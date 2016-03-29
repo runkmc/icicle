@@ -1,0 +1,6 @@
+framework module Pods_IcicleTests {
+  umbrella header "Pods-IcicleTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
