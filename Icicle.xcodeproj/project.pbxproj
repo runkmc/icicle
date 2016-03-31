@@ -95,6 +95,16 @@
 			name = Storyboards;
 			sourceTree = "<group>";
 		};
+		0A3928651CADB03100F724C7 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				0ADE1F281CA1F04A007C2840 /* AppDelegate.swift */,
+				0ADE1F341CA1F04A007C2840 /* Info.plist */,
+				0A3928621CADAE0800F724C7 /* ForecastAPI.swift */,
+			);
+			name = Support;
+			sourceTree = "<group>";
+		};
 		0ADE1F1C1CA1F04A007C2840 = {
 			isa = PBXGroup;
 			children = (
@@ -120,12 +130,10 @@
 		0ADE1F271CA1F04A007C2840 /* Icicle */ = {
 			isa = PBXGroup;
 			children = (
+				0A3928651CADB03100F724C7 /* Support */,
 				0A3928641CADAFF700F724C7 /* Storyboards */,
-				0ADE1F281CA1F04A007C2840 /* AppDelegate.swift */,
 				0ADE1F2A1CA1F04A007C2840 /* ViewController.swift */,
 				0ADE1F2F1CA1F04A007C2840 /* Assets.xcassets */,
-				0ADE1F341CA1F04A007C2840 /* Info.plist */,
-				0A3928621CADAE0800F724C7 /* ForecastAPI.swift */,
 			);
 			path = Icicle;
 			sourceTree = "<group>";
