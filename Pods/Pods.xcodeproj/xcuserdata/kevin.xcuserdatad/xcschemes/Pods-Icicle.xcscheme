@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '6F9BDF0D8DD0364BF0A4685F'
+               BlueprintIdentifier = '698B3489AA0D27B98E7EA301'
                BlueprintName = 'Pods-Icicle'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Pods_Icicle.framework'>

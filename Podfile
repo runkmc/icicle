@@ -10,6 +10,7 @@ end
 
 target 'Icicle' do
   pod 'Argo', '~> 2.3.0'
+  pod 'Runes', '~> 3.2.0'
 end
 
 target 'IcicleTests' do
