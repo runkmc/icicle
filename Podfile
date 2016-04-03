@@ -9,6 +9,7 @@ def testing_pods
 end
 
 target 'Icicle' do
+  pod 'Curry', '~> 2.0.0'
   pod 'Argo', '~> 2.3.0'
   pod 'Runes', '~> 3.2.0'
 end

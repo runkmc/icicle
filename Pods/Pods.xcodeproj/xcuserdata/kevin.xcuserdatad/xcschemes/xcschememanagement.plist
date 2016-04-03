@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Curry.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Nimble.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,12 +52,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>2340C70FAAA9DAD2A901A5E03CC0EED8</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>28E618D9359494C1A68D1922E59D48BE</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>415E255C4F416266AFE9D43E13E5FE0F</key>
+		<key>45772033AC927ABEBCB78141916FAD43</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -62,7 +72,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>672D1F9EFF8A53BBFE5C6D22F634125E</key>
+		<key>9A28D7DA654B0D822D70CD09E4D4BC33</key>
 		<dict>
 			<key>primary</key>
 			<true/>

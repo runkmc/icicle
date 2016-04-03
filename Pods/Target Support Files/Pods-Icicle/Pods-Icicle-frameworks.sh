@@ -85,9 +85,11 @@ strip_invalid_archs() {
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-Icicle/Argo.framework"
+  install_framework "Pods-Icicle/Curry.framework"
   install_framework "Pods-Icicle/Runes.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Icicle/Argo.framework"
+  install_framework "Pods-Icicle/Curry.framework"
   install_framework "Pods-Icicle/Runes.framework"
 fi
