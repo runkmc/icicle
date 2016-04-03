@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '371927B9884CD1359B6713DD'
-               BlueprintName = 'Pods-IcicleUITests'
+               BlueprintIdentifier = '97214127021440DACFE1984D'
+               BlueprintName = 'Argo'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods_IcicleUITests.framework'>
+               BuildableName = 'Argo.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

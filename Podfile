@@ -9,6 +9,7 @@ def testing_pods
 end
 
 target 'Icicle' do
+  pod 'Argo', '~> 2.3.0'
 end
 
 target 'IcicleTests' do

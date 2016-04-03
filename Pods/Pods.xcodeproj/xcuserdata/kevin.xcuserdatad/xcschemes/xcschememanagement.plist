@@ -4,7 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Argo.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Nimble.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-Icicle.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -32,7 +42,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>28E618D9359494C1A68D1922E59D48BE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>6354D0E88FA5FBF7E4C57AF2B24E7FB4</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7621EAA94CF4A801958B018EBA84BF37</key>
 		<dict>
 			<key>primary</key>
 			<true/>
