@@ -14,7 +14,6 @@
 		0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE1F281CA1F04A007C2840 /* AppDelegate.swift */; };
 		0ADE1F301CA1F04A007C2840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE1F2F1CA1F04A007C2840 /* Assets.xcassets */; };
 		0ADE1F331CA1F04A007C2840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE1F311CA1F04A007C2840 /* LaunchScreen.storyboard */; };
-		0ADE1F3E1CA1F04A007C2840 /* IcicleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE1F3D1CA1F04A007C2840 /* IcicleTests.swift */; };
 		0ADE1F491CA1F04A007C2840 /* IcicleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE1F481CA1F04A007C2840 /* IcicleUITests.swift */; };
 		1C13B7BBB7EE3433B3773888 /* Pods_IcicleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D804CCBD9D4B2B69D58C34 /* Pods_IcicleTests.framework */; };
 		7A66DF3A51F805A63D9528E3 /* Pods_IcicleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D9C33B940A12178BB603AF /* Pods_IcicleUITests.framework */; };
@@ -50,7 +49,6 @@
 		0ADE1F321CA1F04A007C2840 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0ADE1F341CA1F04A007C2840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ADE1F391CA1F04A007C2840 /* IcicleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IcicleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0ADE1F3D1CA1F04A007C2840 /* IcicleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IcicleTests.swift; sourceTree = "<group>"; };
 		0ADE1F3F1CA1F04A007C2840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ADE1F441CA1F04A007C2840 /* IcicleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IcicleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ADE1F481CA1F04A007C2840 /* IcicleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IcicleUITests.swift; sourceTree = "<group>"; };
@@ -189,7 +187,6 @@
 			children = (
 				0A2D3B3C1CB5C55300B0DF3C /* Data */,
 				0A2D3B391CB5C4AC00B0DF3C /* Models */,
-				0ADE1F3D1CA1F04A007C2840 /* IcicleTests.swift */,
 				0ADE1F3F1CA1F04A007C2840 /* Info.plist */,
 			);
 			path = IcicleTests;
@@ -500,7 +497,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0ADE1F3E1CA1F04A007C2840 /* IcicleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
