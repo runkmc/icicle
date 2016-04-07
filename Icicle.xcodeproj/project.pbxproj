@@ -15,8 +15,6 @@
 		0A1642671CB6D278001D5593 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1642661CB6D278001D5593 /* Day.swift */; };
 		0A1642691CB6D283001D5593 /* DailySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1642681CB6D283001D5593 /* DailySpec.swift */; };
 		0A16426B1CB6D28B001D5593 /* DaySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A16426A1CB6D28B001D5593 /* DaySpec.swift */; };
-		0A16426E1CB6ED78001D5593 /* MinutelyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A16426D1CB6ED78001D5593 /* MinutelyViewModel.swift */; };
-		0A1642711CB6ED93001D5593 /* MinutelyViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1642701CB6ED93001D5593 /* MinutelyViewModelSpec.swift */; };
 		0A2D3B381CB5C4A100B0DF3C /* Minutley.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D3B371CB5C4A100B0DF3C /* Minutley.swift */; };
 		0A2D3B3B1CB5C54A00B0DF3C /* icicle_test.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A2D3B3A1CB5C54A00B0DF3C /* icicle_test.json */; };
 		0A2D3B3E1CB5C60400B0DF3C /* MinutelySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D3B3D1CB5C60400B0DF3C /* MinutelySpec.swift */; };
@@ -60,8 +58,6 @@
 		0A1642661CB6D278001D5593 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		0A1642681CB6D283001D5593 /* DailySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailySpec.swift; sourceTree = "<group>"; };
 		0A16426A1CB6D28B001D5593 /* DaySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaySpec.swift; sourceTree = "<group>"; };
-		0A16426D1CB6ED78001D5593 /* MinutelyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinutelyViewModel.swift; sourceTree = "<group>"; };
-		0A1642701CB6ED93001D5593 /* MinutelyViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinutelyViewModelSpec.swift; sourceTree = "<group>"; };
 		0A2D3B371CB5C4A100B0DF3C /* Minutley.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minutley.swift; sourceTree = "<group>"; };
 		0A2D3B3A1CB5C54A00B0DF3C /* icicle_test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = icicle_test.json; sourceTree = "<group>"; };
 		0A2D3B3D1CB5C60400B0DF3C /* MinutelySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinutelySpec.swift; sourceTree = "<group>"; };
@@ -120,7 +116,6 @@
 		0A16426C1CB6ED5D001D5593 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				0A16426D1CB6ED78001D5593 /* MinutelyViewModel.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -128,7 +123,6 @@
 		0A16426F1CB6ED81001D5593 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				0A1642701CB6ED93001D5593 /* MinutelyViewModelSpec.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -555,7 +549,6 @@
 				0A16425F1CB63628001D5593 /* Hour.swift in Sources */,
 				0A2D3B471CB5DCFD00B0DF3C /* parseJSON.swift in Sources */,
 				0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */,
-				0A16426E1CB6ED78001D5593 /* MinutelyViewModel.swift in Sources */,
 				0A39286B1CADB10300F724C7 /* CityViewController.swift in Sources */,
 				0A16425D1CB6361B001D5593 /* Hourly.swift in Sources */,
 				0A1642671CB6D278001D5593 /* Day.swift in Sources */,
@@ -571,7 +564,6 @@
 				0A1642691CB6D283001D5593 /* DailySpec.swift in Sources */,
 				0A1642631CB6363D001D5593 /* HourSpec.swift in Sources */,
 				0A2D3B3E1CB5C60400B0DF3C /* MinutelySpec.swift in Sources */,
-				0A1642711CB6ED93001D5593 /* MinutelyViewModelSpec.swift in Sources */,
 				0A1642611CB63635001D5593 /* HourlySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
