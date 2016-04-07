@@ -14,12 +14,15 @@ import Runes
 struct Hourly {
     let icon: String
     let summary: String
+    let data: [Hour]
 }
 
 extension Hourly: Decodable {
     static func decode(j:JSON) -> Decoded<Hourly> {
-        return curry(Hourly.init)
+        let f = curry(Hourly.init)
+            return f
             <^> j <| "icon"
             <*> j <| "summary"
+            <*> j <|| "data"
     }
 }
