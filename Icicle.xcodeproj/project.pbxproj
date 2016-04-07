@@ -11,6 +11,10 @@
 		0A16425F1CB63628001D5593 /* Hour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A16425E1CB63628001D5593 /* Hour.swift */; };
 		0A1642611CB63635001D5593 /* HourlySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1642601CB63635001D5593 /* HourlySpec.swift */; };
 		0A1642631CB6363D001D5593 /* HourSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1642621CB6363D001D5593 /* HourSpec.swift */; };
+		0A1642651CB6D271001D5593 /* Daily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1642641CB6D271001D5593 /* Daily.swift */; };
+		0A1642671CB6D278001D5593 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1642661CB6D278001D5593 /* Day.swift */; };
+		0A1642691CB6D283001D5593 /* DailySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1642681CB6D283001D5593 /* DailySpec.swift */; };
+		0A16426B1CB6D28B001D5593 /* DaySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A16426A1CB6D28B001D5593 /* DaySpec.swift */; };
 		0A2D3B381CB5C4A100B0DF3C /* Minutley.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D3B371CB5C4A100B0DF3C /* Minutley.swift */; };
 		0A2D3B3B1CB5C54A00B0DF3C /* icicle_test.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A2D3B3A1CB5C54A00B0DF3C /* icicle_test.json */; };
 		0A2D3B3E1CB5C60400B0DF3C /* MinutelySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D3B3D1CB5C60400B0DF3C /* MinutelySpec.swift */; };
@@ -50,6 +54,10 @@
 		0A16425E1CB63628001D5593 /* Hour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hour.swift; sourceTree = "<group>"; };
 		0A1642601CB63635001D5593 /* HourlySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlySpec.swift; sourceTree = "<group>"; };
 		0A1642621CB6363D001D5593 /* HourSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourSpec.swift; sourceTree = "<group>"; };
+		0A1642641CB6D271001D5593 /* Daily.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Daily.swift; sourceTree = "<group>"; };
+		0A1642661CB6D278001D5593 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		0A1642681CB6D283001D5593 /* DailySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailySpec.swift; sourceTree = "<group>"; };
+		0A16426A1CB6D28B001D5593 /* DaySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaySpec.swift; sourceTree = "<group>"; };
 		0A2D3B371CB5C4A100B0DF3C /* Minutley.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minutley.swift; sourceTree = "<group>"; };
 		0A2D3B3A1CB5C54A00B0DF3C /* icicle_test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = icicle_test.json; sourceTree = "<group>"; };
 		0A2D3B3D1CB5C60400B0DF3C /* MinutelySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinutelySpec.swift; sourceTree = "<group>"; };
@@ -111,6 +119,8 @@
 				0A2D3B371CB5C4A100B0DF3C /* Minutley.swift */,
 				0A16425C1CB6361B001D5593 /* Hourly.swift */,
 				0A16425E1CB63628001D5593 /* Hour.swift */,
+				0A1642641CB6D271001D5593 /* Daily.swift */,
+				0A1642661CB6D278001D5593 /* Day.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -121,6 +131,8 @@
 				0A2D3B3D1CB5C60400B0DF3C /* MinutelySpec.swift */,
 				0A1642601CB63635001D5593 /* HourlySpec.swift */,
 				0A1642621CB6363D001D5593 /* HourSpec.swift */,
+				0A1642681CB6D283001D5593 /* DailySpec.swift */,
+				0A16426A1CB6D28B001D5593 /* DaySpec.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -523,6 +535,8 @@
 				0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */,
 				0A39286B1CADB10300F724C7 /* CityViewController.swift in Sources */,
 				0A16425D1CB6361B001D5593 /* Hourly.swift in Sources */,
+				0A1642671CB6D278001D5593 /* Day.swift in Sources */,
+				0A1642651CB6D271001D5593 /* Daily.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +544,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A16426B1CB6D28B001D5593 /* DaySpec.swift in Sources */,
+				0A1642691CB6D283001D5593 /* DailySpec.swift in Sources */,
 				0A1642631CB6363D001D5593 /* HourSpec.swift in Sources */,
 				0A2D3B3E1CB5C60400B0DF3C /* MinutelySpec.swift in Sources */,
 				0A1642611CB63635001D5593 /* HourlySpec.swift in Sources */,
