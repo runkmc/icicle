@@ -7,3 +7,19 @@
 //
 
 import Foundation
+import Argo
+import Curry
+import Runes
+
+struct Hourly {
+    let icon: String
+    let summary: String
+}
+
+extension Hourly: Decodable {
+    static func decode(j:JSON) -> Decoded<Hourly> {
+        return curry(Hourly.init)
+            <^> j <| "icon"
+            <*> j <| "summary"
+    }
+}
