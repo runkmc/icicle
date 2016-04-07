@@ -21,8 +21,8 @@ extension Hourly: Decodable {
     static func decode(j:JSON) -> Decoded<Hourly> {
         let f = curry(Hourly.init)
             return f
-            <^> j <| "icon"
-            <*> j <| "summary"
-            <*> j <|| "data"
+                <^> j <| "icon"
+                <*> j <| "summary"
+                <*> j <|| "data"
     }
 }
