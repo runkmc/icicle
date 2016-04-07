@@ -21,12 +21,12 @@ class MinutelySpec: QuickSpec {
             let path = bundle.pathForResource("icicle_test", ofType: "json")
             let data = NSData(contentsOfFile: path!)!
             let json = parseJSON(data, granularity: .Minute)
-            let m: Decoded<Minutely> = decode(json!)
+            let m: Decoded<Minutely> = decode(json)
             let minutes = m.value!
             
             it("parses JSON and has the philsophical attribute of existence") {
-                expect(minutes.icon) == "clear-day"
-                expect(minutes.summary) == "Clear for the hour."
+                expect(minutes.icon) == "partly-cloudy-night"
+                expect(minutes.summary) == "Partly cloudy for the hour."
             }
         }
     }
