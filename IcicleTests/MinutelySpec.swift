@@ -21,8 +21,6 @@ class MinutelySpec: QuickSpec {
             let path = bundle.pathForResource("icicle_test", ofType: "json")
             let data = NSData(contentsOfFile: path!)!
             let json = parseJSON(data, granularity: .Minute)
-            //let json = try? NSJSONSerialization.JSONObjectWithData(data, options: []) as! [String: AnyObject]
-            //let j = json!["minutely"]!
             let m: Decoded<Minutely> = decode(json!)
             let minutes = m.value!
             
