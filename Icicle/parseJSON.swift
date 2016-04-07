@@ -7,3 +7,11 @@
 //
 
 import Foundation
+
+func parseJSON(data:NSData, granularity:TimeGranularity) -> [String: AnyObject] {
+    let potentialJSON = try? NSJSONSerialization.JSONObjectWithData(data, options: [])
+    guard let json = potentialJSON else {
+        return [:]
+    }
+    return json[granularity.rawValue]
+}
