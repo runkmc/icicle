@@ -9,9 +9,17 @@
 import Foundation
 import Argo
 import Curry
+import Runes
 
 struct Minutely {
     let icon: String
     let summary: String
-    let minutes: [Minute]
+}
+
+extension Minutely: Decodable {
+    static func decode(j:JSON) -> Decoded<Minutely> {
+        return curry(Minutely.init)
+            <^> j <| "icon"
+            <*> j <| "summary"
+    }
 }
