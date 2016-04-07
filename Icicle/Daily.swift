@@ -14,6 +14,7 @@ import Runes
 struct Daily {
     let icon: String
     let summary: String
+    let data: [Day]
 }
 
 extension Daily: Decodable {
@@ -22,5 +23,6 @@ extension Daily: Decodable {
         return f
             <^> j <| "icon"
             <*> j <| "summary"
+            <*> j <|| "data"
     }
 }
