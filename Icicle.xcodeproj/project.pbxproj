@@ -22,6 +22,7 @@
 		0A2D3B471CB5DCFD00B0DF3C /* parseJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D3B461CB5DCFD00B0DF3C /* parseJSON.swift */; };
 		0A3928631CADAE0800F724C7 /* ForecastAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3928621CADAE0800F724C7 /* ForecastAPI.swift */; };
 		0A39286B1CADB10300F724C7 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A39286A1CADB10300F724C7 /* CityViewController.swift */; };
+		0A99D91C1CBC5B8400BF354C /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99D91B1CBC5B8400BF354C /* Icon.swift */; };
 		0AD8B0DF1CB829BF00A0C297 /* HourlyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8B0DE1CB829BF00A0C297 /* HourlyViewModel.swift */; };
 		0AD8B0E11CB829CB00A0C297 /* HourlyViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8B0E01CB829CB00A0C297 /* HourlyViewModelSpec.swift */; };
 		0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE1F281CA1F04A007C2840 /* AppDelegate.swift */; };
@@ -67,6 +68,7 @@
 		0A2D3B461CB5DCFD00B0DF3C /* parseJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parseJSON.swift; sourceTree = "<group>"; };
 		0A3928621CADAE0800F724C7 /* ForecastAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastAPI.swift; sourceTree = "<group>"; };
 		0A39286A1CADB10300F724C7 /* CityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
+		0A99D91B1CBC5B8400BF354C /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		0AD8B0DE1CB829BF00A0C297 /* HourlyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyViewModel.swift; sourceTree = "<group>"; };
 		0AD8B0E01CB829CB00A0C297 /* HourlyViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyViewModelSpec.swift; sourceTree = "<group>"; };
 		0ADE1F251CA1F04A007C2840 /* Icicle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Icicle.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,6 +172,7 @@
 			children = (
 				0A2D3B401CB5CB1000B0DF3C /* TimeGranularity.swift */,
 				0A2D3B461CB5DCFD00B0DF3C /* parseJSON.swift */,
+				0A99D91B1CBC5B8400BF354C /* Icon.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -555,6 +558,7 @@
 				0A16425F1CB63628001D5593 /* Hour.swift in Sources */,
 				0A2D3B471CB5DCFD00B0DF3C /* parseJSON.swift in Sources */,
 				0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */,
+				0A99D91C1CBC5B8400BF354C /* Icon.swift in Sources */,
 				0A39286B1CADB10300F724C7 /* CityViewController.swift in Sources */,
 				0A16425D1CB6361B001D5593 /* Hourly.swift in Sources */,
 				0A1642671CB6D278001D5593 /* Day.swift in Sources */,
