@@ -29,9 +29,6 @@
 		0ADE1F301CA1F04A007C2840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE1F2F1CA1F04A007C2840 /* Assets.xcassets */; };
 		0ADE1F331CA1F04A007C2840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE1F311CA1F04A007C2840 /* LaunchScreen.storyboard */; };
 		0ADE1F491CA1F04A007C2840 /* IcicleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE1F481CA1F04A007C2840 /* IcicleUITests.swift */; };
-		1C13B7BBB7EE3433B3773888 /* Pods_IcicleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5D804CCBD9D4B2B69D58C34 /* Pods_IcicleTests.framework */; };
-		7A66DF3A51F805A63D9528E3 /* Pods_IcicleUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2D9C33B940A12178BB603AF /* Pods_IcicleUITests.framework */; };
-		8064EEFD352336313B5C2912 /* Pods_Icicle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0342146B06CABFFF49C7BEA2 /* Pods_Icicle.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,7 +49,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0342146B06CABFFF49C7BEA2 /* Pods_Icicle.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Icicle.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A16425C1CB6361B001D5593 /* Hourly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hourly.swift; sourceTree = "<group>"; };
 		0A16425E1CB63628001D5593 /* Hour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hour.swift; sourceTree = "<group>"; };
 		0A1642601CB63635001D5593 /* HourlySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlySpec.swift; sourceTree = "<group>"; };
@@ -81,14 +77,6 @@
 		0ADE1F441CA1F04A007C2840 /* IcicleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IcicleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ADE1F481CA1F04A007C2840 /* IcicleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IcicleUITests.swift; sourceTree = "<group>"; };
 		0ADE1F4A1CA1F04A007C2840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		354D6192C2A4A756388C008A /* Pods-Icicle.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Icicle.release.xcconfig"; path = "Pods/Target Support Files/Pods-Icicle/Pods-Icicle.release.xcconfig"; sourceTree = "<group>"; };
-		618F5DBDB9B4A8E339B06787 /* Pods-IcicleUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IcicleUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IcicleUITests/Pods-IcicleUITests.release.xcconfig"; sourceTree = "<group>"; };
-		783769E06DE5CA6DC64350FF /* Pods-Icicle.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Icicle.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Icicle/Pods-Icicle.debug.xcconfig"; sourceTree = "<group>"; };
-		B2D9C33B940A12178BB603AF /* Pods_IcicleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IcicleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D35AA6E9EAC76618D8E42A26 /* Pods-IcicleUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IcicleUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IcicleUITests/Pods-IcicleUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		E5D804CCBD9D4B2B69D58C34 /* Pods_IcicleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IcicleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ECDD805F581F6F6B26C1E23D /* Pods-IcicleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IcicleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IcicleTests/Pods-IcicleTests.release.xcconfig"; sourceTree = "<group>"; };
-		ED6005D9CD7EED0F06ED691A /* Pods-IcicleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IcicleTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IcicleTests/Pods-IcicleTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,7 +84,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8064EEFD352336313B5C2912 /* Pods_Icicle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,7 +91,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C13B7BBB7EE3433B3773888 /* Pods_IcicleTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,7 +98,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A66DF3A51F805A63D9528E3 /* Pods_IcicleUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,8 +203,6 @@
 				0ADE1F3C1CA1F04A007C2840 /* IcicleTests */,
 				0ADE1F471CA1F04A007C2840 /* IcicleUITests */,
 				0ADE1F261CA1F04A007C2840 /* Products */,
-				66C9420F73007C8905329090 /* Pods */,
-				780C00A1890EB2A588838DCB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -267,29 +250,6 @@
 			path = IcicleUITests;
 			sourceTree = "<group>";
 		};
-		66C9420F73007C8905329090 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				ED6005D9CD7EED0F06ED691A /* Pods-IcicleTests.debug.xcconfig */,
-				ECDD805F581F6F6B26C1E23D /* Pods-IcicleTests.release.xcconfig */,
-				D35AA6E9EAC76618D8E42A26 /* Pods-IcicleUITests.debug.xcconfig */,
-				618F5DBDB9B4A8E339B06787 /* Pods-IcicleUITests.release.xcconfig */,
-				783769E06DE5CA6DC64350FF /* Pods-Icicle.debug.xcconfig */,
-				354D6192C2A4A756388C008A /* Pods-Icicle.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		780C00A1890EB2A588838DCB /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E5D804CCBD9D4B2B69D58C34 /* Pods_IcicleTests.framework */,
-				B2D9C33B940A12178BB603AF /* Pods_IcicleUITests.framework */,
-				0342146B06CABFFF49C7BEA2 /* Pods_Icicle.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -297,12 +257,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0ADE1F4D1CA1F04A007C2840 /* Build configuration list for PBXNativeTarget "Icicle" */;
 			buildPhases = (
-				4793F35AF45586A7331485B0 /* Check Pods Manifest.lock */,
 				0ADE1F211CA1F04A007C2840 /* Sources */,
 				0ADE1F221CA1F04A007C2840 /* Frameworks */,
 				0ADE1F231CA1F04A007C2840 /* Resources */,
-				8D709AEE71586E90A30C0A7D /* Embed Pods Frameworks */,
-				85EABD2F1C20880A2365A02F /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -317,12 +274,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0ADE1F501CA1F04A007C2840 /* Build configuration list for PBXNativeTarget "IcicleTests" */;
 			buildPhases = (
-				F236B5C37BA083DBEDA13898 /* Check Pods Manifest.lock */,
 				0ADE1F351CA1F04A007C2840 /* Sources */,
 				0ADE1F361CA1F04A007C2840 /* Frameworks */,
 				0ADE1F371CA1F04A007C2840 /* Resources */,
-				1E49958EB53A64EA73A80E6B /* Embed Pods Frameworks */,
-				249CD97AAD007BED02DD7476 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -338,11 +292,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0ADE1F531CA1F04A007C2840 /* Build configuration list for PBXNativeTarget "IcicleUITests" */;
 			buildPhases = (
-				68A325BF928CFDD56BEB0955 /* Check Pods Manifest.lock */,
 				0ADE1F401CA1F04A007C2840 /* Sources */,
 				0ADE1F411CA1F04A007C2840 /* Frameworks */,
 				0ADE1F421CA1F04A007C2840 /* Resources */,
-				4A5AC3797B6043FDEAFAF951 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -423,129 +375,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		1E49958EB53A64EA73A80E6B /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IcicleTests/Pods-IcicleTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		249CD97AAD007BED02DD7476 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IcicleTests/Pods-IcicleTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4793F35AF45586A7331485B0 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		4A5AC3797B6043FDEAFAF951 /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IcicleUITests/Pods-IcicleUITests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		68A325BF928CFDD56BEB0955 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		85EABD2F1C20880A2365A02F /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Icicle/Pods-Icicle-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8D709AEE71586E90A30C0A7D /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Icicle/Pods-Icicle-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F236B5C37BA083DBEDA13898 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0ADE1F211CA1F04A007C2840 /* Sources */ = {
@@ -700,7 +529,6 @@
 		};
 		0ADE1F4E1CA1F04A007C2840 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 783769E06DE5CA6DC64350FF /* Pods-Icicle.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Icicle/Info.plist;
@@ -712,7 +540,6 @@
 		};
 		0ADE1F4F1CA1F04A007C2840 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 354D6192C2A4A756388C008A /* Pods-Icicle.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Icicle/Info.plist;
@@ -724,7 +551,6 @@
 		};
 		0ADE1F511CA1F04A007C2840 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED6005D9CD7EED0F06ED691A /* Pods-IcicleTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
@@ -739,7 +565,6 @@
 		};
 		0ADE1F521CA1F04A007C2840 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ECDD805F581F6F6B26C1E23D /* Pods-IcicleTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
@@ -753,7 +578,6 @@
 		};
 		0ADE1F541CA1F04A007C2840 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D35AA6E9EAC76618D8E42A26 /* Pods-IcicleUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = IcicleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -765,7 +589,6 @@
 		};
 		0ADE1F551CA1F04A007C2840 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 618F5DBDB9B4A8E339B06787 /* Pods-IcicleUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = IcicleUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
