@@ -7,12 +7,3 @@
 //
 
 import Foundation
-import Argo
-
-func parseJSON(data:NSData, granularity:TimeGranularity) -> AnyObject {
-    let json = try? NSJSONSerialization.JSONObjectWithData(data, options: []) as? [String: AnyObject]
-    guard let item = json??[granularity.rawValue] else {
-        return [String: AnyObject]()
-    }
-    return item
-}

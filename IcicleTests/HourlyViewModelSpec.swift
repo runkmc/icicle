@@ -7,17 +7,5 @@
 //
 
 import Foundation
-import Quick
-import Nimble
-import Argo
-@testable import Icicle
 
-class HourlyViewModelSpec: QuickSpec {
-    var bugfix = "" // this is getting old fast.
-    
-    override func spec() {
-        describe("An HourlyViewModelSpec") {
-            
-        }
-    }
-}
+@testable import Icicle
