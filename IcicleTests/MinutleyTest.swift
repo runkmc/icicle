@@ -19,6 +19,13 @@ class MinutleyTest: XCTestCase {
         let json = parseJSON(data:data, granularity: .Minute)
         let minutley = Minutley(data:json)!
         XCTAssertEqual(minutley.summary, "Partly cloudy for the hour.")
-        
+        XCTAssertEqual(minutley.minutes[0]!.precipIntensity, 0)
+        XCTAssertEqual(minutley.icon, "partly-cloudy-night")
+    }
+    
+    func testFailableInit() {
+        let json = ["theBadJson":"so bad"]
+        let minutley = Minutley(data: json)
+        XCTAssertNil(minutley)
     }
 }
