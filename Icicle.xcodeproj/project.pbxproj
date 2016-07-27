@@ -10,6 +10,7 @@
 		0A048E221D495D4D00F1AED3 /* MinuteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A048E211D495D4D00F1AED3 /* MinuteTest.swift */; };
 		0A048E241D49679800F1AED3 /* Minutley.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A048E231D49679800F1AED3 /* Minutley.swift */; };
 		0A048E261D4967A400F1AED3 /* MinutleyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A048E251D4967A400F1AED3 /* MinutleyTest.swift */; };
+		0A048E291D49705400F1AED3 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A048E281D49705400F1AED3 /* JSON.swift */; };
 		0A2D3B381CB5C4A100B0DF3C /* Minute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D3B371CB5C4A100B0DF3C /* Minute.swift */; };
 		0A2D3B3B1CB5C54A00B0DF3C /* icicle_test.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A2D3B3A1CB5C54A00B0DF3C /* icicle_test.json */; };
 		0A2D3B411CB5CB1000B0DF3C /* TimeGranularity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D3B401CB5CB1000B0DF3C /* TimeGranularity.swift */; };
@@ -45,6 +46,7 @@
 		0A048E211D495D4D00F1AED3 /* MinuteTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinuteTest.swift; sourceTree = "<group>"; };
 		0A048E231D49679800F1AED3 /* Minutley.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minutley.swift; sourceTree = "<group>"; };
 		0A048E251D4967A400F1AED3 /* MinutleyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinutleyTest.swift; sourceTree = "<group>"; };
+		0A048E281D49705400F1AED3 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		0A2D3B371CB5C4A100B0DF3C /* Minute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minute.swift; sourceTree = "<group>"; };
 		0A2D3B3A1CB5C54A00B0DF3C /* icicle_test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = icicle_test.json; sourceTree = "<group>"; };
 		0A2D3B401CB5CB1000B0DF3C /* TimeGranularity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeGranularity.swift; sourceTree = "<group>"; };
@@ -90,6 +92,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A048E271D49704600F1AED3 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				0A048E281D49705400F1AED3 /* JSON.swift */,
+			);
+			name = Types;
+			sourceTree = "<group>";
+		};
 		0A16426C1CB6ED5D001D5593 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +208,7 @@
 		0ADE1F271CA1F04A007C2840 /* Icicle */ = {
 			isa = PBXGroup;
 			children = (
+				0A048E271D49704600F1AED3 /* Types */,
 				0A2D3B3F1CB5CAF300B0DF3C /* Helpers */,
 				0A2D3B361CB5C2AC00B0DF3C /* Models */,
 				0A16426C1CB6ED5D001D5593 /* ViewModels */,
@@ -364,6 +375,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A2D3B381CB5C4A100B0DF3C /* Minute.swift in Sources */,
+				0A048E291D49705400F1AED3 /* JSON.swift in Sources */,
 				0A2D3B411CB5CB1000B0DF3C /* TimeGranularity.swift in Sources */,
 				0A3928631CADAE0800F724C7 /* ForecastAPI.swift in Sources */,
 				0A2D3B471CB5DCFD00B0DF3C /* parseJSON.swift in Sources */,
