@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0A048E221D495D4D00F1AED3 /* MinuteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A048E211D495D4D00F1AED3 /* MinuteTest.swift */; };
+		0A048E241D49679800F1AED3 /* Minutley.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A048E231D49679800F1AED3 /* Minutley.swift */; };
+		0A048E261D4967A400F1AED3 /* MinutleyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A048E251D4967A400F1AED3 /* MinutleyTest.swift */; };
 		0A2D3B381CB5C4A100B0DF3C /* Minute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D3B371CB5C4A100B0DF3C /* Minute.swift */; };
 		0A2D3B3B1CB5C54A00B0DF3C /* icicle_test.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A2D3B3A1CB5C54A00B0DF3C /* icicle_test.json */; };
 		0A2D3B411CB5CB1000B0DF3C /* TimeGranularity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D3B401CB5CB1000B0DF3C /* TimeGranularity.swift */; };
@@ -41,6 +43,8 @@
 
 /* Begin PBXFileReference section */
 		0A048E211D495D4D00F1AED3 /* MinuteTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinuteTest.swift; sourceTree = "<group>"; };
+		0A048E231D49679800F1AED3 /* Minutley.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minutley.swift; sourceTree = "<group>"; };
+		0A048E251D4967A400F1AED3 /* MinutleyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinutleyTest.swift; sourceTree = "<group>"; };
 		0A2D3B371CB5C4A100B0DF3C /* Minute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minute.swift; sourceTree = "<group>"; };
 		0A2D3B3A1CB5C54A00B0DF3C /* icicle_test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = icicle_test.json; sourceTree = "<group>"; };
 		0A2D3B401CB5CB1000B0DF3C /* TimeGranularity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeGranularity.swift; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				0A2D3B371CB5C4A100B0DF3C /* Minute.swift */,
+				0A048E231D49679800F1AED3 /* Minutley.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -113,6 +118,7 @@
 			isa = PBXGroup;
 			children = (
 				0A048E211D495D4D00F1AED3 /* MinuteTest.swift */,
+				0A048E251D4967A400F1AED3 /* MinutleyTest.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -364,6 +370,7 @@
 				0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */,
 				0A99D91C1CBC5B8400BF354C /* Icon.swift in Sources */,
 				0A39286B1CADB10300F724C7 /* CityViewController.swift in Sources */,
+				0A048E241D49679800F1AED3 /* Minutley.swift in Sources */,
 				0AD8B0DF1CB829BF00A0C297 /* HourlyViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,6 +379,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A048E261D4967A400F1AED3 /* MinutleyTest.swift in Sources */,
 				0A048E221D495D4D00F1AED3 /* MinuteTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
