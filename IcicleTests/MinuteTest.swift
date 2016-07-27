@@ -19,4 +19,10 @@ class MinuteTest: XCTestCase {
         XCTAssertEqual(minute.precipProbability, 0)
         XCTAssertEqual(minute.precipIntensity, 0)
     }
+    
+    func testFailableInit() {
+        let data = ["nopehaha":28]
+        let minute = Minute(data: data)
+        XCTAssertNil(minute)
+    }
 }
