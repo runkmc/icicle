@@ -7,24 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A16425D1CB6361B001D5593 /* Hourly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A16425C1CB6361B001D5593 /* Hourly.swift */; };
-		0A16425F1CB63628001D5593 /* Hour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A16425E1CB63628001D5593 /* Hour.swift */; };
-		0A1642611CB63635001D5593 /* HourlySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1642601CB63635001D5593 /* HourlySpec.swift */; };
-		0A1642631CB6363D001D5593 /* HourSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1642621CB6363D001D5593 /* HourSpec.swift */; };
-		0A1642651CB6D271001D5593 /* Daily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1642641CB6D271001D5593 /* Daily.swift */; };
-		0A1642671CB6D278001D5593 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1642661CB6D278001D5593 /* Day.swift */; };
-		0A1642691CB6D283001D5593 /* DailySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1642681CB6D283001D5593 /* DailySpec.swift */; };
-		0A16426B1CB6D28B001D5593 /* DaySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A16426A1CB6D28B001D5593 /* DaySpec.swift */; };
-		0A2D3B381CB5C4A100B0DF3C /* Minutley.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D3B371CB5C4A100B0DF3C /* Minutley.swift */; };
+		0A2D3B381CB5C4A100B0DF3C /* Minute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D3B371CB5C4A100B0DF3C /* Minute.swift */; };
 		0A2D3B3B1CB5C54A00B0DF3C /* icicle_test.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A2D3B3A1CB5C54A00B0DF3C /* icicle_test.json */; };
-		0A2D3B3E1CB5C60400B0DF3C /* MinutelySpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D3B3D1CB5C60400B0DF3C /* MinutelySpec.swift */; };
 		0A2D3B411CB5CB1000B0DF3C /* TimeGranularity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D3B401CB5CB1000B0DF3C /* TimeGranularity.swift */; };
 		0A2D3B471CB5DCFD00B0DF3C /* parseJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D3B461CB5DCFD00B0DF3C /* parseJSON.swift */; };
 		0A3928631CADAE0800F724C7 /* ForecastAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3928621CADAE0800F724C7 /* ForecastAPI.swift */; };
 		0A39286B1CADB10300F724C7 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A39286A1CADB10300F724C7 /* CityViewController.swift */; };
 		0A99D91C1CBC5B8400BF354C /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99D91B1CBC5B8400BF354C /* Icon.swift */; };
 		0AD8B0DF1CB829BF00A0C297 /* HourlyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8B0DE1CB829BF00A0C297 /* HourlyViewModel.swift */; };
-		0AD8B0E11CB829CB00A0C297 /* HourlyViewModelSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD8B0E01CB829CB00A0C297 /* HourlyViewModelSpec.swift */; };
 		0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE1F281CA1F04A007C2840 /* AppDelegate.swift */; };
 		0ADE1F301CA1F04A007C2840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE1F2F1CA1F04A007C2840 /* Assets.xcassets */; };
 		0ADE1F331CA1F04A007C2840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE1F311CA1F04A007C2840 /* LaunchScreen.storyboard */; };
@@ -49,24 +39,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A16425C1CB6361B001D5593 /* Hourly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hourly.swift; sourceTree = "<group>"; };
-		0A16425E1CB63628001D5593 /* Hour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hour.swift; sourceTree = "<group>"; };
-		0A1642601CB63635001D5593 /* HourlySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlySpec.swift; sourceTree = "<group>"; };
-		0A1642621CB6363D001D5593 /* HourSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourSpec.swift; sourceTree = "<group>"; };
-		0A1642641CB6D271001D5593 /* Daily.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Daily.swift; sourceTree = "<group>"; };
-		0A1642661CB6D278001D5593 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
-		0A1642681CB6D283001D5593 /* DailySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailySpec.swift; sourceTree = "<group>"; };
-		0A16426A1CB6D28B001D5593 /* DaySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaySpec.swift; sourceTree = "<group>"; };
-		0A2D3B371CB5C4A100B0DF3C /* Minutley.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minutley.swift; sourceTree = "<group>"; };
+		0A2D3B371CB5C4A100B0DF3C /* Minute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minute.swift; sourceTree = "<group>"; };
 		0A2D3B3A1CB5C54A00B0DF3C /* icicle_test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = icicle_test.json; sourceTree = "<group>"; };
-		0A2D3B3D1CB5C60400B0DF3C /* MinutelySpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinutelySpec.swift; sourceTree = "<group>"; };
 		0A2D3B401CB5CB1000B0DF3C /* TimeGranularity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeGranularity.swift; sourceTree = "<group>"; };
 		0A2D3B461CB5DCFD00B0DF3C /* parseJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parseJSON.swift; sourceTree = "<group>"; };
 		0A3928621CADAE0800F724C7 /* ForecastAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastAPI.swift; sourceTree = "<group>"; };
 		0A39286A1CADB10300F724C7 /* CityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		0A99D91B1CBC5B8400BF354C /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		0AD8B0DE1CB829BF00A0C297 /* HourlyViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyViewModel.swift; sourceTree = "<group>"; };
-		0AD8B0E01CB829CB00A0C297 /* HourlyViewModelSpec.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyViewModelSpec.swift; sourceTree = "<group>"; };
 		0ADE1F251CA1F04A007C2840 /* Icicle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Icicle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ADE1F281CA1F04A007C2840 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ADE1F2F1CA1F04A007C2840 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -115,7 +95,6 @@
 		0A16426F1CB6ED81001D5593 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				0AD8B0E01CB829CB00A0C297 /* HourlyViewModelSpec.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -123,11 +102,7 @@
 		0A2D3B361CB5C2AC00B0DF3C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0A2D3B371CB5C4A100B0DF3C /* Minutley.swift */,
-				0A16425C1CB6361B001D5593 /* Hourly.swift */,
-				0A16425E1CB63628001D5593 /* Hour.swift */,
-				0A1642641CB6D271001D5593 /* Daily.swift */,
-				0A1642661CB6D278001D5593 /* Day.swift */,
+				0A2D3B371CB5C4A100B0DF3C /* Minute.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -135,11 +110,6 @@
 		0A2D3B391CB5C4AC00B0DF3C /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				0A2D3B3D1CB5C60400B0DF3C /* MinutelySpec.swift */,
-				0A1642601CB63635001D5593 /* HourlySpec.swift */,
-				0A1642621CB6363D001D5593 /* HourSpec.swift */,
-				0A1642681CB6D283001D5593 /* DailySpec.swift */,
-				0A16426A1CB6D28B001D5593 /* DaySpec.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -384,17 +354,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A2D3B381CB5C4A100B0DF3C /* Minutley.swift in Sources */,
+				0A2D3B381CB5C4A100B0DF3C /* Minute.swift in Sources */,
 				0A2D3B411CB5CB1000B0DF3C /* TimeGranularity.swift in Sources */,
 				0A3928631CADAE0800F724C7 /* ForecastAPI.swift in Sources */,
-				0A16425F1CB63628001D5593 /* Hour.swift in Sources */,
 				0A2D3B471CB5DCFD00B0DF3C /* parseJSON.swift in Sources */,
 				0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */,
 				0A99D91C1CBC5B8400BF354C /* Icon.swift in Sources */,
 				0A39286B1CADB10300F724C7 /* CityViewController.swift in Sources */,
-				0A16425D1CB6361B001D5593 /* Hourly.swift in Sources */,
-				0A1642671CB6D278001D5593 /* Day.swift in Sources */,
-				0A1642651CB6D271001D5593 /* Daily.swift in Sources */,
 				0AD8B0DF1CB829BF00A0C297 /* HourlyViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,12 +369,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0AD8B0E11CB829CB00A0C297 /* HourlyViewModelSpec.swift in Sources */,
-				0A16426B1CB6D28B001D5593 /* DaySpec.swift in Sources */,
-				0A1642691CB6D283001D5593 /* DailySpec.swift in Sources */,
-				0A1642631CB6363D001D5593 /* HourSpec.swift in Sources */,
-				0A2D3B3E1CB5C60400B0DF3C /* MinutelySpec.swift in Sources */,
-				0A1642611CB63635001D5593 /* HourlySpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
