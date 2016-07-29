@@ -8,10 +8,10 @@
 
 import Foundation
 
-func parseJSON(data:Data, granularity:TimeGranularity) -> [String: AnyObject] {
-    let json = try? JSONSerialization.jsonObject(with: data, options: []) as? [String: AnyObject]
+func parseJSON(data:Data, granularity:TimeGranularity) -> JSON {
+    let json = try? JSONSerialization.jsonObject(with: data, options: []) as? JSON
     guard let item = json??[granularity.rawValue] else {
         return [String: AnyObject]()
     }
-    return item as! [String : AnyObject]
+    return item as! JSON
 }

@@ -13,7 +13,7 @@ struct Minute {
     let precipProbability: Float
     let time: Int
     
-    init?(data:[String:AnyObject]) {
+    init?(data:JSON) {
         if let intensity = data["precipIntensity"] as? Float,
         probability = data["precipProbability"] as? Float,
         time = data["time"] as? Int {
