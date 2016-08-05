@@ -18,6 +18,6 @@ class HourTest: XCTestCase {
 			"temperature":65.5, "time":1460008800,
 			"icon":"partly-cloudy-night"]
         let hour = Hour(data:json)!
-        XCTAssertEqual(hour.summary, "partly-cloudy-night")
+        XCTAssertEqual(hour.icon, "partly-cloudy-night")
 	}
 }
