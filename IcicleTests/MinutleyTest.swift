@@ -14,7 +14,7 @@ class MinutleyTest: XCTestCase {
     
     func testMinutleyCreation() {
         let bundle = Bundle(for: self.dynamicType)
-        let path = bundle.url(forResource: "icicle_test", withExtension: "JSON")
+        let path = bundle.url(forResource: "icicle_test", withExtension: "json")
         let data = try! Data(contentsOf: path!)
         let json = parseJSON(data:data, granularity: .Minute)
         let minutley = Minutley(data:json)!
