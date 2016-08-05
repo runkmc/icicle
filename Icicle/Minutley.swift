@@ -15,8 +15,8 @@ struct Minutley {
     
     init?(data:JSON) {
         if let icon = data["icon"] as? String,
-        summary = data["summary"] as? String,
-        minutes = data["data"] as? [JSON] {
+        let summary = data["summary"] as? String,
+        let minutes = data["data"] as? [JSON] {
             self.icon = icon
             self.summary = summary
             self.minutes = minutes.map { Minute(data: $0) }

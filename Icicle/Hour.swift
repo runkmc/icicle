@@ -21,13 +21,13 @@ struct Hour {
 
 	init?(data:JSON) {
 		if let apparentTemperature = data["apparentTemperature"] as? Float,
-		humidity = data["humidity"] as? Float,
-		precipIntensity = data["precipIntensity"] as? Float,
-		precipProbability = data["precipProbability"] as? Float,
-		summary = data["summary"] as? String,
-		temperature = data["temperature"] as? Float,
-		time = data["time"] as? Int,
-		icon = data["icon"] as? String {
+		let humidity = data["humidity"] as? Float,
+		let precipIntensity = data["precipIntensity"] as? Float,
+		let precipProbability = data["precipProbability"] as? Float,
+		let summary = data["summary"] as? String,
+		let temperature = data["temperature"] as? Float,
+		let time = data["time"] as? Int,
+		let icon = data["icon"] as? String {
 			self.apparentTemperature = apparentTemperature 
 			self.humidity = humidity
 			self.precipIntensity = precipIntensity
