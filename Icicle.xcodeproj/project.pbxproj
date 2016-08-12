@@ -127,6 +127,7 @@
 		0A07AFF01D5D5EF100534370 /* IBFiles */ = {
 			isa = PBXGroup;
 			children = (
+				0ADE1F311CA1F04A007C2840 /* LaunchScreen.storyboard */,
 				0A07AFF51D5D5F5D00534370 /* TodayViewController.xib */,
 				0A07AFF91D5D5F8700534370 /* SettingsViewController.xib */,
 				0A07AFFF1D5D5FD800534370 /* WeekViewController.xib */,
@@ -191,14 +192,6 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
-		0A3928641CADAFF700F724C7 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				0ADE1F311CA1F04A007C2840 /* LaunchScreen.storyboard */,
-			);
-			name = Storyboards;
-			sourceTree = "<group>";
-		};
 		0A3928651CADB03100F724C7 /* Support */ = {
 			isa = PBXGroup;
 			children = (
@@ -259,7 +252,6 @@
 				0A3928671CADB08700F724C7 /* ViewControllers */,
 				0A3928661CADB05900F724C7 /* Assets */,
 				0A3928651CADB03100F724C7 /* Support */,
-				0A3928641CADAFF700F724C7 /* Storyboards */,
 			);
 			path = Icicle;
 			sourceTree = "<group>";
