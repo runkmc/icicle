@@ -16,7 +16,6 @@
 		0A2D3B411CB5CB1000B0DF3C /* TimeGranularity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D3B401CB5CB1000B0DF3C /* TimeGranularity.swift */; };
 		0A2D3B471CB5DCFD00B0DF3C /* parseJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D3B461CB5DCFD00B0DF3C /* parseJSON.swift */; };
 		0A3928631CADAE0800F724C7 /* ForecastAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3928621CADAE0800F724C7 /* ForecastAPI.swift */; };
-		0A39286B1CADB10300F724C7 /* CityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A39286A1CADB10300F724C7 /* CityViewController.swift */; };
 		0A413A221D4D9D8B0040A972 /* Hour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A413A211D4D9D8B0040A972 /* Hour.swift */; };
 		0A413A241D4D9DA10040A972 /* HourTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A413A231D4D9DA10040A972 /* HourTest.swift */; };
 		0A761F391D550AC20007109A /* Hourly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A761F381D550AC20007109A /* Hourly.swift */; };
@@ -57,7 +56,6 @@
 		0A2D3B401CB5CB1000B0DF3C /* TimeGranularity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeGranularity.swift; sourceTree = "<group>"; };
 		0A2D3B461CB5DCFD00B0DF3C /* parseJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parseJSON.swift; sourceTree = "<group>"; };
 		0A3928621CADAE0800F724C7 /* ForecastAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastAPI.swift; sourceTree = "<group>"; };
-		0A39286A1CADB10300F724C7 /* CityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CityViewController.swift; sourceTree = "<group>"; };
 		0A413A211D4D9D8B0040A972 /* Hour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hour.swift; sourceTree = "<group>"; };
 		0A413A231D4D9DA10040A972 /* HourTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourTest.swift; sourceTree = "<group>"; };
 		0A761F381D550AC20007109A /* Hourly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hourly.swift; sourceTree = "<group>"; };
@@ -195,7 +193,6 @@
 		0A3928671CADB08700F724C7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0A39286A1CADB10300F724C7 /* CityViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -399,7 +396,6 @@
 				0A2D3B471CB5DCFD00B0DF3C /* parseJSON.swift in Sources */,
 				0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */,
 				0A99D91C1CBC5B8400BF354C /* Icon.swift in Sources */,
-				0A39286B1CADB10300F724C7 /* CityViewController.swift in Sources */,
 				0A048E241D49679800F1AED3 /* Minutley.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
