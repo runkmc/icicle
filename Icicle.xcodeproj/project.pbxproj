@@ -127,6 +127,10 @@
 		0A07AFF01D5D5EF100534370 /* IBFiles */ = {
 			isa = PBXGroup;
 			children = (
+				0A07AFF51D5D5F5D00534370 /* TodayViewController.xib */,
+				0A07AFF91D5D5F8700534370 /* SettingsViewController.xib */,
+				0A07AFFF1D5D5FD800534370 /* WeekViewController.xib */,
+				0A07B0031D5D5FE500534370 /* LocationsViewController.xib */,
 			);
 			name = IBFiles;
 			sourceTree = "<group>";
@@ -217,13 +221,9 @@
 			isa = PBXGroup;
 			children = (
 				0A07AFF41D5D5F5D00534370 /* TodayViewController.swift */,
-				0A07AFF51D5D5F5D00534370 /* TodayViewController.xib */,
 				0A07AFF81D5D5F8700534370 /* SettingsViewController.swift */,
-				0A07AFF91D5D5F8700534370 /* SettingsViewController.xib */,
 				0A07AFFE1D5D5FD800534370 /* WeekViewController.swift */,
-				0A07AFFF1D5D5FD800534370 /* WeekViewController.xib */,
 				0A07B0021D5D5FE500534370 /* LocationsViewController.swift */,
-				0A07B0031D5D5FE500534370 /* LocationsViewController.xib */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
