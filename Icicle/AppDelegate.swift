@@ -16,22 +16,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        let tabBarController = UITabBarController()
-        let settingsController = SettingsViewController()
-        let locationsController = LocationsViewController()
-        let todayController = TodayViewController()
-        let weekController = WeekViewController()
-        
-        settingsController.tabBarItem = UITabBarItem(title: "Settings", image:UIImage(named:"settingsOff"), selectedImage: UIImage(named:"settingsOn"))
-        locationsController.tabBarItem = UITabBarItem(title: "Locations", image:UIImage(named:"locationsOff"), selectedImage:UIImage(named:"locationsOn"))
-        todayController.tabBarItem = UITabBarItem(title: "Today", image:UIImage(named:"todayOff"), selectedImage:UIImage(named:"todayOn"))
-        weekController.tabBarItem = UITabBarItem(title: "This Week", image:UIImage(named:"weekOff"), selectedImage:UIImage(named:"weekOn"))
-        tabBarController.viewControllers = [todayController, weekController, locationsController, settingsController]
-        
-        let bar = tabBarController.tabBar
-        bar.tintColor = IcicleColor.peach
-        bar.barTintColor = IcicleColor.lightGrey
-        
+        let tabBarController = IcicleTabBarViewController()
         window?.rootViewController = tabBarController
         return true
     }
