@@ -27,6 +27,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         todayController.tabBarItem = UITabBarItem(title: "Today", image:UIImage(named:"todayOff"), selectedImage:UIImage(named:"todayOn"))
         weekController.tabBarItem = UITabBarItem(title: "This Week", image:UIImage(named:"weekOff"), selectedImage:UIImage(named:"weekOn"))
         tabBarController.viewControllers = [todayController, weekController, locationsController, settingsController]
+        
+        let bar = tabBarController.tabBar
+        bar.tintColor = IcicleColor.peach
+        bar.barTintColor = IcicleColor.lightGrey
+        
         window?.rootViewController = tabBarController
         return true
     }
