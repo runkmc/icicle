@@ -13,9 +13,7 @@ import XCTest
 class MinutleyTest: XCTestCase {
     
     func testMinutleyCreation() {
-        let bundle = Bundle(for: self.dynamicType)
-        let path = bundle.url(forResource: "icicle_test", withExtension: "json")
-        let data = try! Data(contentsOf: path!)
+        let data = getTestJSON(named: "icicle_test", forClass: self.dynamicType)
         let json = parseJSON(data:data, granularity: .Minute)
         let minutley = Minutley(data:json)!
         XCTAssertEqual(minutley.summary, "Partly cloudy for the hour.")
