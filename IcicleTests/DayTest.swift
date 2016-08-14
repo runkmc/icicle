@@ -13,9 +13,7 @@ import XCTest
 class DayTest: XCTestCase {
     
     func testDayCreation() {
-        let bundle = Bundle(for: self.dynamicType)
-        let path = bundle.url(forResource: "icicle_test", withExtension: "json")
-        let data = try! Data(contentsOf: path!)
+        let data = getTestJSON(named:"icicle_test", forClass:self.dynamicType)
         let json = parseJSON(data: data, granularity: .Day)
         let days = json["data"] as! [AnyObject]
         let day = Day(data:days[0] as! JSON)

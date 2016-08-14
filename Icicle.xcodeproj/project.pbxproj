@@ -33,6 +33,7 @@
 		0A99D91C1CBC5B8400BF354C /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99D91B1CBC5B8400BF354C /* Icon.swift */; };
 		0AC120AB1D610977008E1557 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC120AA1D610977008E1557 /* Day.swift */; };
 		0AC120AD1D61098E008E1557 /* DayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC120AC1D61098E008E1557 /* DayTest.swift */; };
+		0AC120B01D61175A008E1557 /* getTestJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC120AF1D61175A008E1557 /* getTestJson.swift */; };
 		0AC6AEB81D5D1E7900FE55C1 /* Currently.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6AEB71D5D1E7900FE55C1 /* Currently.swift */; };
 		0AC6AEBA1D5D1E8D00FE55C1 /* CurrentlyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6AEB91D5D1E8D00FE55C1 /* CurrentlyTest.swift */; };
 		0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE1F281CA1F04A007C2840 /* AppDelegate.swift */; };
@@ -85,6 +86,7 @@
 		0A99D91B1CBC5B8400BF354C /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		0AC120AA1D610977008E1557 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		0AC120AC1D61098E008E1557 /* DayTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayTest.swift; sourceTree = "<group>"; };
+		0AC120AF1D61175A008E1557 /* getTestJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getTestJson.swift; sourceTree = "<group>"; };
 		0AC6AEB71D5D1E7900FE55C1 /* Currently.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currently.swift; sourceTree = "<group>"; };
 		0AC6AEB91D5D1E8D00FE55C1 /* CurrentlyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentlyTest.swift; sourceTree = "<group>"; };
 		0ADE1F251CA1F04A007C2840 /* Icicle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Icicle.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -233,6 +235,14 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
+		0AC120AE1D61174B008E1557 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0AC120AF1D61175A008E1557 /* getTestJson.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		0ADE1F1C1CA1F04A007C2840 = {
 			isa = PBXGroup;
 			children = (
@@ -271,6 +281,7 @@
 		0ADE1F3C1CA1F04A007C2840 /* IcicleTests */ = {
 			isa = PBXGroup;
 			children = (
+				0AC120AE1D61174B008E1557 /* Helpers */,
 				0A2D3B3C1CB5C55300B0DF3C /* Data */,
 				0A16426F1CB6ED81001D5593 /* ViewModels */,
 				0A2D3B391CB5C4AC00B0DF3C /* Models */,
@@ -455,6 +466,7 @@
 				0A413A241D4D9DA10040A972 /* HourTest.swift in Sources */,
 				0A048E261D4967A400F1AED3 /* MinutleyTest.swift in Sources */,
 				0A761F3B1D550AD20007109A /* HourlyTest.swift in Sources */,
+				0AC120B01D61175A008E1557 /* getTestJson.swift in Sources */,
 				0A048E221D495D4D00F1AED3 /* MinuteTest.swift in Sources */,
 				0AC6AEBA1D5D1E8D00FE55C1 /* CurrentlyTest.swift in Sources */,
 			);
