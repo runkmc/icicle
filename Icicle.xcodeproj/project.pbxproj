@@ -34,6 +34,8 @@
 		0AC120AB1D610977008E1557 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC120AA1D610977008E1557 /* Day.swift */; };
 		0AC120AD1D61098E008E1557 /* DayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC120AC1D61098E008E1557 /* DayTest.swift */; };
 		0AC120B01D61175A008E1557 /* getTestJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC120AF1D61175A008E1557 /* getTestJson.swift */; };
+		0AC120B21D6145D7008E1557 /* Daily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC120B11D6145D7008E1557 /* Daily.swift */; };
+		0AC120B41D6145E2008E1557 /* DailyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC120B31D6145E2008E1557 /* DailyTest.swift */; };
 		0AC6AEB81D5D1E7900FE55C1 /* Currently.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6AEB71D5D1E7900FE55C1 /* Currently.swift */; };
 		0AC6AEBA1D5D1E8D00FE55C1 /* CurrentlyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC6AEB91D5D1E8D00FE55C1 /* CurrentlyTest.swift */; };
 		0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE1F281CA1F04A007C2840 /* AppDelegate.swift */; };
@@ -87,6 +89,8 @@
 		0AC120AA1D610977008E1557 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		0AC120AC1D61098E008E1557 /* DayTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayTest.swift; sourceTree = "<group>"; };
 		0AC120AF1D61175A008E1557 /* getTestJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getTestJson.swift; sourceTree = "<group>"; };
+		0AC120B11D6145D7008E1557 /* Daily.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Daily.swift; sourceTree = "<group>"; };
+		0AC120B31D6145E2008E1557 /* DailyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyTest.swift; sourceTree = "<group>"; };
 		0AC6AEB71D5D1E7900FE55C1 /* Currently.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currently.swift; sourceTree = "<group>"; };
 		0AC6AEB91D5D1E8D00FE55C1 /* CurrentlyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentlyTest.swift; sourceTree = "<group>"; };
 		0ADE1F251CA1F04A007C2840 /* Icicle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Icicle.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +173,7 @@
 				0A761F381D550AC20007109A /* Hourly.swift */,
 				0AC6AEB71D5D1E7900FE55C1 /* Currently.swift */,
 				0AC120AA1D610977008E1557 /* Day.swift */,
+				0AC120B11D6145D7008E1557 /* Daily.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 				0A761F3A1D550AD20007109A /* HourlyTest.swift */,
 				0AC6AEB91D5D1E8D00FE55C1 /* CurrentlyTest.swift */,
 				0AC120AC1D61098E008E1557 /* DayTest.swift */,
+				0AC120B31D6145E2008E1557 /* DailyTest.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -450,6 +456,7 @@
 				0A2D3B471CB5DCFD00B0DF3C /* parseJSON.swift in Sources */,
 				0A07AFF61D5D5F5D00534370 /* TodayViewController.swift in Sources */,
 				0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */,
+				0AC120B21D6145D7008E1557 /* Daily.swift in Sources */,
 				0A07B0041D5D5FE500534370 /* LocationsViewController.swift in Sources */,
 				0AC120AB1D610977008E1557 /* Day.swift in Sources */,
 				0A07AFFA1D5D5F8700534370 /* SettingsViewController.swift in Sources */,
@@ -467,6 +474,7 @@
 				0A048E261D4967A400F1AED3 /* MinutleyTest.swift in Sources */,
 				0A761F3B1D550AD20007109A /* HourlyTest.swift in Sources */,
 				0AC120B01D61175A008E1557 /* getTestJson.swift in Sources */,
+				0AC120B41D6145E2008E1557 /* DailyTest.swift in Sources */,
 				0A048E221D495D4D00F1AED3 /* MinuteTest.swift in Sources */,
 				0AC6AEBA1D5D1E8D00FE55C1 /* CurrentlyTest.swift in Sources */,
 			);
