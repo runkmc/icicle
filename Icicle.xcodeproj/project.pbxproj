@@ -34,6 +34,7 @@
 		0A608A341D5ED807002151E6 /* IcicleTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A608A331D5ED807002151E6 /* IcicleTabBarViewController.swift */; };
 		0A761F391D550AC20007109A /* Hourly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A761F381D550AC20007109A /* Hourly.swift */; };
 		0A761F3B1D550AD20007109A /* HourlyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A761F3A1D550AD20007109A /* HourlyTest.swift */; };
+		0A8A1C541D656A3A0021E5AB /* RawWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A1C531D656A3A0021E5AB /* RawWeatherData.swift */; };
 		0A99D91C1CBC5B8400BF354C /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99D91B1CBC5B8400BF354C /* Icon.swift */; };
 		0AC120AB1D610977008E1557 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC120AA1D610977008E1557 /* Day.swift */; };
 		0AC120AD1D61098E008E1557 /* DayTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC120AC1D61098E008E1557 /* DayTest.swift */; };
@@ -93,6 +94,7 @@
 		0A608A331D5ED807002151E6 /* IcicleTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IcicleTabBarViewController.swift; sourceTree = "<group>"; };
 		0A761F381D550AC20007109A /* Hourly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hourly.swift; sourceTree = "<group>"; };
 		0A761F3A1D550AD20007109A /* HourlyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyTest.swift; sourceTree = "<group>"; };
+		0A8A1C531D656A3A0021E5AB /* RawWeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawWeatherData.swift; sourceTree = "<group>"; };
 		0A99D91B1CBC5B8400BF354C /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		0AC120AA1D610977008E1557 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
 		0AC120AC1D61098E008E1557 /* DayTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayTest.swift; sourceTree = "<group>"; };
@@ -193,6 +195,7 @@
 				0AC6AEB71D5D1E7900FE55C1 /* Currently.swift */,
 				0AC120AA1D610977008E1557 /* Day.swift */,
 				0AC120B11D6145D7008E1557 /* Daily.swift */,
+				0A8A1C531D656A3A0021E5AB /* RawWeatherData.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -482,6 +485,7 @@
 				0A10FE8E1D63E9BC002E5687 /* GraphData.swift in Sources */,
 				0A10FE871D63E412002E5687 /* WeatherDataGetter.swift in Sources */,
 				0AC120AB1D610977008E1557 /* Day.swift in Sources */,
+				0A8A1C541D656A3A0021E5AB /* RawWeatherData.swift in Sources */,
 				0A07AFFA1D5D5F8700534370 /* SettingsViewController.swift in Sources */,
 				0A99D91C1CBC5B8400BF354C /* Icon.swift in Sources */,
 				0A048E241D49679800F1AED3 /* Minutley.swift in Sources */,
