@@ -12,4 +12,5 @@ enum TimeGranularity: String {
     case Day = "daily"
     case Hour = "hourly"
     case Minute = "minutely"
+    case Current = "currently"
 }
