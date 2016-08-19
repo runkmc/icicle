@@ -10,12 +10,12 @@ import Foundation
 import XCTest
 @testable import Icicle
 
-class HourlyTest: XCTestCase {
-    func testHourlyCreation() {
+class HoursTest: XCTestCase {
+    func testHoursCreation() {
         let data = getTestJSON(named: "icicle_test", forClass: self.dynamicType)
         let json = parseJSON(data: data, granularity: .Hour)
-        let hourly = Hourly(data:json)!
-        XCTAssertEqual(hourly.summary, "Mostly cloudy throughout the day.")
-        XCTAssertEqual(hourly.hours[0]!.time, 1460008800)
+        let hours = Hours(data:json)
+        XCTAssertEqual(hours.summary, "Mostly cloudy throughout the day.")
+        XCTAssertEqual(hours.hours[0].time, 1460008800)
     }
 }

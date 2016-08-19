@@ -32,8 +32,8 @@
 		0A413A241D4D9DA10040A972 /* HourTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A413A231D4D9DA10040A972 /* HourTest.swift */; };
 		0A608A321D5ED4E9002151E6 /* IcicleColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A608A311D5ED4E9002151E6 /* IcicleColor.swift */; };
 		0A608A341D5ED807002151E6 /* IcicleTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A608A331D5ED807002151E6 /* IcicleTabBarViewController.swift */; };
-		0A761F391D550AC20007109A /* Hourly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A761F381D550AC20007109A /* Hourly.swift */; };
-		0A761F3B1D550AD20007109A /* HourlyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A761F3A1D550AD20007109A /* HourlyTest.swift */; };
+		0A761F391D550AC20007109A /* Hours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A761F381D550AC20007109A /* Hours.swift */; };
+		0A761F3B1D550AD20007109A /* HoursTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A761F3A1D550AD20007109A /* HoursTest.swift */; };
 		0A8A1C541D656A3A0021E5AB /* RawWeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8A1C531D656A3A0021E5AB /* RawWeatherData.swift */; };
 		0A99D91C1CBC5B8400BF354C /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99D91B1CBC5B8400BF354C /* Icon.swift */; };
 		0AC120AB1D610977008E1557 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC120AA1D610977008E1557 /* Day.swift */; };
@@ -92,8 +92,8 @@
 		0A413A231D4D9DA10040A972 /* HourTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourTest.swift; sourceTree = "<group>"; };
 		0A608A311D5ED4E9002151E6 /* IcicleColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IcicleColor.swift; sourceTree = "<group>"; };
 		0A608A331D5ED807002151E6 /* IcicleTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IcicleTabBarViewController.swift; sourceTree = "<group>"; };
-		0A761F381D550AC20007109A /* Hourly.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hourly.swift; sourceTree = "<group>"; };
-		0A761F3A1D550AD20007109A /* HourlyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyTest.swift; sourceTree = "<group>"; };
+		0A761F381D550AC20007109A /* Hours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hours.swift; sourceTree = "<group>"; };
+		0A761F3A1D550AD20007109A /* HoursTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoursTest.swift; sourceTree = "<group>"; };
 		0A8A1C531D656A3A0021E5AB /* RawWeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RawWeatherData.swift; sourceTree = "<group>"; };
 		0A99D91B1CBC5B8400BF354C /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		0AC120AA1D610977008E1557 /* Day.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
@@ -191,7 +191,7 @@
 				0A2D3B371CB5C4A100B0DF3C /* Minute.swift */,
 				0A048E231D49679800F1AED3 /* Minutes.swift */,
 				0A413A211D4D9D8B0040A972 /* Hour.swift */,
-				0A761F381D550AC20007109A /* Hourly.swift */,
+				0A761F381D550AC20007109A /* Hours.swift */,
 				0AC6AEB71D5D1E7900FE55C1 /* Currently.swift */,
 				0AC120AA1D610977008E1557 /* Day.swift */,
 				0AC120B11D6145D7008E1557 /* Daily.swift */,
@@ -206,7 +206,7 @@
 				0A048E211D495D4D00F1AED3 /* MinuteTest.swift */,
 				0A048E251D4967A400F1AED3 /* MinutesTest.swift */,
 				0A413A231D4D9DA10040A972 /* HourTest.swift */,
-				0A761F3A1D550AD20007109A /* HourlyTest.swift */,
+				0A761F3A1D550AD20007109A /* HoursTest.swift */,
 				0AC6AEB91D5D1E8D00FE55C1 /* CurrentlyTest.swift */,
 				0AC120AC1D61098E008E1557 /* DayTest.swift */,
 				0AC120B31D6145E2008E1557 /* DailyTest.swift */,
@@ -467,7 +467,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A07B0001D5D5FD800534370 /* WeekViewController.swift in Sources */,
-				0A761F391D550AC20007109A /* Hourly.swift in Sources */,
+				0A761F391D550AC20007109A /* Hours.swift in Sources */,
 				0A10FE891D63E603002E5687 /* TodayData.swift in Sources */,
 				0A2D3B381CB5C4A100B0DF3C /* Minute.swift in Sources */,
 				0AC6AEB81D5D1E7900FE55C1 /* Currently.swift in Sources */,
@@ -499,7 +499,7 @@
 				0AC120AD1D61098E008E1557 /* DayTest.swift in Sources */,
 				0A413A241D4D9DA10040A972 /* HourTest.swift in Sources */,
 				0A048E261D4967A400F1AED3 /* MinutesTest.swift in Sources */,
-				0A761F3B1D550AD20007109A /* HourlyTest.swift in Sources */,
+				0A761F3B1D550AD20007109A /* HoursTest.swift in Sources */,
 				0AC120B01D61175A008E1557 /* getTestJson.swift in Sources */,
 				0AC120B41D6145E2008E1557 /* DailyTest.swift in Sources */,
 				0A10FE8B1D63E610002E5687 /* TodayDataTest.swift in Sources */,
