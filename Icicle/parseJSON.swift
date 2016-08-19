@@ -8,10 +8,12 @@
 
 import Foundation
 
-func parseJSON(data:Data, granularity:TimeGranularity) -> JSON {
-    let json = try? JSONSerialization.jsonObject(with: data, options: []) as? JSON
-    guard let item = json??[granularity.rawValue] else {
-        return [String: AnyObject]()
+func parseJSON(data:Data, granularity:TimeGranularity) throws -> JSON {
+    do {
+        let json = try JSONSerialization.jsonObject(with: data, options: []) as! JSON
+        return json[granularity.rawValue] as! JSON
     }
-    return item as! JSON
+    catch {
+        throw error as NSError
+    }
 }
