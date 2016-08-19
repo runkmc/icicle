@@ -17,7 +17,8 @@ class HourTest: XCTestCase {
 			"precipIntensity":0, "precipProbability":0, "summary":"Partly Cloudy", 
 			"temperature":65.5, "time":1460008800,
 			"icon":"partly-cloudy-night"]
-        let hour = Hour(data:json)!
+        let hour = Hour(data:json)
         XCTAssertEqual(hour.icon, "partly-cloudy-night")
+        XCTAssertEqual(hour.apparentTemperature, 65.5)
 	}
 }
