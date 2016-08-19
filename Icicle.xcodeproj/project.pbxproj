@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0A048E221D495D4D00F1AED3 /* MinuteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A048E211D495D4D00F1AED3 /* MinuteTest.swift */; };
-		0A048E241D49679800F1AED3 /* Minutley.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A048E231D49679800F1AED3 /* Minutley.swift */; };
-		0A048E261D4967A400F1AED3 /* MinutleyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A048E251D4967A400F1AED3 /* MinutleyTest.swift */; };
+		0A048E241D49679800F1AED3 /* Minutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A048E231D49679800F1AED3 /* Minutes.swift */; };
+		0A048E261D4967A400F1AED3 /* MinutesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A048E251D4967A400F1AED3 /* MinutesTest.swift */; };
 		0A048E291D49705400F1AED3 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A048E281D49705400F1AED3 /* JSON.swift */; };
 		0A07AFF61D5D5F5D00534370 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07AFF41D5D5F5D00534370 /* TodayViewController.swift */; };
 		0A07AFF71D5D5F5D00534370 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A07AFF51D5D5F5D00534370 /* TodayViewController.xib */; };
@@ -68,8 +68,8 @@
 
 /* Begin PBXFileReference section */
 		0A048E211D495D4D00F1AED3 /* MinuteTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinuteTest.swift; sourceTree = "<group>"; };
-		0A048E231D49679800F1AED3 /* Minutley.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minutley.swift; sourceTree = "<group>"; };
-		0A048E251D4967A400F1AED3 /* MinutleyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinutleyTest.swift; sourceTree = "<group>"; };
+		0A048E231D49679800F1AED3 /* Minutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minutes.swift; sourceTree = "<group>"; };
+		0A048E251D4967A400F1AED3 /* MinutesTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinutesTest.swift; sourceTree = "<group>"; };
 		0A048E281D49705400F1AED3 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		0A07AFF41D5D5F5D00534370 /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
 		0A07AFF51D5D5F5D00534370 /* TodayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TodayViewController.xib; sourceTree = "<group>"; };
@@ -189,7 +189,7 @@
 			isa = PBXGroup;
 			children = (
 				0A2D3B371CB5C4A100B0DF3C /* Minute.swift */,
-				0A048E231D49679800F1AED3 /* Minutley.swift */,
+				0A048E231D49679800F1AED3 /* Minutes.swift */,
 				0A413A211D4D9D8B0040A972 /* Hour.swift */,
 				0A761F381D550AC20007109A /* Hourly.swift */,
 				0AC6AEB71D5D1E7900FE55C1 /* Currently.swift */,
@@ -204,7 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				0A048E211D495D4D00F1AED3 /* MinuteTest.swift */,
-				0A048E251D4967A400F1AED3 /* MinutleyTest.swift */,
+				0A048E251D4967A400F1AED3 /* MinutesTest.swift */,
 				0A413A231D4D9DA10040A972 /* HourTest.swift */,
 				0A761F3A1D550AD20007109A /* HourlyTest.swift */,
 				0AC6AEB91D5D1E8D00FE55C1 /* CurrentlyTest.swift */,
@@ -488,7 +488,7 @@
 				0A8A1C541D656A3A0021E5AB /* RawWeatherData.swift in Sources */,
 				0A07AFFA1D5D5F8700534370 /* SettingsViewController.swift in Sources */,
 				0A99D91C1CBC5B8400BF354C /* Icon.swift in Sources */,
-				0A048E241D49679800F1AED3 /* Minutley.swift in Sources */,
+				0A048E241D49679800F1AED3 /* Minutes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -498,7 +498,7 @@
 			files = (
 				0AC120AD1D61098E008E1557 /* DayTest.swift in Sources */,
 				0A413A241D4D9DA10040A972 /* HourTest.swift in Sources */,
-				0A048E261D4967A400F1AED3 /* MinutleyTest.swift in Sources */,
+				0A048E261D4967A400F1AED3 /* MinutesTest.swift in Sources */,
 				0A761F3B1D550AD20007109A /* HourlyTest.swift in Sources */,
 				0AC120B01D61175A008E1557 /* getTestJson.swift in Sources */,
 				0AC120B41D6145E2008E1557 /* DailyTest.swift in Sources */,
