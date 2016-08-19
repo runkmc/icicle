@@ -9,19 +9,13 @@
 import Foundation
 
 struct Minute {
-    let precipIntensity: Float
-    let precipProbability: Float
-    let time: Int
+    let precipIntensity: Float?
+    let precipProbability: Float?
+    let time: Double?
     
-    init?(data:JSON) {
-        if let intensity = data["precipIntensity"] as? Float,
-        let probability = data["precipProbability"] as? Float,
-        let time = data["time"] as? Int {
-            self.precipIntensity = intensity
-            self.precipProbability = probability
-            self.time = time
-        } else {
-            return nil
-        }
+    init(data:JSON) {
+        self.precipIntensity = data["precipIntensity"] as? Float
+        self.precipProbability = data["precipProbability"] as? Float
+        self.time = data["time"] as? Double
     }
 }
