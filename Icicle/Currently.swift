@@ -9,19 +9,15 @@
 import Foundation
 
 struct Currently {
-	let apparentTemperature:Float
-	let icon:String
-	let temperature:Float
+	let apparentTemperature:Float?
+	let icon:String?
+	let temperature:Float?
+    let time: Double?
 
-	init?(data:JSON) {
-		if let apparentTemperature = data["apparentTemperature"] as? Float,
-		let icon = data["icon"] as? String,
-		let temperature = data["temperature"] as? Float {
-			self.apparentTemperature = apparentTemperature
-			self.icon = icon
-			self.temperature = temperature
-        } else {
-            return nil
-        }
+    init(data:JSON) {
+		self.apparentTemperature = data["apparentTemperature"] as? Float
+		self.icon = data["icon"] as? String
+		self.temperature = data["temperature"] as? Float
+        self.time = data["time"] as? Double 
 	}
 }
