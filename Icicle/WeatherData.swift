@@ -11,9 +11,11 @@ import CoreLocation
 
 struct WeatherData {
     
+    let icon: UIImage
     
     init(minutes:Minutes, hours:Hours, days:Days, currently:Currently) {
-        
+        let iconName = currently.icon ?? "blank"
+        self.icon = UIImage(named:iconName)!
     }
     
 }

@@ -12,5 +12,10 @@ import XCTest
 
 class CurrentlyTest: XCTestCase {
 	func testCurrentlyCreation() {
+        let data = getTestJSON(named: "icicle_test", forClass: self.dynamicType)
+        let json = try! parseJSON(data: data, granularity: .current)
+        let currently = Currently(data: json)
+        
+        XCTAssertEqual(currently.time, 1460009818)
 	}
 }

@@ -18,6 +18,6 @@ struct Currently {
 		self.apparentTemperature = data["apparentTemperature"] as? Float
 		self.icon = data["icon"] as? String
 		self.temperature = data["temperature"] as? Float
-        self.time = data["time"] as? Double 
+        self.time = data["time"] as? Double
 	}
 }

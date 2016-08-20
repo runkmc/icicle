@@ -32,7 +32,7 @@
 		0A4EC4881D679A98004813CF /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EC4871D679A98004813CF /* Location.swift */; };
 		0A4EC48A1D67E3A6004813CF /* WeatherDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EC4891D67E3A6004813CF /* WeatherDataTest.swift */; };
 		0A4EC48C1D67F655004813CF /* TemperatureGraphData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EC48B1D67F655004813CF /* TemperatureGraphData.swift */; };
-		0A4EC48E1D67F680004813CF /* TemperatureGraphDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EC48D1D67F680004813CF /* TemperatureGraphDataTest.swift */; };
+		0A4EC48E1D67F680004813CF /* TemperatureGraphDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EC48D1D67F680004813CF /* TemperatureGraphDataTest.swift */; };
 		0A608A321D5ED4E9002151E6 /* IcicleColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A608A311D5ED4E9002151E6 /* IcicleColor.swift */; };
 		0A608A341D5ED807002151E6 /* IcicleTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A608A331D5ED807002151E6 /* IcicleTabBarViewController.swift */; };
 		0A761F391D550AC20007109A /* Hours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A761F381D550AC20007109A /* Hours.swift */; };
@@ -94,7 +94,7 @@
 		0A4EC4871D679A98004813CF /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		0A4EC4891D67E3A6004813CF /* WeatherDataTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDataTest.swift; sourceTree = "<group>"; };
 		0A4EC48B1D67F655004813CF /* TemperatureGraphData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureGraphData.swift; sourceTree = "<group>"; };
-		0A4EC48D1D67F680004813CF /* TemperatureGraphDataTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TemperatureGrap\bhDataTest.swift"; sourceTree = "<group>"; };
+		0A4EC48D1D67F680004813CF /* TemperatureGraphDataTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TemperatureGraphDataTest.swift; sourceTree = "<group>"; };
 		0A608A311D5ED4E9002151E6 /* IcicleColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IcicleColor.swift; sourceTree = "<group>"; };
 		0A608A331D5ED807002151E6 /* IcicleTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IcicleTabBarViewController.swift; sourceTree = "<group>"; };
 		0A761F381D550AC20007109A /* Hours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hours.swift; sourceTree = "<group>"; };
@@ -187,7 +187,7 @@
 			isa = PBXGroup;
 			children = (
 				0A4EC4891D67E3A6004813CF /* WeatherDataTest.swift */,
-				0A4EC48D1D67F680004813CF /* TemperatureGraphDataTest.swift */,
+				0A4EC48D1D67F680004813CF /* TemperatureGraphDataTest.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -505,7 +505,7 @@
 			files = (
 				0AC120AD1D61098E008E1557 /* DayTest.swift in Sources */,
 				0A413A241D4D9DA10040A972 /* HourTest.swift in Sources */,
-				0A4EC48E1D67F680004813CF /* TemperatureGraphDataTest.swift in Sources */,
+				0A4EC48E1D67F680004813CF /* TemperatureGraphDataTest.swift in Sources */,
 				0A048E261D4967A400F1AED3 /* MinutesTest.swift in Sources */,
 				0A761F3B1D550AD20007109A /* HoursTest.swift in Sources */,
 				0AC120B01D61175A008E1557 /* getTestJson.swift in Sources */,
