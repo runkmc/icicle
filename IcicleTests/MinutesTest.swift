@@ -14,7 +14,7 @@ class MinutesTest: XCTestCase {
     
     func testMinutesCreation() {
         let data = getTestJSON(named: "icicle_test", forClass: self.dynamicType)
-        let json = parseJSON(data:data, granularity: .Minute)
+        let json = try! parseJSON(data:data, granularity: .minute)
         let minutes = Minutes(data:json)
         XCTAssertEqual(minutes.summary, "Partly cloudy for the hour.")
         XCTAssertEqual(minutes.minutes[0].precipIntensity, 0)

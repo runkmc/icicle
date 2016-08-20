@@ -14,7 +14,7 @@ class DailyTest: XCTestCase {
     
     func testDailyCreation() {
         let data = getTestJSON(named: "icicle_test", forClass: self.dynamicType)
-        let json = parseJSON(data: data, granularity: .Day)
+        let json = try! parseJSON(data: data, granularity: .day)
         let day = Days(data: json)
         
         XCTAssertEqual(day.summary, "Light rain on Friday through Wednesday, with temperatures falling to 57°F on Sunday.")

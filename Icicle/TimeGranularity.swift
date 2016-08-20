@@ -9,8 +9,8 @@
 import Foundation
 
 enum TimeGranularity: String {
-    case Day = "daily"
-    case Hour = "hourly"
-    case Minute = "minutely"
-    case Current = "currently"
+    case day = "daily"
+    case hour = "hourly"
+    case minute = "minutely"
+    case current = "currently"
 }

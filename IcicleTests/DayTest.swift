@@ -14,7 +14,7 @@ class DayTest: XCTestCase {
     
     func testDayCreation() {
         let data = getTestJSON(named:"icicle_test", forClass:self.dynamicType)
-        let json = parseJSON(data: data, granularity: .Day)
+        let json = try! parseJSON(data: data, granularity: .day)
         let days = json["data"] as! [AnyObject]
         let day = Day(data:days[0] as! JSON)
         

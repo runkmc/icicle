@@ -6,9 +6,14 @@
 //  Copyright © 2016 Kevin McGladdery. All rights reserved.
 //
 
-import Foundation
+import UIKit
 import CoreLocation
 
 struct WeatherData {
+    
+    
+    init(minutes:Minutes, hours:Hours, days:Days, currently:Currently) {
+        
+    }
     
 }

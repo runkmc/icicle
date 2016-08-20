@@ -30,6 +30,7 @@
 		0A413A241D4D9DA10040A972 /* HourTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A413A231D4D9DA10040A972 /* HourTest.swift */; };
 		0A4EC4861D679718004813CF /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EC4851D679718004813CF /* WeatherData.swift */; };
 		0A4EC4881D679A98004813CF /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EC4871D679A98004813CF /* Location.swift */; };
+		0A4EC48A1D67E3A6004813CF /* WeatherDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4EC4891D67E3A6004813CF /* WeatherDataTest.swift */; };
 		0A608A321D5ED4E9002151E6 /* IcicleColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A608A311D5ED4E9002151E6 /* IcicleColor.swift */; };
 		0A608A341D5ED807002151E6 /* IcicleTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A608A331D5ED807002151E6 /* IcicleTabBarViewController.swift */; };
 		0A761F391D550AC20007109A /* Hours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A761F381D550AC20007109A /* Hours.swift */; };
@@ -89,6 +90,7 @@
 		0A413A231D4D9DA10040A972 /* HourTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourTest.swift; sourceTree = "<group>"; };
 		0A4EC4851D679718004813CF /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		0A4EC4871D679A98004813CF /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		0A4EC4891D67E3A6004813CF /* WeatherDataTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDataTest.swift; sourceTree = "<group>"; };
 		0A608A311D5ED4E9002151E6 /* IcicleColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IcicleColor.swift; sourceTree = "<group>"; };
 		0A608A331D5ED807002151E6 /* IcicleTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IcicleTabBarViewController.swift; sourceTree = "<group>"; };
 		0A761F381D550AC20007109A /* Hours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hours.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 		0A16426F1CB6ED81001D5593 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0A4EC4891D67E3A6004813CF /* WeatherDataTest.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -500,6 +503,7 @@
 				0AC120B01D61175A008E1557 /* getTestJson.swift in Sources */,
 				0AC120B41D6145E2008E1557 /* DaysTest.swift in Sources */,
 				0A048E221D495D4D00F1AED3 /* MinuteTest.swift in Sources */,
+				0A4EC48A1D67E3A6004813CF /* WeatherDataTest.swift in Sources */,
 				0AC6AEBA1D5D1E8D00FE55C1 /* CurrentlyTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
