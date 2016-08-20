@@ -8,3 +8,5 @@
 
 import Foundation
 import CoreLocation
+
+typealias WeatherDataGetter = (location:CLLocation) -> WeatherData

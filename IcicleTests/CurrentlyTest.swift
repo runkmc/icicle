@@ -12,9 +12,5 @@ import XCTest
 
 class CurrentlyTest: XCTestCase {
 	func testCurrentlyCreation() {
-		let testData = ["icon":"partly-cloudy-night",
-			"apparentTemperature":54.4, "temperature":54]
-			let current = Currently(data:testData)
-			XCTAssertEqual(current!.icon, "partly-cloudy-night")
 	}
 }
