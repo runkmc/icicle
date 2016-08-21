@@ -16,7 +16,7 @@ struct Hour {
 	let precipProbability:Float?
 	let summary:String?
 	let temperature:Float?
-	let time:Int?
+	let time:Double?
 	let icon:String?
 
 	init(data:JSON) {
@@ -26,7 +26,7 @@ struct Hour {
 		self.precipProbability = data["precipProbability"] as? Float
 		self.summary = data["summary"] as? String
 		self.temperature = data["temperature"] as? Float
-		self.time = data["time"] as? Int
+		self.time = data["time"] as? Double
 		self.icon = data["icon"] as? String
 	}
 }
