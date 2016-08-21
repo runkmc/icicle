@@ -18,5 +18,6 @@ protocol GraphData {
     var points: [String] { get }
     var highLabel: String { get }
     var lowLabel: String { get }
+    var xAxisLabels: [String] { get }
     
 }
