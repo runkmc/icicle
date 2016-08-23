@@ -15,7 +15,7 @@ protocol GraphData {
     var color: UIColor { get }
     var high: Int { get }
     var low: Int { get }
-    var points: [String] { get }
+    var points: [DataPoint] { get }
     var highLabel: String { get }
     var lowLabel: String { get }
     var xAxisLabels: [String] { get }
