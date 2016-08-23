@@ -14,14 +14,12 @@ class IcicleTabBarViewController: UITabBarController {
         super.viewDidLoad()
         let settingsController = SettingsViewController()
         let locationsController = LocationsViewController()
-        let todayController = TodayViewController()
-        let weekController = WeekViewController()
+        let weatherController = WeatherViewController()
         
         settingsController.tabBarItem = UITabBarItem(title: "Settings", image:UIImage(named:"settingsOff"), selectedImage: UIImage(named:"settingsOn"))
         locationsController.tabBarItem = UITabBarItem(title: "Locations", image:UIImage(named:"locationsOff"), selectedImage:UIImage(named:"locationsOn"))
-        todayController.tabBarItem = UITabBarItem(title: "Today", image:UIImage(named:"todayOff"), selectedImage:UIImage(named:"todayOn"))
-        weekController.tabBarItem = UITabBarItem(title: "This Week", image:UIImage(named:"weekOff"), selectedImage:UIImage(named:"weekOn"))
-        self.viewControllers = [todayController, weekController, locationsController, settingsController]
+        weatherController.tabBarItem = UITabBarItem(title: "Weather", image: UIImage(named:"weatherOff"), selectedImage: UIImage(named:"weatherOn"))
+        self.viewControllers = [weatherController, locationsController, settingsController]
         
         let bar = self.tabBar
         bar.tintColor = IcicleColor.peach

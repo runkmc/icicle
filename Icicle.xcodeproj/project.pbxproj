@@ -11,14 +11,13 @@
 		0A048E241D49679800F1AED3 /* Minutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A048E231D49679800F1AED3 /* Minutes.swift */; };
 		0A048E261D4967A400F1AED3 /* MinutesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A048E251D4967A400F1AED3 /* MinutesTest.swift */; };
 		0A048E291D49705400F1AED3 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A048E281D49705400F1AED3 /* JSON.swift */; };
-		0A07AFF61D5D5F5D00534370 /* TodayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07AFF41D5D5F5D00534370 /* TodayViewController.swift */; };
-		0A07AFF71D5D5F5D00534370 /* TodayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A07AFF51D5D5F5D00534370 /* TodayViewController.xib */; };
 		0A07AFFA1D5D5F8700534370 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07AFF81D5D5F8700534370 /* SettingsViewController.swift */; };
 		0A07AFFB1D5D5F8700534370 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A07AFF91D5D5F8700534370 /* SettingsViewController.xib */; };
-		0A07B0001D5D5FD800534370 /* WeekViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07AFFE1D5D5FD800534370 /* WeekViewController.swift */; };
-		0A07B0011D5D5FD800534370 /* WeekViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A07AFFF1D5D5FD800534370 /* WeekViewController.xib */; };
 		0A07B0041D5D5FE500534370 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07B0021D5D5FE500534370 /* LocationsViewController.swift */; };
 		0A07B0051D5D5FE500534370 /* LocationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A07B0031D5D5FE500534370 /* LocationsViewController.xib */; };
+		0A1076541D6CB41300DED569 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1076521D6CB41300DED569 /* WeatherViewController.swift */; };
+		0A1076551D6CB41300DED569 /* WeatherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1076531D6CB41300DED569 /* WeatherViewController.xib */; };
+		0A1076571D6CC31B00DED569 /* DataPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1076561D6CC31B00DED569 /* DataPoint.swift */; };
 		0A10FE871D63E412002E5687 /* WeatherDataGetter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A10FE861D63E412002E5687 /* WeatherDataGetter.swift */; };
 		0A10FE8E1D63E9BC002E5687 /* GraphData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A10FE8D1D63E9BC002E5687 /* GraphData.swift */; };
 		0A2D3B381CB5C4A100B0DF3C /* Minute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D3B371CB5C4A100B0DF3C /* Minute.swift */; };
@@ -73,14 +72,13 @@
 		0A048E231D49679800F1AED3 /* Minutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minutes.swift; sourceTree = "<group>"; };
 		0A048E251D4967A400F1AED3 /* MinutesTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinutesTest.swift; sourceTree = "<group>"; };
 		0A048E281D49705400F1AED3 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
-		0A07AFF41D5D5F5D00534370 /* TodayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodayViewController.swift; sourceTree = "<group>"; };
-		0A07AFF51D5D5F5D00534370 /* TodayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TodayViewController.xib; sourceTree = "<group>"; };
 		0A07AFF81D5D5F8700534370 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		0A07AFF91D5D5F8700534370 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
-		0A07AFFE1D5D5FD800534370 /* WeekViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekViewController.swift; sourceTree = "<group>"; };
-		0A07AFFF1D5D5FD800534370 /* WeekViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeekViewController.xib; sourceTree = "<group>"; };
 		0A07B0021D5D5FE500534370 /* LocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		0A07B0031D5D5FE500534370 /* LocationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationsViewController.xib; sourceTree = "<group>"; };
+		0A1076521D6CB41300DED569 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		0A1076531D6CB41300DED569 /* WeatherViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherViewController.xib; sourceTree = "<group>"; };
+		0A1076561D6CC31B00DED569 /* DataPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataPoint.swift; sourceTree = "<group>"; };
 		0A10FE861D63E412002E5687 /* WeatherDataGetter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDataGetter.swift; sourceTree = "<group>"; };
 		0A10FE8D1D63E9BC002E5687 /* GraphData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphData.swift; sourceTree = "<group>"; };
 		0A2D3B371CB5C4A100B0DF3C /* Minute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minute.swift; sourceTree = "<group>"; };
@@ -149,6 +147,7 @@
 			children = (
 				0A048E281D49705400F1AED3 /* JSON.swift */,
 				0A10FE861D63E412002E5687 /* WeatherDataGetter.swift */,
+				0A1076561D6CC31B00DED569 /* DataPoint.swift */,
 			);
 			name = Types;
 			sourceTree = "<group>";
@@ -156,10 +155,9 @@
 		0A07AFF01D5D5EF100534370 /* IBFiles */ = {
 			isa = PBXGroup;
 			children = (
+				0A1076531D6CB41300DED569 /* WeatherViewController.xib */,
 				0ADE1F311CA1F04A007C2840 /* LaunchScreen.storyboard */,
-				0A07AFF51D5D5F5D00534370 /* TodayViewController.xib */,
 				0A07AFF91D5D5F8700534370 /* SettingsViewController.xib */,
-				0A07AFFF1D5D5FD800534370 /* WeekViewController.xib */,
 				0A07B0031D5D5FE500534370 /* LocationsViewController.xib */,
 			);
 			name = IBFiles;
@@ -260,11 +258,10 @@
 		0A3928671CADB08700F724C7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0A07AFF41D5D5F5D00534370 /* TodayViewController.swift */,
 				0A07AFF81D5D5F8700534370 /* SettingsViewController.swift */,
-				0A07AFFE1D5D5FD800534370 /* WeekViewController.swift */,
 				0A07B0021D5D5FE500534370 /* LocationsViewController.swift */,
 				0A608A331D5ED807002151E6 /* IcicleTabBarViewController.swift */,
+				0A1076521D6CB41300DED569 /* WeatherViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -441,12 +438,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1076551D6CB41300DED569 /* WeatherViewController.xib in Resources */,
 				0ADE1F331CA1F04A007C2840 /* LaunchScreen.storyboard in Resources */,
 				0ADE1F301CA1F04A007C2840 /* Assets.xcassets in Resources */,
-				0A07AFF71D5D5F5D00534370 /* TodayViewController.xib in Resources */,
 				0A07B0051D5D5FE500534370 /* LocationsViewController.xib in Resources */,
 				0A07AFFB1D5D5F8700534370 /* SettingsViewController.xib in Resources */,
-				0A07B0011D5D5FD800534370 /* WeekViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,23 +468,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A07B0001D5D5FD800534370 /* WeekViewController.swift in Sources */,
 				0A761F391D550AC20007109A /* Hours.swift in Sources */,
 				0A2D3B381CB5C4A100B0DF3C /* Minute.swift in Sources */,
 				0AC6AEB81D5D1E7900FE55C1 /* Currently.swift in Sources */,
 				0A413A221D4D9D8B0040A972 /* Hour.swift in Sources */,
 				0A048E291D49705400F1AED3 /* JSON.swift in Sources */,
 				0A2D3B411CB5CB1000B0DF3C /* TimeGranularity.swift in Sources */,
+				0A1076571D6CC31B00DED569 /* DataPoint.swift in Sources */,
 				0A4EC48C1D67F655004813CF /* TemperatureGraphData.swift in Sources */,
 				0A3928631CADAE0800F724C7 /* ForecastAPI.swift in Sources */,
 				0A608A321D5ED4E9002151E6 /* IcicleColor.swift in Sources */,
 				0A608A341D5ED807002151E6 /* IcicleTabBarViewController.swift in Sources */,
 				0A2D3B471CB5DCFD00B0DF3C /* parseJSON.swift in Sources */,
-				0A07AFF61D5D5F5D00534370 /* TodayViewController.swift in Sources */,
 				0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */,
 				0AC120B21D6145D7008E1557 /* Days.swift in Sources */,
 				0A4EC4881D679A98004813CF /* Location.swift in Sources */,
 				0A07B0041D5D5FE500534370 /* LocationsViewController.swift in Sources */,
+				0A1076541D6CB41300DED569 /* WeatherViewController.swift in Sources */,
 				0A10FE8E1D63E9BC002E5687 /* GraphData.swift in Sources */,
 				0A4EC4861D679718004813CF /* WeatherData.swift in Sources */,
 				0A10FE871D63E412002E5687 /* WeatherDataGetter.swift in Sources */,
