@@ -12,7 +12,7 @@ import XCTest
 
 class CurrentlyTest: XCTestCase {
 	func testCurrentlyCreation() {
-        let data = getTestJSON(named: "icicle_test", forClass: self.dynamicType)
+        let data = getTestJSON(named: "icicle_test", forClass: type(of: self))
         let json = try! parseJSON(data: data, granularity: .current)
         let currently = Currently(data: json)
         

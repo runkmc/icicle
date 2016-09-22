@@ -13,7 +13,7 @@ import XCTest
 class DailyTest: XCTestCase {
     
     func testDailyCreation() {
-        let data = getTestJSON(named: "icicle_test", forClass: self.dynamicType)
+        let data = getTestJSON(named: "icicle_test", forClass: type(of: self))
         let json = try! parseJSON(data: data, granularity: .day)
         let day = Days(data: json)
         

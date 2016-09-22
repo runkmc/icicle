@@ -16,7 +16,7 @@ class WeatherDataTest: XCTestCase {
     var emptyWeatherData: WeatherData!
     
     override func setUp() {
-        let data = getTestJSON(named: "icicle_test", forClass: self.dynamicType)
+        let data = getTestJSON(named: "icicle_test", forClass: type(of: self))
         let minutesData = try! parseJSON(data: data, granularity: .minute)
         let hoursData = try! parseJSON(data: data, granularity: .hour)
         let daysData = try! parseJSON(data: data, granularity: .day)
