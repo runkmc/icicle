@@ -38,7 +38,7 @@ struct TemperatureGraphData: GraphData {
         guard temps.count == times.count else { return nil }
         
         var points: [DataPoint] = []
-        for i in 0...temps.count {
+        for i in 0..<temps.count {
             points.append(DataPoint(point: Int(temps[i]), label: times[i]))
         }
         
