@@ -1,3 +1,6 @@
+infix operator >>-
+infix operator <^>
+
 public enum Result<E, S> {
     case error(E)
     case success(S)
@@ -46,10 +49,12 @@ public enum Result<E, S> {
         case let .error(x): return .error(x)
         }
     }
-}
-
-infix operator >>-
-
-public func >>-<E, S, V>(either:Result<E, S>, f:(S)->Result<E, V>) -> Result<E, V> {
-    return either.flatMap(f)
+    
+    static public func >>-<V>(result:Result<E, S>, f:(S)->Result<E, V>) -> Result<E, V> {
+        return result.flatMap(f)
+    }
+    
+    static public func <^><V>(result:Result<E, S>, f:(S)->V) -> Result<E, V> {
+        return result.map(f)
+    }
 }

@@ -9,8 +9,6 @@ class ResultTest: XCTestCase {
         let name: String
     }
     
-
-    
     func testSuccessAndErrorChecks() {
         let testUser = TestUser(name:"Montgomery Scott")
         let success: Result<String, TestUser> = .success(testUser)
@@ -48,6 +46,12 @@ class ResultTest: XCTestCase {
         let fail: Result<String, String> = .error("no user")
         let failResult: Result<String, TestUser> = fail.map { name in TestUser(name: name) }
         XCTAssertEqual(failResult.errorValue()!, "no user")
+    }
+    
+    func testMapOperator() {
+        let tu1: Result<String, String> = .success("James Kirk")
+        let result: Result<String, TestUser> = tu1 <^> TestUser.init
+        XCTAssertEqual(result.successValue()!.name, "James Kirk")
     }
     
     func testFlatMap() {
