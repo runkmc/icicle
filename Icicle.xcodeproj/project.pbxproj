@@ -21,7 +21,7 @@
 		0A2D3B381CB5C4A100B0DF3C /* Minute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D3B371CB5C4A100B0DF3C /* Minute.swift */; };
 		0A2D3B3B1CB5C54A00B0DF3C /* icicle_test.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A2D3B3A1CB5C54A00B0DF3C /* icicle_test.json */; };
 		0A2D3B411CB5CB1000B0DF3C /* TimeGranularity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D3B401CB5CB1000B0DF3C /* TimeGranularity.swift */; };
-		0A2D3B471CB5DCFD00B0DF3C /* parseJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D3B461CB5DCFD00B0DF3C /* parseJSON.swift */; };
+		0A2D3B471CB5DCFD00B0DF3C /* JSONhelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D3B461CB5DCFD00B0DF3C /* JSONhelpers.swift */; };
 		0A3928631CADAE0800F724C7 /* ForecastAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3928621CADAE0800F724C7 /* ForecastAPI.swift */; };
 		0A413A221D4D9D8B0040A972 /* Hour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A413A211D4D9D8B0040A972 /* Hour.swift */; };
 		0A413A241D4D9DA10040A972 /* HourTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A413A231D4D9DA10040A972 /* HourTest.swift */; };
@@ -80,7 +80,7 @@
 		0A2D3B371CB5C4A100B0DF3C /* Minute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minute.swift; sourceTree = "<group>"; };
 		0A2D3B3A1CB5C54A00B0DF3C /* icicle_test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = icicle_test.json; sourceTree = "<group>"; };
 		0A2D3B401CB5CB1000B0DF3C /* TimeGranularity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeGranularity.swift; sourceTree = "<group>"; };
-		0A2D3B461CB5DCFD00B0DF3C /* parseJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = parseJSON.swift; sourceTree = "<group>"; };
+		0A2D3B461CB5DCFD00B0DF3C /* JSONhelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONhelpers.swift; sourceTree = "<group>"; };
 		0A3928621CADAE0800F724C7 /* ForecastAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastAPI.swift; sourceTree = "<group>"; };
 		0A413A211D4D9D8B0040A972 /* Hour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hour.swift; sourceTree = "<group>"; };
 		0A413A231D4D9DA10040A972 /* HourTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourTest.swift; sourceTree = "<group>"; };
@@ -223,7 +223,7 @@
 			children = (
 				0A77BC381D9642E500258721 /* Result.swift */,
 				0A2D3B401CB5CB1000B0DF3C /* TimeGranularity.swift */,
-				0A2D3B461CB5DCFD00B0DF3C /* parseJSON.swift */,
+				0A2D3B461CB5DCFD00B0DF3C /* JSONhelpers.swift */,
 				0A99D91B1CBC5B8400BF354C /* Icon.swift */,
 				0A608A311D5ED4E9002151E6 /* IcicleColor.swift */,
 			);
@@ -471,7 +471,7 @@
 				0A3928631CADAE0800F724C7 /* ForecastAPI.swift in Sources */,
 				0A608A321D5ED4E9002151E6 /* IcicleColor.swift in Sources */,
 				0A608A341D5ED807002151E6 /* IcicleTabBarViewController.swift in Sources */,
-				0A2D3B471CB5DCFD00B0DF3C /* parseJSON.swift in Sources */,
+				0A2D3B471CB5DCFD00B0DF3C /* JSONhelpers.swift in Sources */,
 				0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */,
 				0AC120B21D6145D7008E1557 /* Days.swift in Sources */,
 				0A4EC4881D679A98004813CF /* Location.swift in Sources */,

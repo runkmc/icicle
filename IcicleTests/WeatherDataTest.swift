@@ -23,14 +23,14 @@ class WeatherDataTest: XCTestCase {
         let currentData = try! parseJSON(data: data, granularity: .current)
         
         let minutes = Minutes(data:minutesData)
-        let hours = Hours(data:hoursData)
+        let hours = Hours(data:hoursData as JSON)
         let days = Days(data:daysData)
         let current = Currently(data: currentData)
         
         self.weatherData = WeatherData(minutes:minutes, hours:hours, days:days, currently:current)
         
-        let empty: [String:AnyObject] = [:]
-        self.emptyWeatherData = WeatherData(minutes:Minutes(data:empty), hours:Hours(data:empty), days:Days(data:empty), currently:Currently(data:empty))
+        let empty: JSONDictionary = [:]
+        self.emptyWeatherData = WeatherData(minutes:Minutes(data:empty), hours:Hours(data:empty as JSON), days:Days(data:empty), currently:Currently(data:empty))
     }
     
     func testIcon() {

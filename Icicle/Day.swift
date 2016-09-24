@@ -27,7 +27,7 @@ struct Day {
     let sunriseTime: Double?
     let sunsetTime: Double?
     
-    init(data:JSON) {
+    init(data:JSONDictionary) {
         self.apparentTemperatureMax = data["apparentTemperatureMax"] as? Float
         self.apparentTemperatureMaxTime = data["apparentTemperatureMaxTime"] as? Int
         self.apparentTemperatureMin = data["apparentTemperatureMin"] as? Float

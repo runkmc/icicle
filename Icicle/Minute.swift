@@ -13,7 +13,7 @@ struct Minute {
     let precipProbability: Float?
     let time: Double?
     
-    init(data:JSON) {
+    init(data:JSONDictionary) {
         self.precipIntensity = data["precipIntensity"] as? Float
         self.precipProbability = data["precipProbability"] as? Float
         self.time = data["time"] as? Double

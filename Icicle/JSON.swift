@@ -6,4 +6,6 @@
 //  Copyright © 2016 Kevin McGladdery. All rights reserved.
 //
 
-typealias JSON = [String:AnyObject]
+typealias JSONDictionary = [String:AnyObject]
+typealias JSON = AnyObject
+typealias JSONArray = [AnyObject]

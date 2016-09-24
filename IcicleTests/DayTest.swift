@@ -16,7 +16,7 @@ class DayTest: XCTestCase {
         let data = getTestJSON(named:"icicle_test", forClass:type(of: self))
         let json = try! parseJSON(data: data, granularity: .day)
         let days = json["data"] as! [AnyObject]
-        let day = Day(data:days[0] as! JSON)
+        let day = Day(data:days[0] as! JSONDictionary)
         
         XCTAssertEqual(day.icon, "partly-cloudy-day")
     }

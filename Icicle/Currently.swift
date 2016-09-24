@@ -14,7 +14,7 @@ struct Currently {
 	let temperature:Float?
     let time: Double?
 
-    init(data:JSON) {
+    init(data:JSONDictionary) {
 		self.apparentTemperature = data["apparentTemperature"] as? Float
 		self.icon = data["icon"] as? String
 		self.temperature = data["temperature"] as? Float

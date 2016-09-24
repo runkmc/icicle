@@ -14,7 +14,7 @@ class MinuteTest: XCTestCase {
     
     func testMinuteCreation() {
         let data = ["time":1460009760, "precipIntensity":0, "precipProbability":0]
-        let minute = Minute(data: data as JSON)
+        let minute = Minute(data: data as JSONDictionary)
         XCTAssertEqual(minute.time!, 1460009760)
         XCTAssertEqual(minute.precipProbability!, 0)
         XCTAssertEqual(minute.precipIntensity!, 0)
