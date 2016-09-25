@@ -11,11 +11,5 @@ import Foundation
 struct Minute {
     let precipIntensity: Float?
     let precipProbability: Float?
-    let time: Double?
-    
-    init(data:JSONDictionary) {
-        self.precipIntensity = data["precipIntensity"] as? Float
-        self.precipProbability = data["precipProbability"] as? Float
-        self.time = data["time"] as? Double
-    }
+    let time: Double
 }

@@ -13,13 +13,13 @@ struct Minutes {
     let icon: String?
     let summary: String?
     
-    init(data:JSONDictionary) {
-        self.icon = data["icon"] as? String
-        self.summary = data["summary"] as? String
-        if let minutes = data["data"] as? [JSONDictionary] {
-            self.minutes = minutes.map { Minute(data: $0) }
-        } else {
-            self.minutes = []
-        }
-    }
+//    init(data:JSONDictionary) {
+//        self.icon = data["icon"] as? String
+//        self.summary = data["summary"] as? String
+//        if let minutes = data["data"] as? [JSONDictionary] {
+//            self.minutes = minutes.map { Minute(data: $0) }
+//        } else {
+//            self.minutes = []
+//        }
+//    }
 }
