@@ -1,3 +1,6 @@
+infix operator >>-
+infix operator <^>
+
 public enum Result<E, S> {
     case error(E)
     case success(S)
