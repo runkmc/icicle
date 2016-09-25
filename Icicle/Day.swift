@@ -27,23 +27,4 @@ struct Day {
     let sunriseTime: Double?
     let sunsetTime: Double?
     
-    init(data:JSONDictionary) {
-        self.apparentTemperatureMax = data["apparentTemperatureMax"] as? Float
-        self.apparentTemperatureMaxTime = data["apparentTemperatureMaxTime"] as? Int
-        self.apparentTemperatureMin = data["apparentTemperatureMin"] as? Float
-        self.apparentTemperatureMinTime = data ["apparentTemperatureMinTime"] as? Int
-        self.precipIntensity = data["precipIntensity"] as? Float
-        self.precipIntensityMax = data["precipIntensityMax"] as? Float
-        self.precipProbability = data["precipProbability"] as? Float
-        self.precipProbabilityMaxTime = data["precipProbabilityMaxTime"] as? Int
-        self.icon = data["icon"] as? String
-        self.moonPhase = data["moonPhase"] as? Float
-        self.temperatureMax = data["temperatureMax"] as? Float
-        self.temperatureMaxTime = data["temperatureMaxTime"] as? Int
-        self.temperatureMin = data["temperatureMin"] as? Float
-        self.temperatureMinTime = data["temperatureMinTime"] as? Int
-        self.time = data["time"] as? Int
-        self.sunriseTime = data["sunriseTime"] as? Double
-        self.sunsetTime = data["sunsetTime"] as? Double 
-    }
 }

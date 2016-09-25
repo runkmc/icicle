@@ -19,14 +19,4 @@ struct Hour {
 	let time:Double?
 	let icon:String?
 
-	init(data:JSONDictionary) {
-		self.apparentTemperature = data["apparentTemperature"] as? Float
-		self.humidity = data["humidity"] as? Float
-		self.precipIntensity = data["precipIntensity"] as? Float
-		self.precipProbability = data["precipProbability"] as? Float
-		self.summary = data["summary"] as? String
-		self.temperature = data["temperature"] as? Float
-		self.time = data["time"] as? Double
-		self.icon = data["icon"] as? String
-	}
 }
