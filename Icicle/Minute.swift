@@ -12,7 +12,16 @@ import Runes
 import Curry
 
 struct Minute {
-    let precipIntensity: Float
-    let precipProbability: Float
+    let precipIntensity: Float?
+    let precipProbability: Float?
     let time: Double
+}
+
+extension Minute: Decodable {
+    static func decode(_ json:JSON) -> Decoded<Minute> {
+        return curry(Minute.init)
+        <^> json <|? "precipIntensity"
+        <*> json <|? "precipProbability"
+        <*> json <|  "time"
+    }
 }

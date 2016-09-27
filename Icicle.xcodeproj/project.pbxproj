@@ -20,6 +20,7 @@
 		0A35A1E31D986076001B99BD /* Minute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A35A1E21D986076001B99BD /* Minute.swift */; };
 		0A35A1E51D986A73001B99BD /* historical-snow.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A35A1E41D986A73001B99BD /* historical-snow.json */; };
 		0A35A1E71D986BAA001B99BD /* sunny-hot.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A35A1E61D986BAA001B99BD /* sunny-hot.json */; };
+		0A35A1E91D98D2DA001B99BD /* MinuteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A35A1E81D98D2DA001B99BD /* MinuteTest.swift */; };
 		0A3928631CADAE0800F724C7 /* ForecastAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3928621CADAE0800F724C7 /* ForecastAPI.swift */; };
 		0A608A321D5ED4E9002151E6 /* IcicleColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A608A311D5ED4E9002151E6 /* IcicleColor.swift */; };
 		0A608A341D5ED807002151E6 /* IcicleTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A608A331D5ED807002151E6 /* IcicleTabBarViewController.swift */; };
@@ -66,6 +67,7 @@
 		0A35A1E21D986076001B99BD /* Minute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minute.swift; sourceTree = "<group>"; };
 		0A35A1E41D986A73001B99BD /* historical-snow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "historical-snow.json"; sourceTree = "<group>"; };
 		0A35A1E61D986BAA001B99BD /* sunny-hot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sunny-hot.json"; sourceTree = "<group>"; };
+		0A35A1E81D98D2DA001B99BD /* MinuteTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinuteTest.swift; sourceTree = "<group>"; };
 		0A3928621CADAE0800F724C7 /* ForecastAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastAPI.swift; sourceTree = "<group>"; };
 		0A608A311D5ED4E9002151E6 /* IcicleColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IcicleColor.swift; sourceTree = "<group>"; };
 		0A608A331D5ED807002151E6 /* IcicleTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IcicleTabBarViewController.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 		0A2D3B391CB5C4AC00B0DF3C /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0A35A1E81D98D2DA001B99BD /* MinuteTest.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -622,6 +625,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A35A1E91D98D2DA001B99BD /* MinuteTest.swift in Sources */,
 				0A77BC3B1D9642FD00258721 /* ResultTest.swift in Sources */,
 				0AC120B01D61175A008E1557 /* getTestJson.swift in Sources */,
 			);
