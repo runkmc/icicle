@@ -15,6 +15,7 @@ struct Minute {
     let precipIntensity: Float?
     let precipProbability: Float?
     let time: Double
+    let precipType: String?
 }
 
 extension Minute: Decodable {
@@ -23,5 +24,6 @@ extension Minute: Decodable {
         <^> json <|? "precipIntensity"
         <*> json <|? "precipProbability"
         <*> json <|  "time"
+        <*> json <|?  "precipType"
     }
 }

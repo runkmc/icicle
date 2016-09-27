@@ -8,12 +8,17 @@
 
 import Foundation
 
-//func parseJSON(data:Data, granularity:TimeGranularity) throws -> JSON {
-//    do {
-//        let json = try JSONSerialization.jsonObject(with: data, options: []) as! [String:AnyObject]
-//        return json[granularity.rawValue] as! JSON
-//    }
-//    catch {
-//        throw error as NSError
-//    }
-//}
+func parseJSON(data:Data, granularity:TimeGranularity) -> Result<NSError, [String:Any]> {
+    let json: [String:Any]
+    do {
+        json = try JSONSerialization.jsonObject(with: data, options: []) as! [String:Any]
+    } catch let error as NSError {
+        return .error(error)
+    }
+    
+    if let data = json[granularity.rawValue] as? [String:Any] {
+        return .success(data)
+    } else {
+        return .error(NSError(domain: "\(granularity.rawValue) data not found", code: 1, userInfo: nil))
+    }
+}

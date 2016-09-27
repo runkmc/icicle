@@ -12,6 +12,12 @@
 		0A07AFFB1D5D5F8700534370 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A07AFF91D5D5F8700534370 /* SettingsViewController.xib */; };
 		0A07B0041D5D5FE500534370 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07B0021D5D5FE500534370 /* LocationsViewController.swift */; };
 		0A07B0051D5D5FE500534370 /* LocationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A07B0031D5D5FE500534370 /* LocationsViewController.xib */; };
+		0A0B60A71D9A168700B12996 /* Minutely.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B60A61D9A168700B12996 /* Minutely.swift */; };
+		0A0B60A91D9A169D00B12996 /* MinutleyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B60A81D9A169D00B12996 /* MinutleyTest.swift */; };
+		0A0B60AB1D9ADD4200B12996 /* Hour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B60AA1D9ADD4200B12996 /* Hour.swift */; };
+		0A0B60AD1D9ADD4F00B12996 /* HourTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B60AC1D9ADD4F00B12996 /* HourTest.swift */; };
+		0A0B60AF1D9AEA3400B12996 /* Hours.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B60AE1D9AEA3400B12996 /* Hours.swift */; };
+		0A0B60B11D9AEA3F00B12996 /* HoursTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B60B01D9AEA3F00B12996 /* HoursTest.swift */; };
 		0A1076541D6CB41300DED569 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1076521D6CB41300DED569 /* WeatherViewController.swift */; };
 		0A1076551D6CB41300DED569 /* WeatherViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A1076531D6CB41300DED569 /* WeatherViewController.xib */; };
 		0A2D3B411CB5CB1000B0DF3C /* TimeGranularity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D3B401CB5CB1000B0DF3C /* TimeGranularity.swift */; };
@@ -59,6 +65,12 @@
 		0A07AFF91D5D5F8700534370 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		0A07B0021D5D5FE500534370 /* LocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		0A07B0031D5D5FE500534370 /* LocationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationsViewController.xib; sourceTree = "<group>"; };
+		0A0B60A61D9A168700B12996 /* Minutely.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minutely.swift; sourceTree = "<group>"; };
+		0A0B60A81D9A169D00B12996 /* MinutleyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinutleyTest.swift; sourceTree = "<group>"; };
+		0A0B60AA1D9ADD4200B12996 /* Hour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hour.swift; sourceTree = "<group>"; };
+		0A0B60AC1D9ADD4F00B12996 /* HourTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourTest.swift; sourceTree = "<group>"; };
+		0A0B60AE1D9AEA3400B12996 /* Hours.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hours.swift; sourceTree = "<group>"; };
+		0A0B60B01D9AEA3F00B12996 /* HoursTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoursTest.swift; sourceTree = "<group>"; };
 		0A1076521D6CB41300DED569 /* WeatherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
 		0A1076531D6CB41300DED569 /* WeatherViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WeatherViewController.xib; sourceTree = "<group>"; };
 		0A2D3B401CB5CB1000B0DF3C /* TimeGranularity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeGranularity.swift; sourceTree = "<group>"; };
@@ -179,6 +191,9 @@
 			isa = PBXGroup;
 			children = (
 				0A35A1E21D986076001B99BD /* Minute.swift */,
+				0A0B60A61D9A168700B12996 /* Minutely.swift */,
+				0A0B60AA1D9ADD4200B12996 /* Hour.swift */,
+				0A0B60AE1D9AEA3400B12996 /* Hours.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -187,6 +202,9 @@
 			isa = PBXGroup;
 			children = (
 				0A35A1E81D98D2DA001B99BD /* MinuteTest.swift */,
+				0A0B60A81D9A169D00B12996 /* MinutleyTest.swift */,
+				0A0B60AC1D9ADD4F00B12996 /* HourTest.swift */,
+				0A0B60B01D9AEA3F00B12996 /* HoursTest.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -613,11 +631,14 @@
 				0A608A341D5ED807002151E6 /* IcicleTabBarViewController.swift in Sources */,
 				0A2D3B471CB5DCFD00B0DF3C /* JSONhelpers.swift in Sources */,
 				0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */,
+				0A0B60AF1D9AEA3400B12996 /* Hours.swift in Sources */,
 				0A07B0041D5D5FE500534370 /* LocationsViewController.swift in Sources */,
+				0A0B60A71D9A168700B12996 /* Minutely.swift in Sources */,
 				0A1076541D6CB41300DED569 /* WeatherViewController.swift in Sources */,
 				0A77BC391D9642E500258721 /* Result.swift in Sources */,
 				0A07AFFA1D5D5F8700534370 /* SettingsViewController.swift in Sources */,
 				0A99D91C1CBC5B8400BF354C /* Icon.swift in Sources */,
+				0A0B60AB1D9ADD4200B12996 /* Hour.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -625,7 +646,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A0B60A91D9A169D00B12996 /* MinutleyTest.swift in Sources */,
+				0A0B60B11D9AEA3F00B12996 /* HoursTest.swift in Sources */,
 				0A35A1E91D98D2DA001B99BD /* MinuteTest.swift in Sources */,
+				0A0B60AD1D9ADD4F00B12996 /* HourTest.swift in Sources */,
 				0A77BC3B1D9642FD00258721 /* ResultTest.swift in Sources */,
 				0AC120B01D61175A008E1557 /* getTestJson.swift in Sources */,
 			);
@@ -680,8 +704,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -725,8 +751,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -753,6 +781,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 836B99BD82586B0FE45F80CF /* Pods-Icicle.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Icicle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -766,6 +795,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 07034E7EB280806FE4D08643 /* Pods-Icicle.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Icicle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
