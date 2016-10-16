@@ -41,6 +41,8 @@
 		0AA99DE71D9EDAD100CE614A /* Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA99DE61D9EDAD100CE614A /* Days.swift */; };
 		0AA99DE91D9EDAE100CE614A /* DaysTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA99DE81D9EDAE100CE614A /* DaysTest.swift */; };
 		0AC120B01D61175A008E1557 /* getTestJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC120AF1D61175A008E1557 /* getTestJson.swift */; };
+		0AD046191DB3120900DC32F2 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD046181DB3120900DC32F2 /* WeatherData.swift */; };
+		0AD0461B1DB3121600DC32F2 /* WeatherDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0461A1DB3121600DC32F2 /* WeatherDataTest.swift */; };
 		0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE1F281CA1F04A007C2840 /* AppDelegate.swift */; };
 		0ADE1F301CA1F04A007C2840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE1F2F1CA1F04A007C2840 /* Assets.xcassets */; };
 		0ADE1F331CA1F04A007C2840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE1F311CA1F04A007C2840 /* LaunchScreen.storyboard */; };
@@ -102,6 +104,8 @@
 		0AA99DE81D9EDAE100CE614A /* DaysTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysTest.swift; sourceTree = "<group>"; };
 		0AAB8236D1A23D4174FAC9C3 /* Pods-IcicleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IcicleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IcicleTests/Pods-IcicleTests.release.xcconfig"; sourceTree = "<group>"; };
 		0AC120AF1D61175A008E1557 /* getTestJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getTestJson.swift; sourceTree = "<group>"; };
+		0AD046181DB3120900DC32F2 /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		0AD0461A1DB3121600DC32F2 /* WeatherDataTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDataTest.swift; sourceTree = "<group>"; };
 		0ADE1F251CA1F04A007C2840 /* Icicle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Icicle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ADE1F281CA1F04A007C2840 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ADE1F2F1CA1F04A007C2840 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -190,6 +194,7 @@
 		0A16426C1CB6ED5D001D5593 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0AD046181DB3120900DC32F2 /* WeatherData.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -197,6 +202,7 @@
 		0A16426F1CB6ED81001D5593 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				0AD0461A1DB3121600DC32F2 /* WeatherDataTest.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -651,6 +657,7 @@
 				0A3928631CADAE0800F724C7 /* ForecastAPI.swift in Sources */,
 				0A608A321D5ED4E9002151E6 /* IcicleColor.swift in Sources */,
 				0A608A341D5ED807002151E6 /* IcicleTabBarViewController.swift in Sources */,
+				0AD046191DB3120900DC32F2 /* WeatherData.swift in Sources */,
 				0A2D3B471CB5DCFD00B0DF3C /* JSONhelpers.swift in Sources */,
 				0A56D0B91DA9CE9D00963D43 /* Currently.swift in Sources */,
 				0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */,
@@ -673,6 +680,7 @@
 			files = (
 				0A0B60A91D9A169D00B12996 /* MinutleyTest.swift in Sources */,
 				0A0B60B11D9AEA3F00B12996 /* HoursTest.swift in Sources */,
+				0AD0461B1DB3121600DC32F2 /* WeatherDataTest.swift in Sources */,
 				0AA99DE91D9EDAE100CE614A /* DaysTest.swift in Sources */,
 				0A35A1E91D98D2DA001B99BD /* MinuteTest.swift in Sources */,
 				0A0B60AD1D9ADD4F00B12996 /* HourTest.swift in Sources */,
