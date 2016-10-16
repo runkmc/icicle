@@ -31,6 +31,8 @@
 		0A35A1E71D986BAA001B99BD /* sunny-hot.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A35A1E61D986BAA001B99BD /* sunny-hot.json */; };
 		0A35A1E91D98D2DA001B99BD /* MinuteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A35A1E81D98D2DA001B99BD /* MinuteTest.swift */; };
 		0A3928631CADAE0800F724C7 /* ForecastAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3928621CADAE0800F724C7 /* ForecastAPI.swift */; };
+		0A56D0B91DA9CE9D00963D43 /* Currently.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A56D0B81DA9CE9D00963D43 /* Currently.swift */; };
+		0A56D0BB1DA9CECE00963D43 /* CurrentlyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A56D0BA1DA9CECE00963D43 /* CurrentlyTest.swift */; };
 		0A608A321D5ED4E9002151E6 /* IcicleColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A608A311D5ED4E9002151E6 /* IcicleColor.swift */; };
 		0A608A341D5ED807002151E6 /* IcicleTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A608A331D5ED807002151E6 /* IcicleTabBarViewController.swift */; };
 		0A77BC391D9642E500258721 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77BC381D9642E500258721 /* Result.swift */; };
@@ -89,6 +91,8 @@
 		0A35A1E61D986BAA001B99BD /* sunny-hot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sunny-hot.json"; sourceTree = "<group>"; };
 		0A35A1E81D98D2DA001B99BD /* MinuteTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinuteTest.swift; sourceTree = "<group>"; };
 		0A3928621CADAE0800F724C7 /* ForecastAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastAPI.swift; sourceTree = "<group>"; };
+		0A56D0B81DA9CE9D00963D43 /* Currently.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currently.swift; sourceTree = "<group>"; };
+		0A56D0BA1DA9CECE00963D43 /* CurrentlyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentlyTest.swift; sourceTree = "<group>"; };
 		0A608A311D5ED4E9002151E6 /* IcicleColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IcicleColor.swift; sourceTree = "<group>"; };
 		0A608A331D5ED807002151E6 /* IcicleTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IcicleTabBarViewController.swift; sourceTree = "<group>"; };
 		0A77BC381D9642E500258721 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
@@ -207,6 +211,7 @@
 				0A0B60B21D9B195100B12996 /* Day.swift */,
 				0A315C0D1D9E182100F4A7DE /* Temperature.swift */,
 				0AA99DE61D9EDAD100CE614A /* Days.swift */,
+				0A56D0B81DA9CE9D00963D43 /* Currently.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 				0A0B60B01D9AEA3F00B12996 /* HoursTest.swift */,
 				0A0B60B51D9B196400B12996 /* DayTest.swift */,
 				0AA99DE81D9EDAE100CE614A /* DaysTest.swift */,
+				0A56D0BA1DA9CECE00963D43 /* CurrentlyTest.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -646,6 +652,7 @@
 				0A608A321D5ED4E9002151E6 /* IcicleColor.swift in Sources */,
 				0A608A341D5ED807002151E6 /* IcicleTabBarViewController.swift in Sources */,
 				0A2D3B471CB5DCFD00B0DF3C /* JSONhelpers.swift in Sources */,
+				0A56D0B91DA9CE9D00963D43 /* Currently.swift in Sources */,
 				0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */,
 				0A0B60AF1D9AEA3400B12996 /* Hours.swift in Sources */,
 				0A07B0041D5D5FE500534370 /* LocationsViewController.swift in Sources */,
@@ -671,6 +678,7 @@
 				0A0B60AD1D9ADD4F00B12996 /* HourTest.swift in Sources */,
 				0A0B60B61D9B196400B12996 /* DayTest.swift in Sources */,
 				0A77BC3B1D9642FD00258721 /* ResultTest.swift in Sources */,
+				0A56D0BB1DA9CECE00963D43 /* CurrentlyTest.swift in Sources */,
 				0AC120B01D61175A008E1557 /* getTestJson.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
