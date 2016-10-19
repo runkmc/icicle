@@ -7,7 +7,12 @@
 //
 
 import Foundation
+import Argo
 
 struct WeatherData {
+    
+    init(currently:Currently, minutely:Minutes, hourly:Hours, daily:Days) {
+        
+    }
     
 }
