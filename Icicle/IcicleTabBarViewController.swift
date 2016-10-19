@@ -22,8 +22,6 @@ class IcicleTabBarViewController: UITabBarController {
         self.viewControllers = [weatherController, locationsController, settingsController]
         
         let bar = self.tabBar
-        bar.tintColor = IcicleColor.peach
-        bar.barTintColor = IcicleColor.lightGrey
     }
 
     override func didReceiveMemoryWarning() {
