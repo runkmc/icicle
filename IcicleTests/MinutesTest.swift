@@ -11,12 +11,12 @@ import Argo
 import XCTest
 @testable import Icicle
 
-class MinutelyTest: XCTestCase {
+class MinutesTest: XCTestCase {
     func testCreation() {
         let data = getTestJSON(named: "sunny-hot", forClass: type(of: self))
         let json = parseJSON(data: data, granularity: .minute)
-        let minutley: Decoded<Minutely> = decode(json.successValue()!)
-        let m = minutley.value!
+        let minutes: Decoded<Minutes> = decode(json.successValue()!)
+        let m = minutes.value!
         XCTAssertEqual(m.summary, "Clear for the hour.")
         XCTAssertEqual(m.minutes[0].time, 1474830480)
     }

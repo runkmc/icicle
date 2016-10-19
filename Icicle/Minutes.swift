@@ -11,14 +11,14 @@ import Argo
 import Runes
 import Curry
 
-struct Minutely {
+struct Minutes {
     let summary: String
     let minutes: [Minute]
 }
 
-extension Minutely: Decodable {
-    static func decode(_ json: JSON) -> Decoded<Minutely> {
-        return curry(Minutely.init)
+extension Minutes: Decodable {
+    static func decode(_ json: JSON) -> Decoded<Minutes> {
+        return curry(Minutes.init)
         <^> json <| "summary"
         <*> json <|| "data"
     }
