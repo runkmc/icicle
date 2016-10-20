@@ -13,7 +13,7 @@ import CoreLocation
 @testable import Icicle
 
 class WeatherDataTest: XCTestCase {
-    func setupWeather(jsonFile:String, location:Location) -> WeatherData {
+    func setupWeather(jsonFile:String, location:Location = Location(coordinates: CLLocation(latitude:0, longitude:0), name: "Default City")) -> WeatherData {
         let data = getTestJSON(named: jsonFile, forClass: type(of:self))
         let currentlyJson = parseJSON(data: data, granularity: .current)
         let minutesJson = parseJSON(data: data, granularity: .minute)
@@ -31,14 +31,12 @@ class WeatherDataTest: XCTestCase {
     }
 
     func testSunnySummary() {
-        let location = Location(coordinates: CLLocation(latitude:0, longitude:0), name: "Concord")
-        let wd = setupWeather(jsonFile: "sunny-hot", location: location)
+        let wd = setupWeather(jsonFile: "sunny-hot")
         XCTAssertEqual(wd.fullSummary, "Currently 83°, but feels like 81°. Clear for the hour. Dry throughout the day. Tomorrow, dry throughout the day, high of 97°. No precipitation throughout the week, with temperatures falling to 67°F on Sunday.")
     }
     
     func testRainySummary() {
-        let location = Location(coordinates: CLLocation(latitude:0, longitude:0), name: "Concord")
-        let wd = setupWeather(jsonFile: "cloudy-futurerain", location: location)
+        let wd = setupWeather(jsonFile: "cloudy-futurerain")
         XCTAssertEqual(wd.fullSummary, "Currently 61°. Partly cloudy for the hour. Partly cloudy until this evening. Tomorrow, mostly cloudy starting in the evening, high of 61°. Light rain on Tuesday through Sunday, with temperatures peaking at 66°F on Tuesday.")
     }
     
@@ -49,14 +47,12 @@ class WeatherDataTest: XCTestCase {
     }
     
     func testSunnyColor() {
-        let location = Location(coordinates: CLLocation(latitude:0, longitude:0), name: "Concord")
-        let wd = setupWeather(jsonFile: "sunny-hot", location: location)
+        let wd = setupWeather(jsonFile: "sunny-hot")
         XCTAssertEqual(wd.weatherColor, IcicleColor.orange)
     }
     
     func testPartlyCloudyColor() {
-        let location = Location(coordinates: CLLocation(latitude:0, longitude:0), name: "Concord")
-        let wd = setupWeather(jsonFile: "cloudy-futurerain", location: location)
+        let wd = setupWeather(jsonFile: "cloudy-futurerain")
         XCTAssertEqual(wd.weatherColor, IcicleColor.green)
     }
 }
