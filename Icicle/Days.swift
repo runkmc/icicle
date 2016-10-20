@@ -13,7 +13,7 @@ import Curry
 
 struct Days {
     let icon:String?
-    let summary:String?
+    let summary:String
     let days:[Day]?
 }
 
@@ -21,7 +21,7 @@ extension Days: Decodable {
     static func decode(_ json: JSON) -> Decoded<Days> {
         return curry(Days.init)
         <^> json <|? "icon"
-        <*> json <|? "summary"
+        <*> json <| "summary"
         <*> json <||? "data"
     }
 }
