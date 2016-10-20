@@ -23,8 +23,14 @@ class WeatherDataTest: XCTestCase {
         let minutes: Decoded<Minutes> = decode(minutesJson.successValue()!)
         let hours: Decoded<Hours> = decode(hoursJson.successValue()!)
         let days: Decoded<Days> = decode(daysJson.successValue()!)
+        let models = WeatherModels(currently: currently.value!, minutes: minutes.value!, hours: hours.value!, days: days.value!)
         
-        return WeatherData(currently: currently.value!, minutely: minutes.value!, hourly: hours.value!, daily: days.value!)
+        let wd = WeatherData.create(models: models)
+        return wd.successValue()!
     }
 
+    func testSummary() {
+        let wd = setupWeather(jsonFile: "sunny-hot")
+        XCTAssertEqual(wd.fullSummary, "Currently 83°, but feels like 81°. Clear for the hour. Dry throughout the day. No precipitation throughout the week, with temperatures falling to 67°F on Sunday.")
+    }
 }
