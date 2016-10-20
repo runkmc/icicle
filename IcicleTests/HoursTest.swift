@@ -20,6 +20,6 @@ class HoursTest: XCTestCase {
         
         XCTAssertEqual(h.summary, "Partly cloudy until this evening.")
         XCTAssertEqual(h.icon!, "partly-cloudy-day")
-        XCTAssertEqualWithAccuracy(h.hours![0].temperature!, 60.84, accuracy: 0.01)
+        XCTAssertEqualWithAccuracy(h.hours[0].temperature!, 60.84, accuracy: 0.01)
     }
 }

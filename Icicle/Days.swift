@@ -14,7 +14,7 @@ import Curry
 struct Days {
     let icon:String?
     let summary:String
-    let days:[Day]?
+    let days:[Day]
 }
 
 extension Days: Decodable {
@@ -22,6 +22,6 @@ extension Days: Decodable {
         return curry(Days.init)
         <^> json <|? "icon"
         <*> json <| "summary"
-        <*> json <||? "data"
+        <*> json <|| "data"
     }
 }
