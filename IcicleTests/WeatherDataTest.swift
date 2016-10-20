@@ -47,4 +47,16 @@ class WeatherDataTest: XCTestCase {
         let wd = setupWeather(jsonFile: "sunny-hot", location: location)
         XCTAssertEqual(wd.locationName, "Concord")
     }
+    
+    func testSunnyColor() {
+        let location = Location(coordinates: CLLocation(latitude:0, longitude:0), name: "Concord")
+        let wd = setupWeather(jsonFile: "sunny-hot", location: location)
+        XCTAssertEqual(wd.weatherColor, IcicleColor.orange)
+    }
+    
+    func testPartlyCloudyColor() {
+        let location = Location(coordinates: CLLocation(latitude:0, longitude:0), name: "Concord")
+        let wd = setupWeather(jsonFile: "cloudy-futurerain", location: location)
+        XCTAssertEqual(wd.weatherColor, IcicleColor.green)
+    }
 }
