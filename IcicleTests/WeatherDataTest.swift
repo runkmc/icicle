@@ -9,10 +9,11 @@
 import Foundation
 import XCTest
 import Argo
+import CoreLocation
 @testable import Icicle
 
 class WeatherDataTest: XCTestCase {
-    func setupWeather(jsonFile:String) -> WeatherData {
+    func setupWeather(jsonFile:String, location:Location) -> WeatherData {
         let data = getTestJSON(named: jsonFile, forClass: type(of:self))
         let currentlyJson = parseJSON(data: data, granularity: .current)
         let minutesJson = parseJSON(data: data, granularity: .minute)
@@ -25,17 +26,25 @@ class WeatherDataTest: XCTestCase {
         let days: Decoded<Days> = decode(daysJson.successValue()!)
         let models = WeatherModels(currently: currently.value!, minutes: minutes.value!, hours: hours.value!, days: days.value!)
         
-        let wd = WeatherData.create(models: models)
+        let wd = WeatherData.create(models: models, location: location)
         return wd.successValue()!
     }
 
     func testSunnySummary() {
-        let wd = setupWeather(jsonFile: "sunny-hot")
+        let location = Location(coordinates: CLLocation(latitude:0, longitude:0), name: "Concord")
+        let wd = setupWeather(jsonFile: "sunny-hot", location: location)
         XCTAssertEqual(wd.fullSummary, "Currently 83°, but feels like 81°. Clear for the hour. Dry throughout the day. Tomorrow, dry throughout the day, high of 97°. No precipitation throughout the week, with temperatures falling to 67°F on Sunday.")
     }
     
     func testRainySummary() {
-        let wd = setupWeather(jsonFile: "cloudy-futurerain")
+        let location = Location(coordinates: CLLocation(latitude:0, longitude:0), name: "Concord")
+        let wd = setupWeather(jsonFile: "cloudy-futurerain", location: location)
         XCTAssertEqual(wd.fullSummary, "Currently 61°. Partly cloudy for the hour. Partly cloudy until this evening. Tomorrow, mostly cloudy starting in the evening, high of 61°. Light rain on Tuesday through Sunday, with temperatures peaking at 66°F on Tuesday.")
+    }
+    
+    func testLocationName() {
+        let location = Location(coordinates: CLLocation(latitude:0, longitude:0), name: "Concord")
+        let wd = setupWeather(jsonFile: "sunny-hot", location: location)
+        XCTAssertEqual(wd.locationName, "Concord")
     }
 }

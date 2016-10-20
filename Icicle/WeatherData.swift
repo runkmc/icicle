@@ -12,14 +12,18 @@ import Argo
 struct WeatherData {
     
     let fullSummary:String
+    let locationName:String
     
-    init(fullSummary:String) {
+    init(fullSummary:String, locationName:String) {
         self.fullSummary = fullSummary
+        self.locationName = locationName
     }
     
-    static func create(models:WeatherModels) -> Result<String, WeatherData> {
+    static func create(models:WeatherModels, location:Location) -> Result<String, WeatherData> {
         let fullSummary = parseSummary(models)
-        return .success(WeatherData(fullSummary: fullSummary))
+        
+        return .success(WeatherData(fullSummary: fullSummary,
+                                    locationName:location.name))
     }
     
     private static func parseSummary(_ models:WeatherModels) -> String {
