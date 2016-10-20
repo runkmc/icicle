@@ -23,13 +23,23 @@ struct WeatherData {
     }
     
     private static func parseSummary(_ models:WeatherModels) -> String {
-        let currentTemp = "\(Int(models.currently.temperature))°"
+        let temp = Int(models.currently.temperature)
+        let currentTemp = "\(temp)°"
+        
         var feelsTemp = "."
-        if let feelsLike = models.currently.apparentTemperature {
+        if let feelsLike = models.currently.apparentTemperature,
+            !((temp - 1)..<(temp + 1)).contains(Int(feelsLike)) {
             feelsTemp = ", but feels like \(Int(feelsLike))°."
         }
         
-        return "Currently \(currentTemp)\(feelsTemp) \(models.minutes.summary) \(models.hours.summary) \(models.days.summary)"
+        var tomorrow = ""
+        if models.days.days.indices.contains(1) {
+            tomorrow = "Tomorrow, \(models.days.days[1].summary.lowercased())"
+            tomorrow.remove(at: tomorrow.index(before: tomorrow.endIndex))
+            tomorrow.append(", high of \(Int(models.days.days[1].temperatures.temperatureMax))°.")
+        }
+        
+        return "Currently \(currentTemp)\(feelsTemp) \(models.minutes.summary) \(models.hours.summary) \(tomorrow) \(models.days.summary)"
     }
     
 }
