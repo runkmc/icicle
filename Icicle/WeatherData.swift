@@ -52,14 +52,14 @@ struct WeatherData {
     
     private static func parseColor(icon:String) -> UIColor {
         switch icon {
-            case "clear-day": return IcicleColor.orange
-            case "clear-night": return IcicleColor.violet
-            case "partly-cloudy-night": return IcicleColor.base02
-            case "rain", "sleet": return IcicleColor.blue
-            case "snow", "fog", "cloudy": return IcicleColor.cyan
-            case "wind": return IcicleColor.red
-            case "partly-cloudy-day": return IcicleColor.green
-        default: return IcicleColor.magenta
+            case "clear-day"             : return IcicleColor.orange
+            case "clear-night"           : return IcicleColor.violet
+            case "partly-cloudy-night"   : return IcicleColor.base02
+            case "rain", "sleet"         : return IcicleColor.blue
+            case "snow", "fog", "cloudy" : return IcicleColor.cyan
+            case "wind"                  : return IcicleColor.red
+            case "partly-cloudy-day"     : return IcicleColor.green
+        default                          : return IcicleColor.magenta
         }
         
     }

@@ -14,17 +14,17 @@ import CoreLocation
 
 class WeatherDataTest: XCTestCase {
     func setupWeather(jsonFile:String, location:Location = Location(coordinates: CLLocation(latitude:0, longitude:0), name: "Default City")) -> WeatherData {
-        let data = getTestJSON(named: jsonFile, forClass: type(of:self))
+        let data          = getTestJSON(named: jsonFile, forClass: type(of:self))
         let currentlyJson = parseJSON(data: data, granularity: .current)
-        let minutesJson = parseJSON(data: data, granularity: .minute)
-        let hoursJson = parseJSON(data: data, granularity: .hour)
-        let daysJson = parseJSON(data: data, granularity: .day)
+        let minutesJson   = parseJSON(data: data, granularity: .minute)
+        let hoursJson     = parseJSON(data: data, granularity: .hour)
+        let daysJson      = parseJSON(data: data, granularity: .day)
         
         let currently: Decoded<Currently> = decode(currentlyJson.successValue()!)
-        let minutes: Decoded<Minutes> = decode(minutesJson.successValue()!)
-        let hours: Decoded<Hours> = decode(hoursJson.successValue()!)
-        let days: Decoded<Days> = decode(daysJson.successValue()!)
-        let models = WeatherModels(currently: currently.value!, minutes: minutes.value!, hours: hours.value!, days: days.value!)
+        let minutes: Decoded<Minutes>     = decode(minutesJson.successValue()!)
+        let hours: Decoded<Hours>         = decode(hoursJson.successValue()!)
+        let days: Decoded<Days>           = decode(daysJson.successValue()!)
+        let models                        = WeatherModels(currently: currently.value!, minutes: minutes.value!, hours: hours.value!, days: days.value!)
         
         let wd = WeatherData.create(models: models, location: location)
         return wd.successValue()!
