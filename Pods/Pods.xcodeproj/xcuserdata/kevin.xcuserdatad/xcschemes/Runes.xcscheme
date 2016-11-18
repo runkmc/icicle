@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '6BEE457C0E9798816D7BF412892A9FDC'
+               BlueprintIdentifier = 'CF8867E4466E206978EDE8CBA4C16491'
                BlueprintName = 'Runes'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Runes.framework'>

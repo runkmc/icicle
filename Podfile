@@ -6,9 +6,9 @@ target 'Icicle' do
   use_frameworks!
 
   # Pods for Icicle
-  pod 'Argo', :git => 'https://github.com/thoughtbot/Argo.git'
-  pod 'Runes', :git => 'https://github.com/thoughtbot/Runes.git'
-  pod 'Curry', :git => 'https://github.com/thoughtbot/Curry.git'
+  pod 'Argo', '~> 4.0'
+  pod 'Runes', '~> 4.0'
+  pod 'Curry', '~> 3.0'
 
   target 'IcicleTests' do
     inherit! :search_paths
