@@ -22,3 +22,18 @@ func parseJSON(data:Data, granularity:TimeGranularity) -> Result<NSError, [Strin
         return .error(NSError(domain: "\(granularity.rawValue) data not found", code: 1, userInfo: nil))
     }
 }
+
+func parseTimeZone(data:Data) -> Result<NSError, TimeZone> {
+    let json: [String:Any]
+    do {
+        json = try JSONSerialization.jsonObject(with: data, options: []) as! [String:Any]
+    } catch let error as NSError {
+        return .error(error)
+    }
+    
+    if let timeZoneString = json["timezone"] as? String, let timeZone = TimeZone(identifier: timeZoneString) {
+        return .success(timeZone)
+    } else {
+        return .error(NSError(domain:"Timezone not valid", code: 1, userInfo: nil))
+    }
+}
