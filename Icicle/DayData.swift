@@ -46,15 +46,10 @@ struct DayData {
         let date = self.dateformatter.string(from: Date(timeIntervalSince1970: day.time))
         let high = parseTempString(temp: day.temperatures.temperatureMax, time: day.temperatures.temperatureMaxTime)
         let low = parseTempString(temp: day.temperatures.temperatureMin, time: day.temperatures.temperatureMinTime)
-        var sunrise = "Unknown"
-        if let sunriseTime = day.sunriseTime {
-            sunrise = specificTimeformatter.string(from: Date(timeIntervalSince1970: sunriseTime))
-        }
-        var sunset = "Unknown"
-        if let sunsetTime = day.sunsetTime {
-            sunset = specificTimeformatter.string(from: Date(timeIntervalSince1970: sunsetTime))
-        }
+        let sunrise = day.sunriseTime != nil ? specificTimeformatter.string(from: Date(timeIntervalSince1970: day.sunriseTime!)) : "Unknown"
+        let sunset = day.sunsetTime != nil ? specificTimeformatter.string(from: Date(timeIntervalSince1970: day.sunsetTime!)) : "Unknown"
         
+
         return .success(DayData(date: date, high: high, low: low, sunrise: sunrise, sunset: sunset))
     }
     
