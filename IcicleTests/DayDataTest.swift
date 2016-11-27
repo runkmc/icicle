@@ -22,11 +22,12 @@ class DayDataTest: XCTestCase {
         let day = DayData.create(dayInfo, timeZone:timeZone).successValue()!
 
         XCTAssertEqual("9/25", day.date)
-        XCTAssertEqual("94° at 4PM", day.high)
-        XCTAssertEqual("56° at 6AM", day.low)
+        XCTAssertEqual("94° at 4 PM", day.high)
+        XCTAssertEqual("56° at 6 AM", day.low)
         XCTAssertEqual("7:00 AM", day.sunrise)
         XCTAssertEqual("7:01 PM", day.sunset)
         XCTAssertEqual("None", day.precipChance)
+        XCTAssertEqual(nil, day.maxPrecipTime)
     }
     
     func testRainyCreation() {
@@ -39,11 +40,12 @@ class DayDataTest: XCTestCase {
         let day = DayData.create(dayInfo, timeZone:timeZone).successValue()!
         
         XCTAssertEqual("9/29", day.date)
-        XCTAssertEqual("65° at 4PM", day.high)
-        XCTAssertEqual("56° at 11PM", day.low)
+        XCTAssertEqual("65° at 4 PM", day.high)
+        XCTAssertEqual("56° at 11 PM", day.low)
         XCTAssertEqual("6:37 AM", day.sunrise)
         XCTAssertEqual("6:26 PM", day.sunset)
         XCTAssertEqual("55%", day.precipChance)
+        XCTAssertEqual("2 PM", day.maxPrecipTime)
 
     }
 }

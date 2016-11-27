@@ -16,6 +16,7 @@ struct DayData {
     let sunrise: String
     let sunset: String
     let precipChance: String
+    let maxPrecipTime: String?
     
     static let dateformatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -27,7 +28,7 @@ struct DayData {
     static let timeformatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.locale = Locale.current
-        formatter.dateFormat = "ha"
+        formatter.dateFormat = "h a"
         return formatter
     }()
     
@@ -51,6 +52,7 @@ struct DayData {
         let low = parseTempString(temp: day.temperatures.temperatureMin, time: day.temperatures.temperatureMinTime)
         let sunrise = day.sunriseTime != nil ? specificTimeformatter.string(from: Date(timeIntervalSince1970: day.sunriseTime!)) : "Unknown"
         let sunset = day.sunsetTime != nil ? specificTimeformatter.string(from: Date(timeIntervalSince1970: day.sunsetTime!)) : "Unknown"
+        
         let precipChance: String
         switch day.precipProbability {
         case .none: precipChance = "None"
@@ -58,7 +60,14 @@ struct DayData {
         case .some(let value): precipChance = String(format: "%.0f%%", (value * 100))
         }
 
-        return .success(DayData(date: date, high: high, low: low, sunrise: sunrise, sunset: sunset, precipChance: precipChance))
+        let maxPrecipTime: String?
+        switch day.precipIntensityMaxTime {
+        case .none: maxPrecipTime = nil
+        case .some(let value): maxPrecipTime = timeformatter.string(from: Date(timeIntervalSince1970: value))
+        }
+        
+        return .success(DayData(date: date, high: high, low: low, sunrise: sunrise, sunset: sunset, precipChance: precipChance,
+                                maxPrecipTime: maxPrecipTime))
     }
     
     static func parseTempString(temp:Float, time:Double?) -> String {
