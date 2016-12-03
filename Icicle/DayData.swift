@@ -16,7 +16,8 @@ struct DayData {
     let sunrise: String
     let sunset: String
     let precipChance: String
-    let maxPrecipTime: String?
+    let maxPrecipTime: String
+    let precipType: String
     
     static let dateformatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -39,10 +40,15 @@ struct DayData {
         return formatter
     }()
     
-    static func create(_ decodedDay:Decoded<Day>, timeZone:TimeZone) -> Result<[String], DayData> {
+    static func create(_ decodedDay:Decoded<Day>, timeZone:TimeZone) -> Result<String, DayData> {
         guard let day = decodedDay.value else {
-            return .error(["oops"])
+            if let error = decodedDay.error {
+                return .error(error.description)
+            } else {
+                return .error("Unknown Error")
+            }
         }
+        
         dateformatter.timeZone = timeZone
         timeformatter.timeZone = timeZone
         specificTimeformatter.timeZone = timeZone
@@ -52,6 +58,7 @@ struct DayData {
         let low = parseTempString(temp: day.temperatures.temperatureMin, time: day.temperatures.temperatureMinTime)
         let sunrise = day.sunriseTime != nil ? specificTimeformatter.string(from: Date(timeIntervalSince1970: day.sunriseTime!)) : "Unknown"
         let sunset = day.sunsetTime != nil ? specificTimeformatter.string(from: Date(timeIntervalSince1970: day.sunsetTime!)) : "Unknown"
+        let precipType = day.precipType != nil ? day.precipType!.capitalized : "—"
         
         let precipChance: String
         switch day.precipProbability {
@@ -60,14 +67,14 @@ struct DayData {
         case .some(let value): precipChance = String(format: "%.0f%%", (value * 100))
         }
 
-        let maxPrecipTime: String?
+        let maxPrecipTime: String
         switch day.precipIntensityMaxTime {
-        case .none: maxPrecipTime = nil
+        case .none: maxPrecipTime = "—"
         case .some(let value): maxPrecipTime = timeformatter.string(from: Date(timeIntervalSince1970: value))
         }
         
         return .success(DayData(date: date, high: high, low: low, sunrise: sunrise, sunset: sunset, precipChance: precipChance,
-                                maxPrecipTime: maxPrecipTime))
+                                maxPrecipTime: maxPrecipTime, precipType: precipType))
     }
     
     static func parseTempString(temp:Float, time:Double?) -> String {
