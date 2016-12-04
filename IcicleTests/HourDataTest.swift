@@ -22,6 +22,7 @@ class HourDataTest: XCTestCase {
         let hour = HourData.create(hourInfo, timeZone:timeZone).successValue()!
         
         XCTAssertEqual("12 PM", hour.time)
+        XCTAssertEqual("Clear", hour.summary)
     }
     
     func testRainyCreation() {
@@ -34,6 +35,7 @@ class HourDataTest: XCTestCase {
         let hour = HourData.create(hourInfo, timeZone:timeZone).successValue()!
         
         XCTAssertEqual("11 AM", hour.time)
+        XCTAssertEqual("Rain", hour.summary)
     }
 
 }
