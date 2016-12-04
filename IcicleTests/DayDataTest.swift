@@ -29,6 +29,7 @@ class DayDataTest: XCTestCase {
         XCTAssertEqual("None", day.precipChance)
         XCTAssertEqual("—", day.maxPrecipTime)
         XCTAssertEqual("—", day.precipType)
+        XCTAssertEqual("Dry throughout the day.", day.summary)
     }
     
     func testRainyCreation() {
@@ -48,5 +49,6 @@ class DayDataTest: XCTestCase {
         XCTAssertEqual("55%", day.precipChance)
         XCTAssertEqual("2 PM", day.maxPrecipTime)
         XCTAssertEqual("Rain", day.precipType)
+        XCTAssertEqual("Light rain and breezy throughout the day.", day.summary)
     }
 }
