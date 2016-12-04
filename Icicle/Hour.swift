@@ -13,6 +13,7 @@ import Curry
 
 struct Hour {
     let time:Double
+    let summary: String
     let icon:String?
     let precipIntensity:Float?
     let precipProbability:Float?
@@ -27,6 +28,7 @@ extension Hour: Decodable {
     static func decode(_ json: JSON) -> Decoded<Hour> {
         return curry(Hour.init)
         <^> json <|  "time"
+        <*> json <|  "summary"
         <*> json <|? "icon"
         <*> json <|? "precipIntensity"
         <*> json <|? "precipProbability"
