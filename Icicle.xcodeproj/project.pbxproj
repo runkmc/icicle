@@ -40,6 +40,8 @@
 		0A3928631CADAE0800F724C7 /* ForecastAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3928621CADAE0800F724C7 /* ForecastAPI.swift */; };
 		0A56D0B91DA9CE9D00963D43 /* Currently.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A56D0B81DA9CE9D00963D43 /* Currently.swift */; };
 		0A56D0BB1DA9CECE00963D43 /* CurrentlyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A56D0BA1DA9CECE00963D43 /* CurrentlyTest.swift */; };
+		0A5A76921DF34C7600E52D3A /* HourData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A76911DF34C7600E52D3A /* HourData.swift */; };
+		0A5A76941DF34C8300E52D3A /* HourDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A76931DF34C8300E52D3A /* HourDataTest.swift */; };
 		0A608A321D5ED4E9002151E6 /* IcicleColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A608A311D5ED4E9002151E6 /* IcicleColor.swift */; };
 		0A608A341D5ED807002151E6 /* IcicleTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A608A331D5ED807002151E6 /* IcicleTabBarViewController.swift */; };
 		0A77BC391D9642E500258721 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77BC381D9642E500258721 /* Result.swift */; };
@@ -109,6 +111,8 @@
 		0A3928621CADAE0800F724C7 /* ForecastAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastAPI.swift; sourceTree = "<group>"; };
 		0A56D0B81DA9CE9D00963D43 /* Currently.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currently.swift; sourceTree = "<group>"; };
 		0A56D0BA1DA9CECE00963D43 /* CurrentlyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentlyTest.swift; sourceTree = "<group>"; };
+		0A5A76911DF34C7600E52D3A /* HourData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourData.swift; sourceTree = "<group>"; };
+		0A5A76931DF34C8300E52D3A /* HourDataTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourDataTest.swift; sourceTree = "<group>"; };
 		0A608A311D5ED4E9002151E6 /* IcicleColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IcicleColor.swift; sourceTree = "<group>"; };
 		0A608A331D5ED807002151E6 /* IcicleTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IcicleTabBarViewController.swift; sourceTree = "<group>"; };
 		0A77BC381D9642E500258721 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
@@ -212,6 +216,7 @@
 			children = (
 				0AD046181DB3120900DC32F2 /* WeatherData.swift */,
 				0A289CEA1DE23F990054C731 /* DayData.swift */,
+				0A5A76911DF34C7600E52D3A /* HourData.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -221,6 +226,7 @@
 			children = (
 				0AD0461A1DB3121600DC32F2 /* WeatherDataTest.swift */,
 				0A289CEC1DE2568E0054C731 /* DayDataTest.swift */,
+				0A5A76931DF34C8300E52D3A /* HourDataTest.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -685,6 +691,7 @@
 				0A0237681DB814C300D7E66B /* WeatherModels.swift in Sources */,
 				0A289CEB1DE23F9A0054C731 /* DayData.swift in Sources */,
 				0A56D0B91DA9CE9D00963D43 /* Currently.swift in Sources */,
+				0A5A76921DF34C7600E52D3A /* HourData.swift in Sources */,
 				0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */,
 				0A0B60AF1D9AEA3400B12996 /* Hours.swift in Sources */,
 				0A07B0041D5D5FE500534370 /* LocationsViewController.swift in Sources */,
@@ -716,6 +723,7 @@
 				0A77BC3B1D9642FD00258721 /* ResultTest.swift in Sources */,
 				0A56D0BB1DA9CECE00963D43 /* CurrentlyTest.swift in Sources */,
 				0AC120B01D61175A008E1557 /* getTestJson.swift in Sources */,
+				0A5A76941DF34C8300E52D3A /* HourDataTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
