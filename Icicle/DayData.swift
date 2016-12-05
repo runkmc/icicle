@@ -41,6 +41,14 @@ struct DayData {
         return formatter
     }()
     
+    static func parseTempString(temp:Float, time:Double?) -> String {
+        var timeString = "\(Int(temp))°"
+        if let timeDouble = time {
+            timeString.append(" at \(timeformatter.string(from: Date(timeIntervalSince1970: timeDouble)))")
+        }
+        return timeString
+    }
+    
     static func create(_ decodedDay:Decoded<Day>, timeZone:TimeZone) -> Result<String, DayData> {
         guard let day = decodedDay.value else {
             if let error = decodedDay.error {
@@ -76,13 +84,5 @@ struct DayData {
         
         return .success(DayData(date: date, high: high, low: low, sunrise: sunrise, sunset: sunset, precipChance: precipChance,
                                 maxPrecipTime: maxPrecipTime, precipType: precipType, summary: day.summary))
-    }
-    
-    static func parseTempString(temp:Float, time:Double?) -> String {
-        var timeString = "\(Int(temp))°"
-        if let timeDouble = time {
-            timeString.append(" at \(timeformatter.string(from: Date(timeIntervalSince1970: timeDouble)))")
-        }
-        return timeString
     }
 }
