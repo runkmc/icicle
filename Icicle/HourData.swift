@@ -12,6 +12,7 @@ import Argo
 struct HourData {
     let time: String
     let summary: String
+    let temperature: String
     
     static let timeformatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -31,7 +32,8 @@ struct HourData {
         timeformatter.timeZone = timeZone
         
         let time = timeformatter.string(from: Date(timeIntervalSince1970: hour.time))
+        let temperature = hour.temperature != nil ? "\(Int(hour.temperature!))°" : "Unknown"
         
-        return .success(HourData(time: time, summary: hour.summary))
+        return .success(HourData(time: time, summary: hour.summary, temperature: temperature))
     }
 }
