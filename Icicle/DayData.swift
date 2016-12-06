@@ -67,7 +67,7 @@ struct DayData {
         let low = parseTempString(temp: day.temperatures.temperatureMin, time: day.temperatures.temperatureMinTime)
         let sunrise = day.sunriseTime != nil ? specificTimeformatter.string(from: Date(timeIntervalSince1970: day.sunriseTime!)) : "Unknown"
         let sunset = day.sunsetTime != nil ? specificTimeformatter.string(from: Date(timeIntervalSince1970: day.sunsetTime!)) : "Unknown"
-        let precipType = day.precipType != nil ? day.precipType!.capitalized : "—"
+        let precipType = formatPrecipType(day.precipType)
         let precipChance = formatPrecipChance(day.precipProbability)
 
         let maxPrecipTime: String
