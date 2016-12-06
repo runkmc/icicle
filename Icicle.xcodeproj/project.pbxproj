@@ -50,6 +50,7 @@
 		0AA99DE71D9EDAD100CE614A /* Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA99DE61D9EDAD100CE614A /* Days.swift */; };
 		0AA99DE91D9EDAE100CE614A /* DaysTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA99DE81D9EDAE100CE614A /* DaysTest.swift */; };
 		0AC120B01D61175A008E1557 /* getTestJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC120AF1D61175A008E1557 /* getTestJson.swift */; };
+		0AC1FE411DF65E7800F0D602 /* HasPrecipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC1FE401DF65E7800F0D602 /* HasPrecipitation.swift */; };
 		0AD046191DB3120900DC32F2 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD046181DB3120900DC32F2 /* WeatherData.swift */; };
 		0AD0461B1DB3121600DC32F2 /* WeatherDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0461A1DB3121600DC32F2 /* WeatherDataTest.swift */; };
 		0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE1F281CA1F04A007C2840 /* AppDelegate.swift */; };
@@ -122,6 +123,7 @@
 		0AA99DE81D9EDAE100CE614A /* DaysTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysTest.swift; sourceTree = "<group>"; };
 		0AAB8236D1A23D4174FAC9C3 /* Pods-IcicleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IcicleTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IcicleTests/Pods-IcicleTests.release.xcconfig"; sourceTree = "<group>"; };
 		0AC120AF1D61175A008E1557 /* getTestJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getTestJson.swift; sourceTree = "<group>"; };
+		0AC1FE401DF65E7800F0D602 /* HasPrecipitation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HasPrecipitation.swift; sourceTree = "<group>"; };
 		0AD046181DB3120900DC32F2 /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		0AD0461A1DB3121600DC32F2 /* WeatherDataTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDataTest.swift; sourceTree = "<group>"; };
 		0ADE1F251CA1F04A007C2840 /* Icicle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Icicle.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,6 +209,7 @@
 		0A10FE8C1D63E9AF002E5687 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				0AC1FE401DF65E7800F0D602 /* HasPrecipitation.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -698,6 +701,7 @@
 				0A315C0E1D9E182100F4A7DE /* Temperature.swift in Sources */,
 				0A0237641DB6FA0C00D7E66B /* Location.swift in Sources */,
 				0A0B60A71D9A168700B12996 /* Minutes.swift in Sources */,
+				0AC1FE411DF65E7800F0D602 /* HasPrecipitation.swift in Sources */,
 				0A1076541D6CB41300DED569 /* WeatherViewController.swift in Sources */,
 				0A77BC391D9642E500258721 /* Result.swift in Sources */,
 				0A07AFFA1D5D5F8700534370 /* SettingsViewController.swift in Sources */,

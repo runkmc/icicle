@@ -13,6 +13,7 @@ struct HourData {
     let time: String
     let summary: String
     let temperature: String
+    let precipChance: String
     
     static let timeformatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -33,7 +34,10 @@ struct HourData {
         
         let time = timeformatter.string(from: Date(timeIntervalSince1970: hour.time))
         let temperature = hour.temperature != nil ? "\(Int(hour.temperature!))°" : "Unknown"
+        let precipChance = formatPrecipChance(hour.precipProbability)
         
-        return .success(HourData(time: time, summary: hour.summary, temperature: temperature))
+        return .success(HourData(time: time, summary: hour.summary, temperature: temperature, precipChance: precipChance))
     }
 }
+
+extension HourData: HasPrecipitation { }

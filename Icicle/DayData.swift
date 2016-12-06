@@ -86,3 +86,5 @@ struct DayData {
                                 maxPrecipTime: maxPrecipTime, precipType: precipType, summary: day.summary))
     }
 }
+
+extension DayData: HasPrecipitation { }
