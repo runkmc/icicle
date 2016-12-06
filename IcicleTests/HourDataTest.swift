@@ -25,6 +25,7 @@ class HourDataTest: XCTestCase {
         XCTAssertEqual("Clear", hour.summary)
         XCTAssertEqual("82°", hour.temperature)
         XCTAssertEqual("None", hour.precipChance)
+        XCTAssertEqual("—", hour.precipType)
     }
     
     func testRainyCreation() {
@@ -40,6 +41,7 @@ class HourDataTest: XCTestCase {
         XCTAssertEqual("Rain", hour.summary)
         XCTAssertEqual("61°", hour.temperature)
         XCTAssertEqual("61%", hour.precipChance)
+        XCTAssertEqual("Rain", hour.precipType)
     }
 
 }

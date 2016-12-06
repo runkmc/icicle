@@ -10,7 +10,9 @@ import Foundation
 
 protocol HasPrecipitation {
     var precipChance: String { get }
+    var precipType: String { get }
     static func formatPrecipChance(_ chance:Float?) -> String
+    static func formatPrecipType(_ type:String?) -> String
 }
 
 extension HasPrecipitation {
@@ -20,5 +22,9 @@ extension HasPrecipitation {
         case .some(let value) where value == 0: return "None"
         case .some(let value): return String(format: "%.0f%%", (value * 100))
         }
+    }
+    
+    static func formatPrecipType(_ type:String?) -> String {
+        return type != nil ? type!.capitalized : "—"
     }
 }
