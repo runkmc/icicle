@@ -14,7 +14,6 @@ import Runes
 struct Day {
     let time:Double
     let summary:String
-    let icon:String?
     let sunriseTime:Double?
     let sunsetTime:Double?
     let moonPhase:Double?
@@ -30,7 +29,6 @@ extension Day: Decodable {
         return curry(Day.init)
         <^> json <| "time"
         <*> json <| "summary"
-		<*> json <|? "icon"
 		<*> json <|? "sunriseTime"
 		<*> json <|? "sunsetTime"
 		<*> json <|? "moonPhase"

@@ -21,7 +21,6 @@ class DayTest: XCTestCase {
         
         XCTAssertEqual(day!.time, 1474776000)
         XCTAssertEqual(day!.summary, "Partly cloudy starting in the afternoon, continuing until evening.")
-        XCTAssertEqual(day!.icon, "partly-cloudy-day")
         XCTAssertEqual(day!.sunriseTime!, 1474799592)
         XCTAssertEqual(day!.sunsetTime!, 1474842842)
         XCTAssertEqualWithAccuracy(day!.moonPhase!, 0.83, accuracy: 0.01)
