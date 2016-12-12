@@ -16,10 +16,6 @@ struct Temperature {
     let temperatureMinTime:Double?
     let temperatureMax:Float
     let temperatureMaxTime:Double?
-    let apparentTemperatureMin:Float?
-    let apparentTemperatureMinTime:Double?
-    let apparentTemperatureMax:Float?
-    let apparentTemperatureMaxTime:Double?
 }
 
 extension Temperature: Decodable {
@@ -29,9 +25,5 @@ extension Temperature: Decodable {
         <*> json <|? "temperatureMinTime"
         <*> json <| "temperatureMax"
         <*> json <|? "temperatureMaxTime"
-        <*> json <|? "apparentTemperatureMin"
-        <*> json <|? "apparentTemperatureMinTime"
-        <*> json <|? "apparentTemperatureMax"
-        <*> json <|? "apparentTemperatureMaxTime"
     }
 }
