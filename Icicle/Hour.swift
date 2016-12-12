@@ -17,7 +17,6 @@ struct Hour {
     let icon:String?
     let precipProbability:Float?
     let precipType:String?
-    let precipAccumulation:Float?
     let temperature:Float?
     let apparentTemperature:Float?
     let humidity:Float?
@@ -31,7 +30,6 @@ extension Hour: Decodable {
         <*> json <|? "icon"
         <*> json <|? "precipProbability"
         <*> json <|? "precipType"
-        <*> json <|? "precipAccumulation"
         <*> json <|? "temperature"
         <*> json <|? "apparentTemperature"
         <*> json <|? "humidity"
