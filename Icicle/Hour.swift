@@ -15,7 +15,6 @@ struct Hour {
     let time:Double
     let summary: String
     let icon:String?
-    let precipIntensity:Float?
     let precipProbability:Float?
     let precipType:String?
     let precipAccumulation:Float?
@@ -30,7 +29,6 @@ extension Hour: Decodable {
         <^> json <|  "time"
         <*> json <|  "summary"
         <*> json <|? "icon"
-        <*> json <|? "precipIntensity"
         <*> json <|? "precipProbability"
         <*> json <|? "precipType"
         <*> json <|? "precipAccumulation"
