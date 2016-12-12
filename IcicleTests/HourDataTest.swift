@@ -24,7 +24,7 @@ class HourDataTest: XCTestCase {
         XCTAssertEqual("12 PM", hour.time)
         XCTAssertEqual("Clear", hour.summary)
         XCTAssertEqual("82°", hour.temperature)
-        XCTAssertEqual("None", hour.precipChance)
+        XCTAssertEqual("0%", hour.precipChance)
         XCTAssertEqual("—", hour.precipType)
     }
     

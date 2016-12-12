@@ -68,7 +68,7 @@ struct DayData {
         let sunrise = day.sunriseTime != nil ? specificTimeformatter.string(from: Date(timeIntervalSince1970: day.sunriseTime!)) : "Unknown"
         let sunset = day.sunsetTime != nil ? specificTimeformatter.string(from: Date(timeIntervalSince1970: day.sunsetTime!)) : "Unknown"
         let precipType = formatPrecipType(day.precipType)
-        let precipChance = formatPrecipChance(day.precipProbability)
+        let precipChance = formatPercentage(day.precipProbability)
 
         let maxPrecipTime: String
         switch day.precipIntensityMaxTime {

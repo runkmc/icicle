@@ -26,7 +26,7 @@ class DayDataTest: XCTestCase {
         XCTAssertEqual("56° at 6 AM", day.low)
         XCTAssertEqual("7:00 AM", day.sunrise)
         XCTAssertEqual("7:01 PM", day.sunset)
-        XCTAssertEqual("None", day.precipChance)
+        XCTAssertEqual("0%", day.precipChance)
         XCTAssertEqual("—", day.maxPrecipTime)
         XCTAssertEqual("—", day.precipType)
         XCTAssertEqual("Dry throughout the day.", day.summary)
