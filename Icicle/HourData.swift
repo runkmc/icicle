@@ -15,6 +15,7 @@ struct HourData {
     let temperature: String
     let precipChance: String
     let precipType: String
+    let apparentTemperature: String
     
     static let timeformatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -22,6 +23,14 @@ struct HourData {
         formatter.dateFormat = "h a"
         return formatter
     }()
+    
+    static func parseTemp(_ temp:Float?) -> String {
+        if let t = temp {
+            return "\(Int(t))°"
+        } else {
+            return "Unknown"
+        }
+    }
     
     static func create(_ decodedHour:Decoded<Hour>, timeZone:TimeZone) -> Result<String, HourData> {
         guard let hour = decodedHour.value else {
@@ -34,12 +43,13 @@ struct HourData {
         timeformatter.timeZone = timeZone
         
         let time = timeformatter.string(from: Date(timeIntervalSince1970: hour.time))
-        let temperature = hour.temperature != nil ? "\(Int(hour.temperature!))°" : "Unknown"
+        let temperature = parseTemp(hour.temperature)
         let precipChance = formatPercentage(hour.precipProbability)
         let precipType = formatPrecipType(hour.precipType)
+        let apparentTemperature = parseTemp(hour.apparentTemperature)
         
         return .success(HourData(time: time, summary: hour.summary, temperature: temperature, precipChance: precipChance,
-                                 precipType: precipType))
+                                 precipType: precipType, apparentTemperature: apparentTemperature))
     }
 }
 
