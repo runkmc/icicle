@@ -14,7 +14,7 @@ import Argo
 class DayTest: XCTestCase {
     func testCreation() {
         let data = getTestJSON(named: "cloudy-futurerain", forClass: type(of:self))
-        let json = parseJSON(data: data, granularity: .day)
+        let json = timeParser(data: data, granularity: .day)
         let dayJSON = json.successValue()!
         let days = dayJSON["data"] as! [AnyObject]
         let day: Day? = decode(days[0] as! [String:Any])

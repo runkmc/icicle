@@ -13,7 +13,7 @@ import XCTest
 class ParseTimeZoneTest: XCTestCase {
     func testPacificDaylight() {
         let data = getTestJSON(named: "sunny-hot", forClass: type(of:self))
-        let tz = parseTimeZone(data: data).successValue()!
+        let tz = timeZoneParser(data: data).successValue()!
         XCTAssertEqual(tz.localizedName(for: .generic, locale: Locale.current), "Pacific Time")
     }
 }

@@ -14,7 +14,7 @@ import XCTest
 class CurrentlyTest: XCTestCase {
     func testCreation() {
         let data = getTestJSON(named: "sunny-hot", forClass: type(of: self))
-        let json = parseJSON(data: data, granularity: .current)
+        let json = timeParser(data: data, granularity: .current)
         let currently: Decoded<Currently> = decode(json.successValue()!)
         let c = currently.value!
         

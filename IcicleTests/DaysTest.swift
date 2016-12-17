@@ -14,7 +14,7 @@ import XCTest
 class DaysTest: XCTestCase {
     func testCreation() {
         let data = getTestJSON(named: "sunny-hot", forClass: type(of:self))
-        let json = parseJSON(data: data, granularity: .day)
+        let json = timeParser(data: data, granularity: .day)
         let days: Decoded<Days> = decode(json.successValue()!)
         let d = days.value!
         

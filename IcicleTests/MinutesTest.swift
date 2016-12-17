@@ -14,7 +14,7 @@ import XCTest
 class MinutesTest: XCTestCase {
     func testCreation() {
         let data = getTestJSON(named: "sunny-hot", forClass: type(of: self))
-        let json = parseJSON(data: data, granularity: .minute)
+        let json = timeParser(data: data, granularity: .minute)
         let minutes: Decoded<Minutes> = decode(json.successValue()!)
         let m = minutes.value!
         XCTAssertEqual(m.summary, "Clear for the hour.")

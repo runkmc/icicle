@@ -14,7 +14,7 @@ import XCTest
 class HourTest: XCTestCase {
     func testCreation() {
         let data = getTestJSON(named: "historical-snow", forClass: type(of:self))
-        let json = parseJSON(data: data, granularity: .hour)
+        let json = timeParser(data: data, granularity: .hour)
         let hourJSON = json.successValue()!
         let hours = hourJSON["data"] as! [AnyObject]
         let hour: Hour? = decode(hours[5] as! [String:Any])

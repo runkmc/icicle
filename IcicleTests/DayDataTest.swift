@@ -14,11 +14,11 @@ import Argo
 class DayDataTest: XCTestCase {
     func testSunnyCreation() {
         let data = getTestJSON(named: "sunny-hot", forClass: type(of:self))
-        let json = parseJSON(data: data, granularity: .day)
+        let json = timeParser(data: data, granularity: .day)
         let dayJSON = json.successValue()!
         let days = dayJSON["data"] as! [AnyObject]
         let dayInfo: Decoded<Day> = decode(days[0] as! [String:Any])
-        let timeZone = parseTimeZone(data: data).successValue()!
+        let timeZone = timeZoneParser(data: data).successValue()!
         let day = DayData.create(dayInfo, timeZone:timeZone).successValue()!
 
         XCTAssertEqual("9/25", day.date)
@@ -34,11 +34,11 @@ class DayDataTest: XCTestCase {
     
     func testRainyCreation() {
         let data = getTestJSON(named: "cloudy-futurerain", forClass: type(of:self))
-        let json = parseJSON(data: data, granularity: .day)
+        let json = timeParser(data: data, granularity: .day)
         let dayJSON = json.successValue()!
         let days = dayJSON["data"] as! [AnyObject]
         let dayInfo: Decoded<Day> = decode(days[4] as! [String:Any])
-        let timeZone = parseTimeZone(data: data).successValue()!
+        let timeZone = timeZoneParser(data: data).successValue()!
         let day = DayData.create(dayInfo, timeZone:timeZone).successValue()!
         
         XCTAssertEqual("9/29", day.date)

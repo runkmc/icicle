@@ -14,7 +14,7 @@ import Argo
 class AlertTest: XCTestCase {
     func testCreation() {
         let data = getTestJSON(named: "sunny-hot", forClass: type(of:self))
-        let alerts = parseAlerts(data: data).successValue()!
+        let alerts = alertParser(data: data).successValue()!
         let alert: Alert = decode(alerts[0] as! [String:Any])!
         
         XCTAssertEqual("Heat Advisory for Alameda, CA", alert.title)
