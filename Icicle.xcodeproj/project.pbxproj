@@ -38,6 +38,8 @@
 		0A35A1E91D98D2DA001B99BD /* MinuteTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A35A1E81D98D2DA001B99BD /* MinuteTest.swift */; };
 		0A39143F1DE6C6C700A1330C /* ParseTimeZoneTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A39143E1DE6C6C700A1330C /* ParseTimeZoneTest.swift */; };
 		0A3928631CADAE0800F724C7 /* ForecastAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3928621CADAE0800F724C7 /* ForecastAPI.swift */; };
+		0A54E13A1E04F12D00359CAB /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54E1391E04F12D00359CAB /* Alert.swift */; };
+		0A54E13C1E04F13C00359CAB /* AlertTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54E13B1E04F13C00359CAB /* AlertTest.swift */; };
 		0A56D0B91DA9CE9D00963D43 /* Currently.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A56D0B81DA9CE9D00963D43 /* Currently.swift */; };
 		0A56D0BB1DA9CECE00963D43 /* CurrentlyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A56D0BA1DA9CECE00963D43 /* CurrentlyTest.swift */; };
 		0A5A76921DF34C7600E52D3A /* HourData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A76911DF34C7600E52D3A /* HourData.swift */; };
@@ -110,6 +112,8 @@
 		0A35A1E81D98D2DA001B99BD /* MinuteTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinuteTest.swift; sourceTree = "<group>"; };
 		0A39143E1DE6C6C700A1330C /* ParseTimeZoneTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseTimeZoneTest.swift; sourceTree = "<group>"; };
 		0A3928621CADAE0800F724C7 /* ForecastAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastAPI.swift; sourceTree = "<group>"; };
+		0A54E1391E04F12D00359CAB /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		0A54E13B1E04F13C00359CAB /* AlertTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTest.swift; sourceTree = "<group>"; };
 		0A56D0B81DA9CE9D00963D43 /* Currently.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currently.swift; sourceTree = "<group>"; };
 		0A56D0BA1DA9CECE00963D43 /* CurrentlyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentlyTest.swift; sourceTree = "<group>"; };
 		0A5A76911DF34C7600E52D3A /* HourData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourData.swift; sourceTree = "<group>"; };
@@ -247,6 +251,7 @@
 				0A56D0B81DA9CE9D00963D43 /* Currently.swift */,
 				0A0237631DB6FA0C00D7E66B /* Location.swift */,
 				0A0237671DB814C300D7E66B /* WeatherModels.swift */,
+				0A54E1391E04F12D00359CAB /* Alert.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -261,6 +266,7 @@
 				0A0B60B51D9B196400B12996 /* DayTest.swift */,
 				0AA99DE81D9EDAE100CE614A /* DaysTest.swift */,
 				0A56D0BA1DA9CECE00963D43 /* CurrentlyTest.swift */,
+				0A54E13B1E04F13C00359CAB /* AlertTest.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -687,6 +693,7 @@
 				0A0B60B31D9B195100B12996 /* Day.swift in Sources */,
 				0A3928631CADAE0800F724C7 /* ForecastAPI.swift in Sources */,
 				0A0237621DB6F92200D7E66B /* LocationFetcher.swift in Sources */,
+				0A54E13A1E04F12D00359CAB /* Alert.swift in Sources */,
 				0A608A321D5ED4E9002151E6 /* IcicleColor.swift in Sources */,
 				0A608A341D5ED807002151E6 /* IcicleTabBarViewController.swift in Sources */,
 				0AD046191DB3120900DC32F2 /* WeatherData.swift in Sources */,
@@ -723,6 +730,7 @@
 				0A35A1E91D98D2DA001B99BD /* MinuteTest.swift in Sources */,
 				0A0B60AD1D9ADD4F00B12996 /* HourTest.swift in Sources */,
 				0A0B60B61D9B196400B12996 /* DayTest.swift in Sources */,
+				0A54E13C1E04F13C00359CAB /* AlertTest.swift in Sources */,
 				0A39143F1DE6C6C700A1330C /* ParseTimeZoneTest.swift in Sources */,
 				0A77BC3B1D9642FD00258721 /* ResultTest.swift in Sources */,
 				0A56D0BB1DA9CECE00963D43 /* CurrentlyTest.swift in Sources */,

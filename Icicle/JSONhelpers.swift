@@ -23,6 +23,21 @@ func parseJSON(data:Data, granularity:TimeGranularity) -> Result<NSError, [Strin
     }
 }
 
+func parseAlerts(data:Data) -> Result<NSError, [Any]> {
+    let json: [String:Any]
+    do {
+        json = try JSONSerialization.jsonObject(with: data, options: []) as! [String:Any]
+    } catch let error as NSError {
+        return .error(error)
+    }
+    
+    if let data = json["alerts"] as? [Any] {
+        return .success(data)
+    } else {
+        return .error(NSError(domain: "Alert data not found", code: 1, userInfo: nil))
+    }
+}
+
 func parseTimeZone(data:Data) -> Result<NSError, TimeZone> {
     let json: [String:Any]
     do {
