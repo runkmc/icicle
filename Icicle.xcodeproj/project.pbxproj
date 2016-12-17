@@ -40,6 +40,8 @@
 		0A3928631CADAE0800F724C7 /* ForecastAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3928621CADAE0800F724C7 /* ForecastAPI.swift */; };
 		0A54E13A1E04F12D00359CAB /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54E1391E04F12D00359CAB /* Alert.swift */; };
 		0A54E13C1E04F13C00359CAB /* AlertTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54E13B1E04F13C00359CAB /* AlertTest.swift */; };
+		0A54E13E1E04FFE600359CAB /* AlertData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54E13D1E04FFE600359CAB /* AlertData.swift */; };
+		0A54E1401E04FFF100359CAB /* AlertDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A54E13F1E04FFF100359CAB /* AlertDataTest.swift */; };
 		0A56D0B91DA9CE9D00963D43 /* Currently.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A56D0B81DA9CE9D00963D43 /* Currently.swift */; };
 		0A56D0BB1DA9CECE00963D43 /* CurrentlyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A56D0BA1DA9CECE00963D43 /* CurrentlyTest.swift */; };
 		0A5A76921DF34C7600E52D3A /* HourData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A76911DF34C7600E52D3A /* HourData.swift */; };
@@ -114,6 +116,8 @@
 		0A3928621CADAE0800F724C7 /* ForecastAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastAPI.swift; sourceTree = "<group>"; };
 		0A54E1391E04F12D00359CAB /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		0A54E13B1E04F13C00359CAB /* AlertTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertTest.swift; sourceTree = "<group>"; };
+		0A54E13D1E04FFE600359CAB /* AlertData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertData.swift; sourceTree = "<group>"; };
+		0A54E13F1E04FFF100359CAB /* AlertDataTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertDataTest.swift; sourceTree = "<group>"; };
 		0A56D0B81DA9CE9D00963D43 /* Currently.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Currently.swift; sourceTree = "<group>"; };
 		0A56D0BA1DA9CECE00963D43 /* CurrentlyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentlyTest.swift; sourceTree = "<group>"; };
 		0A5A76911DF34C7600E52D3A /* HourData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourData.swift; sourceTree = "<group>"; };
@@ -224,6 +228,7 @@
 				0AD046181DB3120900DC32F2 /* WeatherData.swift */,
 				0A289CEA1DE23F990054C731 /* DayData.swift */,
 				0A5A76911DF34C7600E52D3A /* HourData.swift */,
+				0A54E13D1E04FFE600359CAB /* AlertData.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -234,6 +239,7 @@
 				0AD0461A1DB3121600DC32F2 /* WeatherDataTest.swift */,
 				0A289CEC1DE2568E0054C731 /* DayDataTest.swift */,
 				0A5A76931DF34C8300E52D3A /* HourDataTest.swift */,
+				0A54E13F1E04FFF100359CAB /* AlertDataTest.swift */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -696,6 +702,7 @@
 				0A54E13A1E04F12D00359CAB /* Alert.swift in Sources */,
 				0A608A321D5ED4E9002151E6 /* IcicleColor.swift in Sources */,
 				0A608A341D5ED807002151E6 /* IcicleTabBarViewController.swift in Sources */,
+				0A54E13E1E04FFE600359CAB /* AlertData.swift in Sources */,
 				0AD046191DB3120900DC32F2 /* WeatherData.swift in Sources */,
 				0A2D3B471CB5DCFD00B0DF3C /* JSONhelpers.swift in Sources */,
 				0A0237681DB814C300D7E66B /* WeatherModels.swift in Sources */,
@@ -724,6 +731,7 @@
 			files = (
 				0A289CED1DE2568E0054C731 /* DayDataTest.swift in Sources */,
 				0A0B60A91D9A169D00B12996 /* MinutesTest.swift in Sources */,
+				0A54E1401E04FFF100359CAB /* AlertDataTest.swift in Sources */,
 				0A0B60B11D9AEA3F00B12996 /* HoursTest.swift in Sources */,
 				0AD0461B1DB3121600DC32F2 /* WeatherDataTest.swift in Sources */,
 				0AA99DE91D9EDAE100CE614A /* DaysTest.swift in Sources */,
