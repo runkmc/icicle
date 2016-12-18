@@ -14,18 +14,8 @@ import CoreLocation
 
 class WeatherDataTest: XCTestCase {
     func setupWeather(jsonFile:String, location:Location = Location(coordinates: CLLocation(latitude:0, longitude:0), name: "Default City")) -> WeatherData {
-        let data          = getTestJSON(named: jsonFile, forClass: type(of:self))
-        let currentlyJson = timeParser(data: data, granularity: .current)
-        let minutesJson   = timeParser(data: data, granularity: .minute)
-        let hoursJson     = timeParser(data: data, granularity: .hour)
-        let daysJson      = timeParser(data: data, granularity: .day)
-        
-        let currently: Decoded<Currently> = decode(currentlyJson.successValue()!)
-        let minutes: Decoded<Minutes>     = decode(minutesJson.successValue()!)
-        let hours: Decoded<Hours>         = decode(hoursJson.successValue()!)
-        let days: Decoded<Days>           = decode(daysJson.successValue()!)
-        let models                        = WeatherModels(currently: currently.value!, minutes: minutes.value!, hours: hours.value!, days: days.value!)
-        
+        let data = getTestJSON(named: jsonFile, forClass: type(of:self))
+        let models = decoder(data:data).successValue()!
         let wd = WeatherData.create(models: models, location: location)
         return wd.successValue()!
     }
@@ -54,5 +44,11 @@ class WeatherDataTest: XCTestCase {
     func testPartlyCloudyColor() {
         let wd = setupWeather(jsonFile: "cloudy-futurerain")
         XCTAssertEqual(wd.weatherColor, IcicleColor.green)
+    }
+    
+    func testHours() {
+        let wd = setupWeather(jsonFile: "cloudy-futurerain")
+        let hour = wd.hours[44]
+        XCTAssertEqual(hour.summary, "Rain")
     }
 }

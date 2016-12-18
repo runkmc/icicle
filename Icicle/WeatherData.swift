@@ -14,40 +14,49 @@ struct WeatherData {
     let fullSummary:String
     let locationName:String
     let weatherColor:UIColor
+    let hours:[HourData]
     
-    init(fullSummary:String, locationName:String, color:UIColor) {
+    init(fullSummary:String, locationName:String, color:UIColor, hours:[HourData]) {
         self.fullSummary = fullSummary
         self.locationName = locationName
         self.weatherColor = color
+        self.hours = hours
     }
     
     static func create(models:WeatherModels, location:Location) -> Result<String, WeatherData> {
-        let fullSummary = parseSummary(models)
-        let color = parseColor(icon: models.currently.icon)
+        guard let currently = models.currently.value else { return .error(models.currently.error!.description) }
+        guard let minutes = models.minutes.value else { return .error(models.minutes.error!.description) }
+        guard let hours = models.hours.value else { return .error(models.hours.error!.description) }
+        guard let days = models.days.value else { return .error(models.days.error!.description) }
+        
+        let fullSummary = parseSummary(currently:currently, minutes:minutes, hours:hours, days:days)
+        let color = parseColor(icon: currently.icon)
+        let individualHours = hours.hours.map { HourData.create($0, timeZone:models.timeZone) }
         
         return .success(WeatherData(fullSummary: fullSummary,
                                     locationName: location.name,
-                                    color: color))
+                                    color: color,
+                                    hours:individualHours))
     }
     
-    private static func parseSummary(_ models:WeatherModels) -> String {
-        let temp = Int(models.currently.temperature)
+    private static func parseSummary(currently:Currently, minutes:Minutes, hours:Hours, days:Days) -> String {
+        let temp = Int(currently.temperature)
         let currentTemp = "\(temp)°"
         
         var feelsTemp = "."
-        if let feelsLike = models.currently.apparentTemperature,
+        if let feelsLike = currently.apparentTemperature,
             !((temp - 1)..<(temp + 1)).contains(Int(feelsLike)) {
             feelsTemp = ", but feels like \(Int(feelsLike))°."
         }
         
         var tomorrow = ""
-        if models.days.days.indices.contains(1) {
-            tomorrow = "Tomorrow, \(models.days.days[1].summary.lowercased())"
+        if days.days.indices.contains(1) {
+            tomorrow = "Tomorrow, \(days.days[1].summary.lowercased())"
             tomorrow.remove(at: tomorrow.index(before: tomorrow.endIndex))
-            tomorrow.append(", high of \(Int(models.days.days[1].temperatures.temperatureMax))°.")
+            tomorrow.append(", high of \(Int(days.days[1].temperatures.temperatureMax))°.")
         }
         
-        return "Currently \(currentTemp)\(feelsTemp) \(models.minutes.summary) \(models.hours.summary) \(tomorrow) \(models.days.summary)"
+        return "Currently \(currentTemp)\(feelsTemp) \(minutes.summary) \(hours.summary) \(tomorrow) \(days.summary)"
     }
     
     private static func parseColor(icon:String) -> UIColor {
