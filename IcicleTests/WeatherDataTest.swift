@@ -57,4 +57,15 @@ class WeatherDataTest: XCTestCase {
         let day = wd.days[0]
         XCTAssertEqual("56° at 6 AM", day.low)
     }
+    
+    func testAlerts() {
+        let wd = setupWeather(jsonFile: "sunny-hot")
+        let alert = wd.alerts[0]
+        XCTAssertEqual("Heat Advisory for Alameda, CA", alert.title)
+    }
+    
+    func testNoAlerts() {
+        let wd = setupWeather(jsonFile: "cloudy-futurerain")
+        XCTAssertEqual(wd.alerts.count, 1)
+    }
 }
