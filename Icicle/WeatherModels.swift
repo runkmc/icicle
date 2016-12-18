@@ -7,10 +7,13 @@
 //
 
 import Foundation
+import Argo
 
 struct WeatherModels {
-    let currently:Currently
-    let minutes:Minutes
-    let hours:Hours
-    let days:Days
+    let currently:Decoded<Currently>
+    let minutes:Decoded<Minutes>
+    let hours:Decoded<Hours>
+    let days:Decoded<Days>
+    let alerts:[Alert]
+    let timeZone:TimeZone
 }
