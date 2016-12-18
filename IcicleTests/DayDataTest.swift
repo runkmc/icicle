@@ -9,17 +9,20 @@
 import Foundation
 import XCTest
 import Argo
+import CoreLocation
 @testable import Icicle
 
 class DayDataTest: XCTestCase {
+    func setupWeather(jsonFile:String, location:Location = Location(coordinates: CLLocation(latitude:0, longitude:0), name: "Default City")) -> WeatherData {
+        let data = getTestJSON(named: jsonFile, forClass: type(of:self))
+        let models = decoder(data:data).successValue()!
+        let wd = WeatherData.create(models: models, location: location)
+        return wd.successValue()!
+    }
+    
     func testSunnyCreation() {
-        let data = getTestJSON(named: "sunny-hot", forClass: type(of:self))
-        let json = timeParser(data: data, granularity: .day)
-        let dayJSON = json.successValue()!
-        let days = dayJSON["data"] as! [AnyObject]
-        let dayInfo: Decoded<Day> = decode(days[0] as! [String:Any])
-        let timeZone = timeZoneParser(data: data).successValue()!
-        let day = DayData.create(dayInfo, timeZone:timeZone).successValue()!
+        let wd = setupWeather(jsonFile: "sunny-hot")
+        let day = wd.days[0]
 
         XCTAssertEqual("9/25", day.date)
         XCTAssertEqual("94° at 4 PM", day.high)
@@ -33,13 +36,8 @@ class DayDataTest: XCTestCase {
     }
     
     func testRainyCreation() {
-        let data = getTestJSON(named: "cloudy-futurerain", forClass: type(of:self))
-        let json = timeParser(data: data, granularity: .day)
-        let dayJSON = json.successValue()!
-        let days = dayJSON["data"] as! [AnyObject]
-        let dayInfo: Decoded<Day> = decode(days[4] as! [String:Any])
-        let timeZone = timeZoneParser(data: data).successValue()!
-        let day = DayData.create(dayInfo, timeZone:timeZone).successValue()!
+        let wd = setupWeather(jsonFile: "cloudy-futurerain")
+        let day = wd.days[4]
         
         XCTAssertEqual("9/29", day.date)
         XCTAssertEqual("65° at 4 PM", day.high)

@@ -51,4 +51,10 @@ class WeatherDataTest: XCTestCase {
         let hour = wd.hours[44]
         XCTAssertEqual(hour.summary, "Rain")
     }
+    
+    func testDays() {
+        let wd = setupWeather(jsonFile: "sunny-hot")
+        let day = wd.days[0]
+        XCTAssertEqual("56° at 6 AM", day.low)
+    }
 }

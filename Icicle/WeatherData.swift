@@ -15,12 +15,14 @@ struct WeatherData {
     let locationName:String
     let weatherColor:UIColor
     let hours:[HourData]
+    let days:[DayData]
     
-    init(fullSummary:String, locationName:String, color:UIColor, hours:[HourData]) {
+    init(fullSummary:String, locationName:String, color:UIColor, hours:[HourData], days:[DayData]) {
         self.fullSummary = fullSummary
         self.locationName = locationName
         self.weatherColor = color
         self.hours = hours
+        self.days = days
     }
     
     static func create(models:WeatherModels, location:Location) -> Result<String, WeatherData> {
@@ -32,11 +34,13 @@ struct WeatherData {
         let fullSummary = parseSummary(currently:currently, minutes:minutes, hours:hours, days:days)
         let color = parseColor(icon: currently.icon)
         let individualHours = hours.hours.map { HourData.create($0, timeZone:models.timeZone) }
+        let individualDays = days.days.map { DayData.create($0, timeZone:models.timeZone) }
         
         return .success(WeatherData(fullSummary: fullSummary,
                                     locationName: location.name,
                                     color: color,
-                                    hours:individualHours))
+                                    hours:individualHours,
+                                    days:individualDays))
     }
     
     private static func parseSummary(currently:Currently, minutes:Minutes, hours:Hours, days:Days) -> String {

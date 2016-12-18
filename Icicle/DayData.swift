@@ -49,14 +49,7 @@ struct DayData {
         return timeString
     }
     
-    static func create(_ decodedDay:Decoded<Day>, timeZone:TimeZone) -> Result<String, DayData> {
-        guard let day = decodedDay.value else {
-            if let error = decodedDay.error {
-                return .error(error.description)
-            } else {
-                return .error("Unknown Error")
-            }
-        }
+    static func create(_ day:Day, timeZone:TimeZone) -> DayData {
         
         dateformatter.timeZone = timeZone
         timeformatter.timeZone = timeZone
@@ -76,8 +69,8 @@ struct DayData {
         case .some(let value): maxPrecipTime = timeformatter.string(from: Date(timeIntervalSince1970: value))
         }
         
-        return .success(DayData(date: date, high: high, low: low, sunrise: sunrise, sunset: sunset, precipChance: precipChance,
-                                maxPrecipTime: maxPrecipTime, precipType: precipType, summary: day.summary))
+        return DayData(date: date, high: high, low: low, sunrise: sunrise, sunset: sunset, precipChance: precipChance,
+                                maxPrecipTime: maxPrecipTime, precipType: precipType, summary: day.summary)
     }
 }
 
