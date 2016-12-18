@@ -13,13 +13,11 @@ import Curry
 
 struct Minutes {
     let summary: String
-    let minutes: [Minute]
 }
 
 extension Minutes: Decodable {
     static func decode(_ json: JSON) -> Decoded<Minutes> {
         return curry(Minutes.init)
         <^> json <| "summary"
-        <*> json <|| "data"
     }
 }
