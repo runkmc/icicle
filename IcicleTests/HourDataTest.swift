@@ -9,17 +9,20 @@
 import Foundation
 import XCTest
 import Argo
+import CoreLocation
 @testable import Icicle
 
 class HourDataTest: XCTestCase {
+    func setupWeather(jsonFile:String, location:Location = Location(coordinates: CLLocation(latitude:0, longitude:0), name: "Default City")) -> WeatherData {
+        let data = getTestJSON(named: jsonFile, forClass: type(of:self))
+        let models = decoder(data:data).successValue()!
+        let wd = WeatherData.create(models: models, location: location)
+        return wd.successValue()!
+    }
+
     func testSunnyCreation() {
-        let data = getTestJSON(named: "sunny-hot", forClass: type(of:self))
-        let json = timeParser(data: data, granularity: .hour)
-        let hourJSON = json.successValue()!
-        let hours = hourJSON["data"] as! [AnyObject]
-        let hourInfo: Decoded<Hour> = decode(hours[0] as! [String:Any])
-        let timeZone = timeZoneParser(data: data).successValue()!
-        let hour = HourData.create(hourInfo, timeZone:timeZone).successValue()!
+        let wd = setupWeather(jsonFile: "sunny-hot")
+        let hour = wd.hours[0]
         
         XCTAssertEqual("12 PM", hour.time)
         XCTAssertEqual("Clear", hour.summary)
@@ -31,14 +34,9 @@ class HourDataTest: XCTestCase {
     }
     
     func testRainyCreation() {
-        let data = getTestJSON(named: "cloudy-futurerain", forClass: type(of:self))
-        let json = timeParser(data: data, granularity: .hour)
-        let hourJSON = json.successValue()!
-        let hours = hourJSON["data"] as! [AnyObject]
-        let hourInfo: Decoded<Hour> = decode(hours[44] as! [String:Any])
-        let timeZone = timeZoneParser(data: data).successValue()!
-        let hour = HourData.create(hourInfo, timeZone:timeZone).successValue()!
-        
+        let wd = setupWeather(jsonFile: "cloudy-futurerain")
+        let hour = wd.hours[44]
+
         XCTAssertEqual("11 AM", hour.time)
         XCTAssertEqual("Rain", hour.summary)
         XCTAssertEqual("61°", hour.temperature)

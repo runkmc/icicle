@@ -33,14 +33,7 @@ struct HourData {
         }
     }
     
-    static func create(_ decodedHour:Decoded<Hour>, timeZone:TimeZone) -> Result<String, HourData> {
-        guard let hour = decodedHour.value else {
-            if let error = decodedHour.error {
-                return .error(error.description)
-            } else {
-                return .error("Unknown Error")
-            }
-        }
+    static func create(_ hour:Hour, timeZone:TimeZone) -> HourData {
         timeformatter.timeZone = timeZone
         
         let time = timeformatter.string(from: Date(timeIntervalSince1970: hour.time))
@@ -50,8 +43,8 @@ struct HourData {
         let apparentTemperature = parseTemp(hour.apparentTemperature)
         let humidity = formatPercentage(hour.humidity)
         
-        return .success(HourData(time: time, summary: hour.summary, temperature: temperature, precipChance: precipChance,
-                                 precipType: precipType, apparentTemperature: apparentTemperature, humidity: humidity))
+        return HourData(time: time, summary: hour.summary, temperature: temperature, precipChance: precipChance,
+                                 precipType: precipType, apparentTemperature: apparentTemperature, humidity: humidity)
     }
 }
 
