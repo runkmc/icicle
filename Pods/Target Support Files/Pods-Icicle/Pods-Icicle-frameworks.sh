@@ -87,9 +87,13 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Argo/Argo.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Curry/Curry.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Runes/Runes.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RxCocoa/RxCocoa.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RxSwift/RxSwift.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "$BUILT_PRODUCTS_DIR/Argo/Argo.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Curry/Curry.framework"
   install_framework "$BUILT_PRODUCTS_DIR/Runes/Runes.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RxCocoa/RxCocoa.framework"
+  install_framework "$BUILT_PRODUCTS_DIR/RxSwift/RxSwift.framework"
 fi

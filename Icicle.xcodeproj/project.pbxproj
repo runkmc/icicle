@@ -476,7 +476,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0800;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Kevin McGladdery";
 				TargetAttributes = {
 					0ADE1F241CA1F04A007C2840 = {
@@ -898,6 +898,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CDD45B1986B545C53CE6706C /* Pods-IcicleTests.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = IcicleTests/Info.plist;
@@ -914,6 +915,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0AAB8236D1A23D4174FAC9C3 /* Pods-IcicleTests.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = IcicleTests/Info.plist;

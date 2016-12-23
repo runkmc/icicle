@@ -9,10 +9,14 @@ target 'Icicle' do
   pod 'Argo', '~> 4.0'
   pod 'Runes', '~> 4.0'
   pod 'Curry', '~> 3.0'
+  pod 'RxSwift', '~> 3.0'
+  pod 'RxCocoa', '~> 3.0'
 
   target 'IcicleTests' do
     inherit! :search_paths
     # Pods for testing
+    pod 'RxBlocking', '~> 3.0'
+    pod 'RxTest', '~> 3.0'
   end
 
   target 'IcicleUITests' do
