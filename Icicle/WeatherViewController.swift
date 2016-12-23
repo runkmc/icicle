@@ -11,9 +11,14 @@ import UIKit
 class WeatherViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
+    let location: Location? = nil
+    let weatherData: WeatherData? = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        if let givenLocation = location {
+            
+        }
 
         // Do any additional setup after loading the view.
     }
