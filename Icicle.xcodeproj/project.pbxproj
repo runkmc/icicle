@@ -55,6 +55,8 @@
 		0AC1FE411DF65E7800F0D602 /* HasPrecipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC1FE401DF65E7800F0D602 /* HasPrecipitation.swift */; };
 		0AD046191DB3120900DC32F2 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD046181DB3120900DC32F2 /* WeatherData.swift */; };
 		0AD0461B1DB3121600DC32F2 /* WeatherDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0461A1DB3121600DC32F2 /* WeatherDataTest.swift */; };
+		0AD565F71E0E4BB3009A58AE /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD565F61E0E4BB3009A58AE /* LocationService.swift */; };
+		0AD565F91E0E4BC9009A58AE /* LocationServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD565F81E0E4BC9009A58AE /* LocationServiceTest.swift */; };
 		0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE1F281CA1F04A007C2840 /* AppDelegate.swift */; };
 		0ADE1F301CA1F04A007C2840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE1F2F1CA1F04A007C2840 /* Assets.xcassets */; };
 		0ADE1F331CA1F04A007C2840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE1F311CA1F04A007C2840 /* LaunchScreen.storyboard */; };
@@ -131,6 +133,8 @@
 		0AC1FE401DF65E7800F0D602 /* HasPrecipitation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HasPrecipitation.swift; sourceTree = "<group>"; };
 		0AD046181DB3120900DC32F2 /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		0AD0461A1DB3121600DC32F2 /* WeatherDataTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDataTest.swift; sourceTree = "<group>"; };
+		0AD565F61E0E4BB3009A58AE /* LocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		0AD565F81E0E4BC9009A58AE /* LocationServiceTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationServiceTest.swift; sourceTree = "<group>"; };
 		0ADE1F251CA1F04A007C2840 /* Icicle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Icicle.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ADE1F281CA1F04A007C2840 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0ADE1F2F1CA1F04A007C2840 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -292,6 +296,7 @@
 				0A99D91B1CBC5B8400BF354C /* Icon.swift */,
 				0A608A311D5ED4E9002151E6 /* IcicleColor.swift */,
 				0A54E1411E05EF6400359CAB /* decoder.swift */,
+				0AD565F61E0E4BB3009A58AE /* LocationService.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -331,6 +336,7 @@
 				0A77BC3A1D9642FD00258721 /* ResultTest.swift */,
 				0AC120AF1D61175A008E1557 /* getTestJson.swift */,
 				0A39143E1DE6C6C700A1330C /* ParseTimeZoneTest.swift */,
+				0AD565F81E0E4BC9009A58AE /* LocationServiceTest.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -712,6 +718,7 @@
 				0A315C0E1D9E182100F4A7DE /* Temperature.swift in Sources */,
 				0A0237641DB6FA0C00D7E66B /* Location.swift in Sources */,
 				0A0B60A71D9A168700B12996 /* Minutes.swift in Sources */,
+				0AD565F71E0E4BB3009A58AE /* LocationService.swift in Sources */,
 				0AC1FE411DF65E7800F0D602 /* HasPrecipitation.swift in Sources */,
 				0A1076541D6CB41300DED569 /* WeatherViewController.swift in Sources */,
 				0A77BC391D9642E500258721 /* Result.swift in Sources */,
@@ -733,6 +740,7 @@
 				0AA99DE91D9EDAE100CE614A /* DaysTest.swift in Sources */,
 				0A0B60AD1D9ADD4F00B12996 /* HourTest.swift in Sources */,
 				0AFB94511E0640120097614F /* MinutesTest.swift in Sources */,
+				0AD565F91E0E4BC9009A58AE /* LocationServiceTest.swift in Sources */,
 				0A0B60B61D9B196400B12996 /* DayTest.swift in Sources */,
 				0A54E13C1E04F13C00359CAB /* AlertTest.swift in Sources */,
 				0A39143F1DE6C6C700A1330C /* ParseTimeZoneTest.swift in Sources */,
