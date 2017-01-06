@@ -8,8 +8,6 @@
 
 import Foundation
 import CoreLocation
-import RxCocoa
-import RxSwift
 
 class LocationService: NSObject {
     static let instance = LocationService()
