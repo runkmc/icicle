@@ -202,12 +202,12 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		0A048E271D49704600F1AED3 /* Types */ = {
+		0A048E271D49704600F1AED3 /* Other Types */ = {
 			isa = PBXGroup;
 			children = (
 				0A0237611DB6F92200D7E66B /* LocationFetcher.swift */,
 			);
-			name = Types;
+			name = "Other Types";
 			sourceTree = "<group>";
 		};
 		0A07AFF01D5D5EF100534370 /* IBFiles */ = {
@@ -376,7 +376,7 @@
 			isa = PBXGroup;
 			children = (
 				0A10FE8C1D63E9AF002E5687 /* Protocols */,
-				0A048E271D49704600F1AED3 /* Types */,
+				0A048E271D49704600F1AED3 /* Other Types */,
 				0A2D3B3F1CB5CAF300B0DF3C /* Helpers */,
 				0A2D3B361CB5C2AC00B0DF3C /* Models */,
 				0A16426C1CB6ED5D001D5593 /* ViewModels */,
