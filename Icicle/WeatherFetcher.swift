@@ -7,9 +7,7 @@
 //
 
 import Foundation
-import RxCocoa
-import RxSwift
 
-func weatherFetcher(locationService:LocationService, session:DataSession, completion: () -> ()) -> Result<[String], WeatherData> {
-    
-}
+//func weatherFetcher(locationService:LocationService, session:DataSession, completion: () -> ()) -> Result<[String], WeatherData> {
+//    
+//}
