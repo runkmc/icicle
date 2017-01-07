@@ -8,6 +8,35 @@
 
 import Foundation
 
-//func weatherFetcher(locationService:LocationService, session:DataSession, completion: () -> ()) -> Result<[String], WeatherData> {
-//    
-//}
+func weatherFetcher(locationService:LocationService, session:DataTask, completion:@escaping (Result<[String], WeatherData>) -> ()) {
+    var errors:[String] = []
+    locationService.getLocation { location in
+        let longitude = location.coordinate.longitude
+        let latitude = location.coordinate.latitude
+        let urlString = "https://api.darksky.net/forecast/\(forecastAPIKEY)/\(latitude),\(longitude)"
+        let weatherUrl = URL(string:urlString)
+        guard let url = weatherUrl else { NSLog("Problem creating url string: \(urlString)"); return }
+        
+        session.dataTask(with: url) { data, response, error in
+            if let err = error {
+                errors.append(err.localizedDescription)
+                NSLog(err.localizedDescription)
+                completion(.error(errors))
+                return
+            }
+            
+            guard let downloadedData = data else { errors.append("No data found"); return }
+            let decodedData = decoder(data: downloadedData)
+            guard let models = decodedData.successValue() else { errors.append(contentsOf: decodedData.errorValue()!); return }
+            
+            let formattedModels = WeatherData.create(models: models)
+            guard let viewModels = formattedModels.successValue() else { errors.append(formattedModels.errorValue()!); return }
+            
+            completion(.success(viewModels))
+        }.resume()
+    }
+    
+    if errors.count > 0 {
+        completion(.error(errors))
+    }
+}
