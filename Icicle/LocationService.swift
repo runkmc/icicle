@@ -10,6 +10,5 @@ import Foundation
 import CoreLocation
 
 protocol LocationService {
-    var gotLocation:((CLLocation) -> ())? { get set }
-    func getLocation()
+    func getLocation(completion:@escaping (CLLocation) -> ())
 }

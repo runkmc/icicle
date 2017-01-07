@@ -11,7 +11,6 @@ import CoreLocation
 
 class SavedLocationService {
     let location:Location
-    var gotLocation:((CLLocation) -> ())? = nil
     
     init(location:Location) {
         self.location = location
@@ -19,7 +18,7 @@ class SavedLocationService {
 }
 
 extension SavedLocationService {
-    func getLocation() {
-        self.gotLocation?(self.location.coordinates)
+    func getLocation(completion:@escaping (CLLocation) -> ()) {
+        completion(self.location.coordinates)
     }
 }
