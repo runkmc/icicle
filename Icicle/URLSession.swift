@@ -8,4 +8,8 @@
 
 import Foundation
 
-extension URLSession: DataTask { }
+extension URLSession: DataTask {
+    func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> DataTaskResumable {
+        return (dataTask(with: url, completionHandler: completionHandler) as URLSessionDataTask)
+    }
+}
