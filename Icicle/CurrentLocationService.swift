@@ -12,6 +12,7 @@ import CoreLocation
 class CurrentLocationService: NSObject {
     static let instance = CurrentLocationService()
     fileprivate let manager = CLLocationManager()
+    var gotLocation:((CLLocation) -> ())? = nil
     var currentLocation: CLLocation? = nil
     
     fileprivate override init() { }
@@ -32,6 +33,18 @@ extension CurrentLocationService: CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let loc = locations.first {
+            self.currentLocation = loc
+            self.gotLocation?(loc)
+        }
+    }
+}
+
+extension CurrentLocationService: LocationService {
+        func getLocation() {
+            if let loc = self.currentLocation {
+                self.gotLocation?(loc)
+            }
         
     }
 }
