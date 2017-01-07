@@ -1,5 +1,5 @@
 //
-//  LocationService.swift
+//  DataSession.swift
 //  Icicle
 //
 //  Created by Kevin McGladdery on 1/6/17.
@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol LocationService {
+protocol DataSession {
     
 }
