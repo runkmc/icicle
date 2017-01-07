@@ -13,10 +13,10 @@ import CoreLocation
 @testable import Icicle
 
 class HourDataTest: XCTestCase {
-    func setupWeather(jsonFile:String, location:Location = Location(coordinates: CLLocation(latitude:0, longitude:0), name: "Default City")) -> WeatherData {
+    func setupWeather(jsonFile:String) -> WeatherData {
         let data = getTestJSON(named: jsonFile, forClass: type(of:self))
         let models = decoder(data:data).successValue()!
-        let wd = WeatherData.create(models: models, location: location)
+        let wd = WeatherData.create(models: models)
         return wd.successValue()!
     }
 

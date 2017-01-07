@@ -13,10 +13,10 @@ import CoreLocation
 @testable import Icicle
 
 class WeatherDataTest: XCTestCase {
-    func setupWeather(jsonFile:String, location:Location = Location(coordinates: CLLocation(latitude:0, longitude:0), name: "Default City")) -> WeatherData {
+    func setupWeather(jsonFile:String) -> WeatherData {
         let data = getTestJSON(named: jsonFile, forClass: type(of:self))
         let models = decoder(data:data).successValue()!
-        let wd = WeatherData.create(models: models, location: location)
+        let wd = WeatherData.create(models: models)
         return wd.successValue()!
     }
 
@@ -28,12 +28,6 @@ class WeatherDataTest: XCTestCase {
     func testRainySummary() {
         let wd = setupWeather(jsonFile: "cloudy-futurerain")
         XCTAssertEqual(wd.fullSummary, "Currently 61°. Partly cloudy for the hour. Partly cloudy until this evening. Tomorrow, mostly cloudy starting in the evening, high of 61°. Light rain on Tuesday through Sunday, with temperatures peaking at 66°F on Tuesday.")
-    }
-    
-    func testLocationName() {
-        let location = Location(coordinates: CLLocation(latitude:0, longitude:0), name: "Concord")
-        let wd = setupWeather(jsonFile: "sunny-hot", location: location)
-        XCTAssertEqual(wd.locationName, "Concord")
     }
     
     func testSunnyColor() {

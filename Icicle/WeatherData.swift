@@ -12,22 +12,20 @@ import Argo
 struct WeatherData {
     
     let fullSummary:String
-    let locationName:String
     let weatherColor:UIColor
     let hours:[HourData]
     let days:[DayData]
     let alerts:[AlertData]
     
-    init(fullSummary:String, locationName:String, color:UIColor, hours:[HourData], days:[DayData], alerts:[AlertData]) {
+    init(fullSummary:String, color:UIColor, hours:[HourData], days:[DayData], alerts:[AlertData]) {
         self.fullSummary = fullSummary
-        self.locationName = locationName
         self.weatherColor = color
         self.hours = hours
         self.days = days
         self.alerts = alerts
     }
     
-    static func create(models:WeatherModels, location:Location) -> Result<String, WeatherData> {
+    static func create(models:WeatherModels) -> Result<String, WeatherData> {
         guard let currently = models.currently.value else { return .error(models.currently.error!.description) }
         guard let minutes = models.minutes.value else { return .error(models.minutes.error!.description) }
         guard let hours = models.hours.value else { return .error(models.hours.error!.description) }
@@ -40,7 +38,6 @@ struct WeatherData {
         let alerts = models.alerts.map { AlertData.create($0) }
         
         return .success(WeatherData(fullSummary: fullSummary,
-                                    locationName: location.name,
                                     color: color,
                                     hours:individualHours,
                                     days:individualDays,
