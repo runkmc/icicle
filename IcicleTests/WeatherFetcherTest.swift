@@ -25,7 +25,10 @@ class WeatherFetcherTest: XCTestCase {
         // ^ is an invalid character in URLs
         weatherFetcher(locationService:locService, session:EmptySession(), key: "^") { result in
             XCTAssertTrue(Result.isError(result))
-            XCTAssertEqual(result.errorValue()?.first, "Problem creating url string: https://api.darksky.net/forecast/^/10.0,-10.0")
+            switch result.errorValue()! {
+            case .urlError(let value): XCTAssertEqual(value, "Problem creating url string: https://api.darksky.net/forecast/^/10.0,-10.0")
+            default: XCTFail()
+            }
         }
     }
 }
