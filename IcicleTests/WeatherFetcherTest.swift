@@ -47,4 +47,54 @@ class WeatherFetcherTest: XCTestCase {
             }
         }
     }
+    
+    struct BadJSONSession: DataTask {
+        func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> DataTaskResumable {
+            let data = getTestJSON(named: "eight-days", forClass: WeatherFetcherTest.self)
+            completionHandler(data, nil, nil)
+            return URLSessionDataTaskStub()
+        }
+    }
+    
+    func testBadJSON() {
+        weatherFetcher(locationService: locService, session: BadJSONSession(), key: "1") { result in
+            switch result.errorValue()! {
+            case .decodingError(let value): XCTAssertEqual(value, "NSCocoaErrorDomain")
+            default: XCTFail()
+            }
+        }
+    }
+    
+    struct IncompleteDataSession: DataTask {
+        func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> DataTaskResumable {
+            let data = getTestJSON(named: "historical-snow", forClass: WeatherFetcherTest.self)
+            completionHandler(data, nil, nil)
+            return URLSessionDataTaskStub()
+        }
+    }
+    
+    func testIncompleteJSON() {
+        weatherFetcher(locationService: locService, session: IncompleteDataSession(), key: "1") { result in
+            switch result.errorValue()! {
+            case .decodingError(let value): XCTAssertEqual(value, "minutely data not found")
+            default: XCTFail()
+            }
+        }
+    }
+    
+    struct GoodSession: DataTask {
+        func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> DataTaskResumable {
+            let data = getTestJSON(named: "sunny-hot", forClass: WeatherFetcherTest.self)
+            completionHandler(data, nil, nil)
+            return URLSessionDataTaskStub()
+        }
+    }
+    
+    func testGoodData() {
+        weatherFetcher(locationService: locService, session: GoodSession(), key: "1") { result in
+            let weather = result.successValue()!
+            let day = weather.days[0]
+            XCTAssertEqual("56° at 6 AM", day.low)
+        }
+    }
 }
