@@ -362,6 +362,7 @@
 			isa = PBXGroup;
 			children = (
 				0A43015F1E21718E00F0841E /* URLSessionDataTaskStub.swift */,
+				0AC120AF1D61175A008E1557 /* getTestJson.swift */,
 			);
 			name = Support;
 			sourceTree = "<group>";
@@ -370,7 +371,6 @@
 			isa = PBXGroup;
 			children = (
 				0A77BC3A1D9642FD00258721 /* ResultTest.swift */,
-				0AC120AF1D61175A008E1557 /* getTestJson.swift */,
 				0A39143E1DE6C6C700A1330C /* ParseTimeZoneTest.swift */,
 				0AD565F81E0E4BC9009A58AE /* LocationServiceTest.swift */,
 				0A537D351E2068B1004E1A1E /* WeatherFetcherTest.swift */,
