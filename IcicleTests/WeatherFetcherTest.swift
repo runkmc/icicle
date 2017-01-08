@@ -31,4 +31,20 @@ class WeatherFetcherTest: XCTestCase {
             }
         }
     }
+    
+    struct ContainsErrorSession: DataTask {
+        func dataTask(with url: URL, completionHandler: @escaping (Data?, URLResponse?, Error?) -> Void) -> DataTaskResumable {
+            completionHandler(nil, nil, NSError(domain: "YA DONE MESSED UP", code: 0, userInfo: nil))
+            return URLSessionDataTaskStub()
+        }
+    }
+    
+    func testBadResponse() {
+        weatherFetcher(locationService: locService, session: ContainsErrorSession(), key: "123") { result in
+            switch result.errorValue()! {
+            case .httpError(let value): XCTAssertEqual(value, "I found an error instead of the weather. Sorry about that.")
+            default: XCTFail()
+            }
+        }
+    }
 }

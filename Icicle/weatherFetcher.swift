@@ -24,7 +24,7 @@ func weatherFetcher(locationService:LocationService, session:DataTask, key:Strin
         session.dataTask(with: url) { data, response, error in
             if let err = error {
                 NSLog(err.localizedDescription)
-                completion(.error(.httpError(err.localizedDescription)))
+                completion(.error(.httpError("I found an error instead of the weather. Sorry about that.")))
                 return
             }
             
