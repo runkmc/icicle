@@ -10,7 +10,13 @@ import Foundation
 import CoreLocation
 
 class CurrentLocationService: NSObject {
-    static let instance = CurrentLocationService()
+    static let instance: CurrentLocationService = {
+        let service = CurrentLocationService()
+        service.manager.delegate = service
+        service.startGettingLocation()
+        return service
+    }()
+        
     fileprivate let manager = CLLocationManager()
     fileprivate var gotLocation:((CLLocation) -> ())? = nil
     var currentLocation: CLLocation? = nil
@@ -29,7 +35,7 @@ class CurrentLocationService: NSObject {
 
 extension CurrentLocationService: CLLocationManagerDelegate {
     func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        self.startGettingLocation(status: status)
+        startGettingLocation(status: status)
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -37,6 +43,10 @@ extension CurrentLocationService: CLLocationManagerDelegate {
             self.currentLocation = loc
             self.gotLocation?(loc)
         }
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
+        
     }
 }
 
@@ -46,6 +56,5 @@ extension CurrentLocationService: LocationService {
             if let loc = self.currentLocation {
                 completion(loc)
             }
-    
     }
 }
