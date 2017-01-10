@@ -16,6 +16,7 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var locationName: UILabel!
     @IBOutlet weak var headerBackground: UIView!
     @IBOutlet weak var headerBackgroundTopConstraint: NSLayoutConstraint!
+    @IBOutlet weak var weatherDescription: UILabel!
     let animator = UIDynamicAnimator()
     
     override func viewDidLoad() {
@@ -33,6 +34,7 @@ class WeatherViewController: UIViewController {
                 print("block ran")
                 if let weather = result.successValue() {
                     self?.locationName.text = self?.location?.name ?? "Current Location"
+                    self?.weatherDescription.text = weather.fullSummary
                 }
                 
                 

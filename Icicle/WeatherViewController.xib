@@ -8,6 +8,14 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="FiraSans-Book.otf">
+            <string>FiraSans-Book</string>
+        </array>
+        <array key="FiraSans-ExtraLight.otf">
+            <string>FiraSans-ExtraLight</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeatherViewController" customModule="Icicle" customModuleProvider="target">
             <connections>
@@ -16,6 +24,7 @@
                 <outlet property="locationName" destination="s20-tL-YjD" id="Gjz-9y-XYb"/>
                 <outlet property="scrollView" destination="ZvR-en-E3S" id="Pra-M3-c2s"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="weatherDescription" destination="8MZ-4L-yhI" id="BYs-9Y-rfR"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -29,10 +38,9 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SKb-uS-LKh">
                             <rect key="frame" x="0.0" y="-210" width="375" height="210"/>
                             <subviews>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s20-tL-YjD">
-                                    <rect key="frame" x="8" y="118" width="42" height="21"/>
-                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s20-tL-YjD">
+                                    <rect key="frame" x="16" y="122" width="343" height="72"/>
+                                    <fontDescription key="fontDescription" name="FiraSans-ExtraLight" family="Fira Sans" pointSize="60"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
@@ -40,13 +48,25 @@
                             <color key="backgroundColor" red="0.91372549020000005" green="0.18823529410000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="210" id="1DR-q5-Nnn"/>
+                                <constraint firstItem="s20-tL-YjD" firstAttribute="leading" secondItem="SKb-uS-LKh" secondAttribute="leading" constant="16" id="9Dr-xA-RHZ"/>
+                                <constraint firstAttribute="bottom" secondItem="s20-tL-YjD" secondAttribute="bottom" constant="16" id="GS0-ji-ex9"/>
+                                <constraint firstAttribute="trailing" secondItem="s20-tL-YjD" secondAttribute="trailing" constant="16" id="n78-sS-1AP"/>
                             </constraints>
                         </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8MZ-4L-yhI">
+                            <rect key="frame" x="16" y="242" width="343" height="0.0"/>
+                            <fontDescription key="fontDescription" name="FiraSans-Book" family="Fira Sans" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                     </subviews>
                     <constraints>
                         <constraint firstItem="SKb-uS-LKh" firstAttribute="width" secondItem="ZvR-en-E3S" secondAttribute="width" id="46l-9c-Elb"/>
+                        <constraint firstItem="8MZ-4L-yhI" firstAttribute="top" secondItem="ZvR-en-E3S" secondAttribute="top" constant="242" id="Brg-vN-fQQ"/>
                         <constraint firstItem="SKb-uS-LKh" firstAttribute="leading" secondItem="ZvR-en-E3S" secondAttribute="leading" id="KS7-4n-LA6"/>
                         <constraint firstItem="SKb-uS-LKh" firstAttribute="top" secondItem="ZvR-en-E3S" secondAttribute="top" constant="-210" id="Wk6-h9-3Td"/>
+                        <constraint firstItem="8MZ-4L-yhI" firstAttribute="width" secondItem="s20-tL-YjD" secondAttribute="width" id="XvZ-NM-7ET"/>
+                        <constraint firstItem="8MZ-4L-yhI" firstAttribute="leading" secondItem="s20-tL-YjD" secondAttribute="leading" id="wyJ-th-aYT"/>
                     </constraints>
                 </scrollView>
             </subviews>
