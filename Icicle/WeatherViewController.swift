@@ -42,7 +42,7 @@ class WeatherViewController: UIViewController {
                 
                 if self != nil {
                     let headerSnapper = UISnapBehavior(item: (self?.headerBackground)!, snapTo: CGPoint(x: self!.view.frame.width / 2, y:105))
-                    headerSnapper.damping = 1.0
+                    headerSnapper.damping = 0.65
                     self?.animator.addBehavior(headerSnapper)
                 }
                 self?.scrollView.isScrollEnabled = true
