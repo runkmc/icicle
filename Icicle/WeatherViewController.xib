@@ -12,6 +12,8 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeatherViewController" customModule="Icicle" customModuleProvider="target">
             <connections>
                 <outlet property="headerBackground" destination="SKb-uS-LKh" id="yFl-yh-two"/>
+                <outlet property="headerBackgroundTopConstraint" destination="Wk6-h9-3Td" id="sz6-Vs-3H4"/>
+                <outlet property="locationName" destination="s20-tL-YjD" id="Gjz-9y-XYb"/>
                 <outlet property="scrollView" destination="ZvR-en-E3S" id="Pra-M3-c2s"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -25,17 +27,17 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SKb-uS-LKh">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="210"/>
+                            <rect key="frame" x="0.0" y="-210" width="375" height="210"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s20-tL-YjD">
                                     <rect key="frame" x="8" y="118" width="42" height="21"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" red="0.1058823529" green="0.066666666669999999" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" red="0.91372549020000005" green="0.18823529410000001" blue="0.1647058824" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="210" id="1DR-q5-Nnn"/>
                             </constraints>
@@ -44,7 +46,7 @@
                     <constraints>
                         <constraint firstItem="SKb-uS-LKh" firstAttribute="width" secondItem="ZvR-en-E3S" secondAttribute="width" id="46l-9c-Elb"/>
                         <constraint firstItem="SKb-uS-LKh" firstAttribute="leading" secondItem="ZvR-en-E3S" secondAttribute="leading" id="KS7-4n-LA6"/>
-                        <constraint firstItem="SKb-uS-LKh" firstAttribute="top" secondItem="ZvR-en-E3S" secondAttribute="top" id="Wk6-h9-3Td"/>
+                        <constraint firstItem="SKb-uS-LKh" firstAttribute="top" secondItem="ZvR-en-E3S" secondAttribute="top" constant="-210" id="Wk6-h9-3Td"/>
                     </constraints>
                 </scrollView>
             </subviews>

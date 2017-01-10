@@ -13,6 +13,7 @@ class CurrentLocationService: NSObject {
     static let instance: CurrentLocationService = {
         let service = CurrentLocationService()
         service.manager.delegate = service
+        service.manager.desiredAccuracy = 1000
         service.startGettingLocation()
         return service
     }()
@@ -25,7 +26,7 @@ class CurrentLocationService: NSObject {
     
     fileprivate func startGettingLocation(status:CLAuthorizationStatus = CLLocationManager.authorizationStatus()) {
         switch CLLocationManager.authorizationStatus() {
-        case .authorizedWhenInUse:
+        case .authorizedWhenInUse, .authorizedAlways:
             manager.requestLocation()
         default:
             manager.requestWhenInUseAuthorization()
@@ -40,6 +41,7 @@ extension CurrentLocationService: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         if let loc = locations.first {
+            print(" got a location")
             self.currentLocation = loc
             self.gotLocation?(loc)
         }
