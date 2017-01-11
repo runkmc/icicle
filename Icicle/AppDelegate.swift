@@ -16,8 +16,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        let tabBarController = IcicleTabBarViewController()
-        window?.rootViewController = tabBarController
+        let controller = WeatherViewController()
+        window?.rootViewController = controller
         return true
     }
 
