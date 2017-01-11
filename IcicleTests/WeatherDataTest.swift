@@ -16,7 +16,8 @@ class WeatherDataTest: XCTestCase {
     func setupWeather(jsonFile:String) -> WeatherData {
         let data = getTestJSON(named: jsonFile, forClass: type(of:self))
         let models = decoder(data:data).successValue()!
-        let wd = WeatherData.create(models: models)
+        let location = Location(coordinates: CLLocation(latitude:0, longitude:0), name: "Default City")
+        let wd = WeatherData.create(models: models, location:location)
         return wd.successValue()!
     }
 
