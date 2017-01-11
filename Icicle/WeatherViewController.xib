@@ -39,8 +39,8 @@
                             <rect key="frame" x="0.0" y="-210" width="375" height="210"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s20-tL-YjD">
-                                    <rect key="frame" x="16" y="122" width="343" height="72"/>
-                                    <fontDescription key="fontDescription" name="FiraSans-ExtraLight" family="Fira Sans" pointSize="60"/>
+                                    <rect key="frame" x="16" y="134" width="343" height="60"/>
+                                    <fontDescription key="fontDescription" name="FiraSans-ExtraLight" family="Fira Sans" pointSize="50"/>
                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <nil key="highlightedColor"/>
                                 </label>
