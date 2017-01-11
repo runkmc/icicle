@@ -16,7 +16,7 @@ class SavedLocationServiceTest: XCTestCase {
         let location = Location(coordinates: CLLocation(latitude: 1337, longitude: 1701), name: "Default City")
         let service = SavedLocationService(location:location)
         service.getLocation() { location in
-            XCTAssertEqual(location.coordinate.latitude, 1337)
+            XCTAssertEqual(location.coordinates.coordinate.latitude, 1337)
         }
     }
 }

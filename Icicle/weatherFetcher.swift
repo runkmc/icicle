@@ -10,8 +10,8 @@ import Foundation
 
 func weatherFetcher(locationService:LocationService, session:DataTask, key:String, completion:@escaping (Result<WeatherError, WeatherData>) -> ()) {
     locationService.getLocation { location in
-        let longitude = location.coordinate.longitude
-        let latitude = location.coordinate.latitude
+        let longitude = location.coordinates.coordinate.longitude
+        let latitude = location.coordinates.coordinate.latitude
         let urlString = "https://api.darksky.net/forecast/\(key)/\(latitude),\(longitude)"
         let weatherUrl = URL(string:urlString)
         guard let url = weatherUrl else {
@@ -42,7 +42,7 @@ func weatherFetcher(locationService:LocationService, session:DataTask, key:Strin
                 return
             }
             
-            let formattedModels = WeatherData.create(models: models)
+            let formattedModels = WeatherData.create(models: models, location:location)
             guard let viewModels = formattedModels.successValue() else {
                 NSLog(formattedModels.errorValue()!)
                 completion(.error(.formattingError(formattedModels.errorValue()!)))
