@@ -19,8 +19,10 @@ class CurrentLocationService: NSObject {
     }()
         
     fileprivate let manager = CLLocationManager()
-    fileprivate var gotLocation:((CLLocation) -> ())? = nil
+    fileprivate var gotLocation:((Location) -> ())? = nil
     var currentLocation: CLLocation? = nil
+    var location: Location? = nil
+    let geoCoder = CLGeocoder()
     
     fileprivate override init() { }
     
@@ -32,6 +34,24 @@ class CurrentLocationService: NSObject {
             manager.requestWhenInUseAuthorization()
         }
     }
+    
+    func processLocation(loc:CLLocation) {
+        if let alreadyProcessedLocation = self.location {
+            self.gotLocation?(alreadyProcessedLocation)
+            return
+        }
+        
+        geoCoder.reverseGeocodeLocation(loc) { (placemarks, error) in
+            if let mark = placemarks?.first {
+                let possibleNames = mark.locality ?? mark.subAdministrativeArea
+                let name = possibleNames ?? "Current Location"
+                let location = Location(coordinates: loc, name: name)
+                print(name)
+                self.location = location
+                self.gotLocation?(location)
+            }
+        }
+    }
 }
 
 extension CurrentLocationService: CLLocationManagerDelegate {
@@ -40,23 +60,21 @@ extension CurrentLocationService: CLLocationManagerDelegate {
     }
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        if let loc = locations.first {
-            print(" got a location")
-            self.currentLocation = loc
-            self.gotLocation?(loc)
+        if self.currentLocation == nil {
+            self.currentLocation = locations.first!
+            processLocation(loc: locations.first!)
+            return
         }
     }
     
-    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        
-    }
+    func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) { }
 }
 
 extension CurrentLocationService: LocationService {
-    func getLocation(completion:@escaping (CLLocation) -> ()) {
-            self.gotLocation = completion
-            if let loc = self.currentLocation {
-                completion(loc)
-            }
+    func getLocation(completion:@escaping (Location) -> ()) {
+        self.gotLocation = completion
+        if let loc = self.currentLocation {
+            processLocation(loc: loc)
+        }
     }
 }

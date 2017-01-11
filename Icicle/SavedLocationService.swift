@@ -18,7 +18,7 @@ class SavedLocationService {
 }
 
 extension SavedLocationService: LocationService {
-    func getLocation(completion:@escaping (CLLocation) -> ()) {
-        completion(self.location.coordinates)
+    func getLocation(completion:@escaping (Location) -> ()) {
+        completion(self.location)
     }
 }
