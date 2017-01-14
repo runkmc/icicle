@@ -8,55 +8,69 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="FiraSans-Book.otf">
+            <string>FiraSans-Book</string>
+        </array>
+    </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="hour" id="gTV-IL-0wX" customClass="HourlyCollectionViewCell" customModule="Icicle" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="160" height="300"/>
+            <rect key="frame" x="0.0" y="0.0" width="150" height="300"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="160" height="300"/>
+                <rect key="frame" x="0.0" y="0.0" width="150" height="300"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fu-MV-PfW">
-                        <rect key="frame" x="8" y="8" width="144" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fu-MV-PfW">
+                        <rect key="frame" x="8" y="8" width="134" height="20"/>
+                        <fontDescription key="fontDescription" name="FiraSans-Book" family="Fira Sans" pointSize="17"/>
+                        <color key="textColor" red="0.035294117647058823" green="0.22352941176470587" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtT-fF-WTz">
-                        <rect key="frame" x="8" y="37" width="144" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="8" y="36" width="134" height="20"/>
+                        <fontDescription key="fontDescription" name="FiraSans-Book" family="Fira Sans" pointSize="17"/>
+                        <color key="textColor" red="0.035294117647058823" green="0.22352941176470587" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fq7-w5-zHn">
-                        <rect key="frame" x="8" y="66" width="144" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="8" y="64" width="134" height="20"/>
+                        <fontDescription key="fontDescription" name="FiraSans-Book" family="Fira Sans" pointSize="17"/>
+                        <color key="textColor" red="0.035294117647058823" green="0.22352941176470587" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Hg-cr-Wye">
-                        <rect key="frame" x="8" y="95" width="144" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="8" y="92" width="134" height="20"/>
+                        <fontDescription key="fontDescription" name="FiraSans-Book" family="Fira Sans" pointSize="17"/>
+                        <color key="textColor" red="0.035294117647058823" green="0.22352941176470587" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRt-ee-QS2">
-                        <rect key="frame" x="8" y="124" width="144" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="8" y="120" width="134" height="20"/>
+                        <fontDescription key="fontDescription" name="FiraSans-Book" family="Fira Sans" pointSize="17"/>
+                        <color key="textColor" red="0.035294117647058823" green="0.22352941176470587" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ya-96-RH6">
-                        <rect key="frame" x="8" y="153" width="144" height="21"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="8" y="148" width="134" height="20"/>
+                        <fontDescription key="fontDescription" name="FiraSans-Book" family="Fira Sans" pointSize="17"/>
+                        <color key="textColor" red="0.035294117647058823" green="0.22352941176470587" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i8l-8v-6NJ">
+                        <rect key="frame" x="0.0" y="8" width="1" height="160"/>
+                        <color key="backgroundColor" red="0.92941176470588238" green="0.90588235294117647" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="160" id="6MP-oT-QBi"/>
+                            <constraint firstAttribute="width" constant="1" id="eMZ-Ao-TN2"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <constraints>
+                <constraint firstItem="i8l-8v-6NJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1Hw-X7-LMY"/>
                 <constraint firstAttribute="trailing" secondItem="4Hg-cr-Wye" secondAttribute="trailing" constant="8" id="5zq-I6-sfe"/>
                 <constraint firstAttribute="trailing" secondItem="Fq7-w5-zHn" secondAttribute="trailing" constant="8" id="8Lw-VE-Jdc"/>
                 <constraint firstItem="TtT-fF-WTz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="9JB-2f-pXh"/>
@@ -66,6 +80,7 @@
                 <constraint firstItem="5Fu-MV-PfW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="K7q-rr-ttE"/>
                 <constraint firstAttribute="trailing" secondItem="GRt-ee-QS2" secondAttribute="trailing" constant="8" id="LBc-U3-iLj"/>
                 <constraint firstItem="GRt-ee-QS2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="NHK-Ms-ixg"/>
+                <constraint firstItem="i8l-8v-6NJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="O9f-Bo-JTB"/>
                 <constraint firstItem="Fq7-w5-zHn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Qem-Di-zqK"/>
                 <constraint firstItem="5Fu-MV-PfW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="gM5-0G-DlH"/>
                 <constraint firstAttribute="trailing" secondItem="TtT-fF-WTz" secondAttribute="trailing" constant="8" id="gcf-QP-JMc"/>
@@ -76,7 +91,7 @@
                 <constraint firstItem="8ya-96-RH6" firstAttribute="top" secondItem="GRt-ee-QS2" secondAttribute="bottom" constant="8" id="uMq-jy-C24"/>
                 <constraint firstItem="GRt-ee-QS2" firstAttribute="top" secondItem="4Hg-cr-Wye" secondAttribute="bottom" constant="8" id="yza-Ys-vlK"/>
             </constraints>
-            <size key="customSize" width="160" height="300"/>
+            <size key="customSize" width="150" height="300"/>
             <connections>
                 <outlet property="apparentTemperature" destination="4Hg-cr-Wye" id="dW6-ry-HXK"/>
                 <outlet property="humidity" destination="8ya-96-RH6" id="7KX-e4-1Zk"/>
@@ -85,7 +100,7 @@
                 <outlet property="temperature" destination="Fq7-w5-zHn" id="kbr-Ud-t9s"/>
                 <outlet property="time" destination="5Fu-MV-PfW" id="nMw-SY-f1s"/>
             </connections>
-            <point key="canvasLocation" x="-142" y="209"/>
+            <point key="canvasLocation" x="-147" y="209"/>
         </collectionViewCell>
     </objects>
 </document>
