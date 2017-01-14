@@ -17,6 +17,7 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var weatherDescription: UILabel!
     @IBOutlet weak var hourlyCollectionView: UICollectionView!
     @IBOutlet weak var toggleSwitch: UISegmentedControl!
+    @IBOutlet weak var dailyCollectionView: UICollectionView!
     
     var locationService: LocationService = CurrentLocationService.instance
     var weather: WeatherData? = nil
@@ -34,6 +35,7 @@ class WeatherViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.animator.delegate = self
+        self.dailyCollectionView.isHidden = true
         self.scrollView.isScrollEnabled = false
         self.hourlyCollectionView.isHidden = true
         self.toggleSwitch.isHidden = true
@@ -54,7 +56,7 @@ class WeatherViewController: UIViewController {
                 if let weather = result.successValue() {
                     self?.weather = weather
                     let paragraphStyle = NSMutableParagraphStyle()
-                    paragraphStyle.lineHeightMultiple = 1.2
+                    paragraphStyle.lineHeightMultiple = 1.1
                     let description = NSAttributedString(string: weather.fullSummary, attributes:
                         [NSFontAttributeName:UIFont(name:"FiraSans-Book", size:18.0)!,
                          NSParagraphStyleAttributeName:paragraphStyle])
