@@ -21,6 +21,7 @@
             <connections>
                 <outlet property="headerBackground" destination="SKb-uS-LKh" id="yFl-yh-two"/>
                 <outlet property="headerBackgroundTopConstraint" destination="Wk6-h9-3Td" id="sz6-Vs-3H4"/>
+                <outlet property="hourlyCollectionView" destination="had-PK-Szc" id="Vd9-LV-DOi"/>
                 <outlet property="locationName" destination="s20-tL-YjD" id="Gjz-9y-XYb"/>
                 <outlet property="scrollView" destination="ZvR-en-E3S" id="Pra-M3-c2s"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>

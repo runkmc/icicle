@@ -16,11 +16,29 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var headerBackground: UIView!
     @IBOutlet weak var headerBackgroundTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var weatherDescription: UILabel!
+    @IBOutlet weak var hourlyCollectionView: UICollectionView!
+    var weather: WeatherData? = nil
     let animator = UIDynamicAnimator()
+    let layout:UICollectionViewFlowLayout = {
+        let l = UICollectionViewFlowLayout()
+        l.itemSize = CGSize(width: 200, height: 300)
+        l.scrollDirection = .horizontal
+        l.headerReferenceSize = CGSize(width: 120, height: 300)
+        l.sectionHeadersPinToVisibleBounds = true
+        return l
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.scrollView.isScrollEnabled = false
+        self.hourlyCollectionView.collectionViewLayout = self.layout
+        self.hourlyCollectionView.delegate = self
+        self.hourlyCollectionView.dataSource = self
+        let nib = UINib(nibName: "HourlyCollectionViewCell", bundle: Bundle.main)
+        self.hourlyCollectionView.register(nib, forCellWithReuseIdentifier: "hour")
+        let headerNib = UINib(nibName: "HourHeaderView", bundle: Bundle.main)
+        self.hourlyCollectionView.register(headerNib, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "header")
+        
 
         // Do any additional setup after loading the view.
     }
@@ -31,8 +49,11 @@ class WeatherViewController: UIViewController {
             DispatchQueue.main.sync {
                 print("block ran")
                 if let weather = result.successValue() {
+                    self?.weather = weather
                     self?.locationName.text = weather.location.name
                     self?.weatherDescription.text = weather.fullSummary
+                    self?.hourlyCollectionView.reloadData()
+                    
                 }
                 
                 
@@ -61,6 +82,25 @@ class WeatherViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 }
+
+extension WeatherViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return self.weather?.hours.count ?? 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "hour", for: indexPath) as! HourlyCollectionViewCell
+        cell.display(self.weather!.hours[indexPath.row])
+        return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        let header = collectionView.dequeueReusableSupplementaryView(ofKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "header", for: indexPath)
+        return header
+    }
+}
+
+extension WeatherViewController: UICollectionViewDelegate { }
 
 extension WeatherViewController: UIDynamicAnimatorDelegate {
     func dynamicAnimatorDidPause(_ animator: UIDynamicAnimator) {
