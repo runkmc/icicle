@@ -65,6 +65,8 @@
 		0A77BC3B1D9642FD00258721 /* ResultTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77BC3A1D9642FD00258721 /* ResultTest.swift */; };
 		0A82C4481E2AB7F300DCBE3B /* FiraSans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A82C4471E2AB7F300DCBE3B /* FiraSans-Light.otf */; };
 		0A82C44B1E2ABDF300DCBE3B /* HourlyCollectionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A82C44A1E2ABDF300DCBE3B /* HourlyCollectionHelper.swift */; };
+		0A82C44E1E2AE59700DCBE3B /* DailyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A82C44C1E2AE59700DCBE3B /* DailyCollectionViewCell.swift */; };
+		0A82C44F1E2AE59700DCBE3B /* DailyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A82C44D1E2AE59700DCBE3B /* DailyCollectionViewCell.xib */; };
 		0A8798B11E29A71800458DB2 /* HourHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8798AF1E29A71800458DB2 /* HourHeaderView.swift */; };
 		0A8798B21E29A71800458DB2 /* HourHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A8798B01E29A71800458DB2 /* HourHeaderView.xib */; };
 		0A99D91C1CBC5B8400BF354C /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99D91B1CBC5B8400BF354C /* Icon.swift */; };
@@ -161,6 +163,8 @@
 		0A77BC3A1D9642FD00258721 /* ResultTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTest.swift; sourceTree = "<group>"; };
 		0A82C4471E2AB7F300DCBE3B /* FiraSans-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-Light.otf"; sourceTree = "<group>"; };
 		0A82C44A1E2ABDF300DCBE3B /* HourlyCollectionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyCollectionHelper.swift; sourceTree = "<group>"; };
+		0A82C44C1E2AE59700DCBE3B /* DailyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyCollectionViewCell.swift; sourceTree = "<group>"; };
+		0A82C44D1E2AE59700DCBE3B /* DailyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DailyCollectionViewCell.xib; sourceTree = "<group>"; };
 		0A8798AF1E29A71800458DB2 /* HourHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourHeaderView.swift; sourceTree = "<group>"; };
 		0A8798B01E29A71800458DB2 /* HourHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HourHeaderView.xib; sourceTree = "<group>"; };
 		0A99D91B1CBC5B8400BF354C /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
@@ -264,6 +268,7 @@
 				0A07B0031D5D5FE500534370 /* LocationsViewController.xib */,
 				0A6AAE221E29935400432129 /* HourlyCollectionViewCell.xib */,
 				0A8798B01E29A71800458DB2 /* HourHeaderView.xib */,
+				0A82C44D1E2AE59700DCBE3B /* DailyCollectionViewCell.xib */,
 			);
 			name = IBFiles;
 			sourceTree = "<group>";
@@ -404,6 +409,7 @@
 			children = (
 				0A6AAE211E29935400432129 /* HourlyCollectionViewCell.swift */,
 				0A8798AF1E29A71800458DB2 /* HourHeaderView.swift */,
+				0A82C44C1E2AE59700DCBE3B /* DailyCollectionViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -626,6 +632,7 @@
 				0A07AFFB1D5D5F8700534370 /* SettingsViewController.xib in Resources */,
 				0A06D1DE1E25654800BD1502 /* FiraSans-Book.otf in Resources */,
 				0A6AAE241E29935400432129 /* HourlyCollectionViewCell.xib in Resources */,
+				0A82C44F1E2AE59700DCBE3B /* DailyCollectionViewCell.xib in Resources */,
 				0A8798B21E29A71800458DB2 /* HourHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -817,6 +824,7 @@
 				0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */,
 				0A0B60AF1D9AEA3400B12996 /* Hours.swift in Sources */,
 				0A4301661E21773400F0841E /* WeatherError.swift in Sources */,
+				0A82C44E1E2AE59700DCBE3B /* DailyCollectionViewCell.swift in Sources */,
 				0A07B0041D5D5FE500534370 /* LocationsViewController.swift in Sources */,
 				0A43015D1E207C6200F0841E /* URLSession.swift in Sources */,
 				0A315C0E1D9E182100F4A7DE /* Temperature.swift in Sources */,
