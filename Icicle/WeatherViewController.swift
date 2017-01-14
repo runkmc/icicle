@@ -23,7 +23,7 @@ class WeatherViewController: UIViewController {
         let l = UICollectionViewFlowLayout()
         l.itemSize = CGSize(width: 160, height: 300)
         l.scrollDirection = .horizontal
-        l.headerReferenceSize = CGSize(width: 120, height: 300)
+        l.headerReferenceSize = CGSize(width: 145, height: 300)
         l.sectionHeadersPinToVisibleBounds = true
         return l
     }()
