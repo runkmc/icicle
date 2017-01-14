@@ -21,7 +21,7 @@ struct HourData {
     static let timeformatter: DateFormatter = {
         let formatter = DateFormatter()
         formatter.locale = Locale.current
-        formatter.dateFormat = "h a"
+        formatter.dateFormat = "h a, EEEE"
         return formatter
     }()
     

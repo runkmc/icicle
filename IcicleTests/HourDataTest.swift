@@ -25,7 +25,7 @@ class HourDataTest: XCTestCase {
         let wd = setupWeather(jsonFile: "sunny-hot")
         let hour = wd.hours[0]
         
-        XCTAssertEqual("12 PM", hour.time)
+        XCTAssertEqual("12 PM, Sunday", hour.time)
         XCTAssertEqual("Clear", hour.summary)
         XCTAssertEqual("82°", hour.temperature)
         XCTAssertEqual("0%", hour.precipChance)
@@ -38,7 +38,7 @@ class HourDataTest: XCTestCase {
         let wd = setupWeather(jsonFile: "cloudy-futurerain")
         let hour = wd.hours[44]
 
-        XCTAssertEqual("11 AM", hour.time)
+        XCTAssertEqual("11 AM, Tuesday", hour.time)
         XCTAssertEqual("Rain", hour.summary)
         XCTAssertEqual("61°", hour.temperature)
         XCTAssertEqual("61%", hour.precipChance)
