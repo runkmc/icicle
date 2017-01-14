@@ -11,6 +11,9 @@ import UIKit
 class HourlyCollectionViewCell: UICollectionViewCell {
 
     @IBOutlet weak var time: UILabel!
+    @IBOutlet weak var summary: UILabel!
+    @IBOutlet weak var temperature: UILabel!
+    @IBOutlet weak var apparentTemperature: UILabel!
     
     
     override func awakeFromNib() {
@@ -20,6 +23,9 @@ class HourlyCollectionViewCell: UICollectionViewCell {
     
     func display(_ hour:HourData) {
         self.time.text = hour.time
+        self.summary.text = hour.summary
+        self.temperature.text = hour.temperature
+        self.apparentTemperature.text = hour.apparentTemperature
     }
 
 }
