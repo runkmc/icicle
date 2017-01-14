@@ -8,6 +8,7 @@
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>UIAppFonts</key>
 	<array>
+		<string>FiraSans-Light.otf</string>
 		<string>FiraSans-ExtraLight.otf</string>
 		<string>FirsSans-Book.otf</string>
 	</array>
