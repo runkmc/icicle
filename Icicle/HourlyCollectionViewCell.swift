@@ -14,6 +14,8 @@ class HourlyCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var summary: UILabel!
     @IBOutlet weak var temperature: UILabel!
     @IBOutlet weak var apparentTemperature: UILabel!
+    @IBOutlet weak var precipChance: UILabel!
+    @IBOutlet weak var humidity: UILabel!
     
     
     override func awakeFromNib() {
@@ -26,6 +28,8 @@ class HourlyCollectionViewCell: UICollectionViewCell {
         self.summary.text = hour.summary
         self.temperature.text = hour.temperature
         self.apparentTemperature.text = hour.apparentTemperature
+        self.precipChance.text = hour.precipChance
+        self.humidity.text = hour.humidity
     }
 
 }

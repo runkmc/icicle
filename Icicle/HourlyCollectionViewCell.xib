@@ -42,6 +42,18 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GRt-ee-QS2">
+                        <rect key="frame" x="8" y="124" width="144" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ya-96-RH6">
+                        <rect key="frame" x="8" y="153" width="144" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </view>
             <constraints>
@@ -49,18 +61,26 @@
                 <constraint firstAttribute="trailing" secondItem="Fq7-w5-zHn" secondAttribute="trailing" constant="8" id="8Lw-VE-Jdc"/>
                 <constraint firstItem="TtT-fF-WTz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="9JB-2f-pXh"/>
                 <constraint firstItem="4Hg-cr-Wye" firstAttribute="top" secondItem="Fq7-w5-zHn" secondAttribute="bottom" constant="8" id="CMg-cY-pB0"/>
+                <constraint firstAttribute="trailing" secondItem="8ya-96-RH6" secondAttribute="trailing" constant="8" id="CwS-Zm-O0R"/>
                 <constraint firstItem="4Hg-cr-Wye" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="E3F-qL-m3I"/>
                 <constraint firstItem="5Fu-MV-PfW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="K7q-rr-ttE"/>
+                <constraint firstAttribute="trailing" secondItem="GRt-ee-QS2" secondAttribute="trailing" constant="8" id="LBc-U3-iLj"/>
+                <constraint firstItem="GRt-ee-QS2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="NHK-Ms-ixg"/>
                 <constraint firstItem="Fq7-w5-zHn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Qem-Di-zqK"/>
                 <constraint firstItem="5Fu-MV-PfW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="gM5-0G-DlH"/>
                 <constraint firstAttribute="trailing" secondItem="TtT-fF-WTz" secondAttribute="trailing" constant="8" id="gcf-QP-JMc"/>
                 <constraint firstItem="Fq7-w5-zHn" firstAttribute="top" secondItem="TtT-fF-WTz" secondAttribute="bottom" constant="8" id="geW-g9-7qb"/>
+                <constraint firstItem="8ya-96-RH6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="pYE-IM-BDt"/>
                 <constraint firstAttribute="trailing" secondItem="5Fu-MV-PfW" secondAttribute="trailing" constant="8" id="tb3-Gr-gV6"/>
                 <constraint firstItem="TtT-fF-WTz" firstAttribute="top" secondItem="5Fu-MV-PfW" secondAttribute="bottom" constant="8" id="txi-XI-bdU"/>
+                <constraint firstItem="8ya-96-RH6" firstAttribute="top" secondItem="GRt-ee-QS2" secondAttribute="bottom" constant="8" id="uMq-jy-C24"/>
+                <constraint firstItem="GRt-ee-QS2" firstAttribute="top" secondItem="4Hg-cr-Wye" secondAttribute="bottom" constant="8" id="yza-Ys-vlK"/>
             </constraints>
             <size key="customSize" width="160" height="300"/>
             <connections>
                 <outlet property="apparentTemperature" destination="4Hg-cr-Wye" id="dW6-ry-HXK"/>
+                <outlet property="humidity" destination="8ya-96-RH6" id="7KX-e4-1Zk"/>
+                <outlet property="precipChance" destination="GRt-ee-QS2" id="td0-z7-8Ed"/>
                 <outlet property="summary" destination="TtT-fF-WTz" id="il3-hp-kpK"/>
                 <outlet property="temperature" destination="Fq7-w5-zHn" id="kbr-Ud-t9s"/>
                 <outlet property="time" destination="5Fu-MV-PfW" id="nMw-SY-f1s"/>
