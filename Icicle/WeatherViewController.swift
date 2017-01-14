@@ -39,7 +39,7 @@ class WeatherViewController: UIViewController {
         let nib = UINib(nibName: "HourlyCollectionViewCell", bundle: Bundle.main)
         self.hourlyCollectionView.register(nib, forCellWithReuseIdentifier: "hour")
         let headerNib = UINib(nibName: "HourHeaderView", bundle: Bundle.main)
-        self.hourlyCollectionView.register(headerNib, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "header")
+        self.hourlyCollectionView.register(headerNib, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "hourheader")
         
 
         // Do any additional setup after loading the view.
@@ -56,12 +56,8 @@ class WeatherViewController: UIViewController {
                     self?.locationName.text = weather.location.name
                     self?.weatherDescription.text = weather.fullSummary
                     self?.hourlyCollectionView.reloadData()
-                    
                 }
-                
-                
-                
-                
+
                 if self != nil {
                     let headerSnapper = UISnapBehavior(item: (self?.headerBackground)!, snapTo: CGPoint(x: self!.view.frame.width / 2, y:105))
                     headerSnapper.damping = 0.65
