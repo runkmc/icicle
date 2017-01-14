@@ -31,5 +31,4 @@ class HourlyCollectionViewCell: UICollectionViewCell {
         self.precipChance.text = hour.precipChance
         self.humidity.text = hour.humidity
     }
-
 }

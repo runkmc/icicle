@@ -40,9 +40,6 @@ class WeatherViewController: UIViewController {
         self.hourlyCollectionView.register(nib, forCellWithReuseIdentifier: "hour")
         let headerNib = UINib(nibName: "HourHeaderView", bundle: Bundle.main)
         self.hourlyCollectionView.register(headerNib, forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: "hourheader")
-        
-
-        // Do any additional setup after loading the view.
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -78,7 +75,6 @@ class WeatherViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 }
 
