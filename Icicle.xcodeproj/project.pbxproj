@@ -64,6 +64,7 @@
 		0A77BC391D9642E500258721 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77BC381D9642E500258721 /* Result.swift */; };
 		0A77BC3B1D9642FD00258721 /* ResultTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77BC3A1D9642FD00258721 /* ResultTest.swift */; };
 		0A82C4481E2AB7F300DCBE3B /* FiraSans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A82C4471E2AB7F300DCBE3B /* FiraSans-Light.otf */; };
+		0A82C44B1E2ABDF300DCBE3B /* HourlyCollectionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A82C44A1E2ABDF300DCBE3B /* HourlyCollectionHelper.swift */; };
 		0A8798B11E29A71800458DB2 /* HourHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8798AF1E29A71800458DB2 /* HourHeaderView.swift */; };
 		0A8798B21E29A71800458DB2 /* HourHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A8798B01E29A71800458DB2 /* HourHeaderView.xib */; };
 		0A99D91C1CBC5B8400BF354C /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99D91B1CBC5B8400BF354C /* Icon.swift */; };
@@ -159,6 +160,7 @@
 		0A77BC381D9642E500258721 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		0A77BC3A1D9642FD00258721 /* ResultTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTest.swift; sourceTree = "<group>"; };
 		0A82C4471E2AB7F300DCBE3B /* FiraSans-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-Light.otf"; sourceTree = "<group>"; };
+		0A82C44A1E2ABDF300DCBE3B /* HourlyCollectionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyCollectionHelper.swift; sourceTree = "<group>"; };
 		0A8798AF1E29A71800458DB2 /* HourHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourHeaderView.swift; sourceTree = "<group>"; };
 		0A8798B01E29A71800458DB2 /* HourHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HourHeaderView.xib; sourceTree = "<group>"; };
 		0A99D91B1CBC5B8400BF354C /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
@@ -406,6 +408,14 @@
 			name = Views;
 			sourceTree = "<group>";
 		};
+		0A82C4491E2ABDC200DCBE3B /* CollectionView Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0A82C44A1E2ABDF300DCBE3B /* HourlyCollectionHelper.swift */,
+			);
+			name = "CollectionView Helpers";
+			sourceTree = "<group>";
+		};
 		0AC120AE1D61174B008E1557 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -450,6 +460,7 @@
 				0A07AFF01D5D5EF100534370 /* IBFiles */,
 				0A3928671CADB08700F724C7 /* ViewControllers */,
 				0A6AAE1E1E298ABB00432129 /* Views */,
+				0A82C4491E2ABDC200DCBE3B /* CollectionView Helpers */,
 				0A3928661CADB05900F724C7 /* Assets */,
 				0A3928651CADB03100F724C7 /* Support */,
 			);
@@ -818,6 +829,7 @@
 				0A77BC391D9642E500258721 /* Result.swift in Sources */,
 				0A07AFFA1D5D5F8700534370 /* SettingsViewController.swift in Sources */,
 				0A4301641E21724C00F0841E /* URLSessionDataTask.swift in Sources */,
+				0A82C44B1E2ABDF300DCBE3B /* HourlyCollectionHelper.swift in Sources */,
 				0A99D91C1CBC5B8400BF354C /* Icon.swift in Sources */,
 				0AA99DE71D9EDAD100CE614A /* Days.swift in Sources */,
 				0A0B60AB1D9ADD4200B12996 /* Hour.swift in Sources */,
