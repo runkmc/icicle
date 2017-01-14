@@ -258,6 +258,7 @@
 				0A07AFF91D5D5F8700534370 /* SettingsViewController.xib */,
 				0A07B0031D5D5FE500534370 /* LocationsViewController.xib */,
 				0A6AAE221E29935400432129 /* HourlyCollectionViewCell.xib */,
+				0A8798B01E29A71800458DB2 /* HourHeaderView.xib */,
 			);
 			name = IBFiles;
 			sourceTree = "<group>";
@@ -398,7 +399,6 @@
 			children = (
 				0A6AAE211E29935400432129 /* HourlyCollectionViewCell.swift */,
 				0A8798AF1E29A71800458DB2 /* HourHeaderView.swift */,
-				0A8798B01E29A71800458DB2 /* HourHeaderView.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
