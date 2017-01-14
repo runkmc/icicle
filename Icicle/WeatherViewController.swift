@@ -21,7 +21,7 @@ class WeatherViewController: UIViewController {
     let animator = UIDynamicAnimator()
     let layout:UICollectionViewFlowLayout = {
         let l = UICollectionViewFlowLayout()
-        l.itemSize = CGSize(width: 200, height: 300)
+        l.itemSize = CGSize(width: 160, height: 300)
         l.scrollDirection = .horizontal
         l.headerReferenceSize = CGSize(width: 120, height: 300)
         l.sectionHeadersPinToVisibleBounds = true
