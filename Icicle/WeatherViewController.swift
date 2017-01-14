@@ -16,6 +16,7 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var headerBackgroundTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var weatherDescription: UILabel!
     @IBOutlet weak var hourlyCollectionView: UICollectionView!
+    @IBOutlet weak var toggleSwitch: UISegmentedControl!
     
     var locationService: LocationService = CurrentLocationService.instance
     var weather: WeatherData? = nil
@@ -32,7 +33,10 @@ class WeatherViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.animator.delegate = self
         self.scrollView.isScrollEnabled = false
+        self.hourlyCollectionView.isHidden = true
+        self.toggleSwitch.isHidden = true
         self.hourlyCollectionView.collectionViewLayout = self.layout
         self.hourlyCollectionView.delegate = self.hourlyHelper
         self.hourlyCollectionView.dataSource = self.hourlyHelper
@@ -49,9 +53,15 @@ class WeatherViewController: UIViewController {
                 print("block ran")
                 if let weather = result.successValue() {
                     self?.weather = weather
+                    let paragraphStyle = NSMutableParagraphStyle()
+                    paragraphStyle.lineHeightMultiple = 1.2
+                    let description = NSAttributedString(string: weather.fullSummary, attributes:
+                        [NSFontAttributeName:UIFont(name:"FiraSans-Book", size:18.0)!,
+                         NSParagraphStyleAttributeName:paragraphStyle])
+                    self?.weatherDescription.attributedText = description
                     self?.hourlyHelper.weather = weather
                     self?.locationName.text = weather.location.name
-                    self?.weatherDescription.text = weather.fullSummary
+
                     self?.hourlyCollectionView.reloadData()
                 }
 
@@ -80,6 +90,9 @@ class WeatherViewController: UIViewController {
 
 extension WeatherViewController: UIDynamicAnimatorDelegate {
     func dynamicAnimatorDidPause(_ animator: UIDynamicAnimator) {
+        self.hourlyCollectionView.isHidden = false
+        self.toggleSwitch.isHidden = false
+        print("pausing")
         self.headerBackgroundTopConstraint.constant = 0
     }
 }

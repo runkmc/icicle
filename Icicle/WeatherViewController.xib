@@ -9,9 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="FiraSans-Book.otf">
-            <string>FiraSans-Book</string>
-        </array>
         <array key="FiraSans-ExtraLight.otf">
             <string>FiraSans-ExtraLight</string>
         </array>
@@ -24,6 +21,7 @@
                 <outlet property="hourlyCollectionView" destination="had-PK-Szc" id="Vd9-LV-DOi"/>
                 <outlet property="locationName" destination="s20-tL-YjD" id="Gjz-9y-XYb"/>
                 <outlet property="scrollView" destination="ZvR-en-E3S" id="Pra-M3-c2s"/>
+                <outlet property="toggleSwitch" destination="nkP-yQ-7Ty" id="cYx-F5-ofL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="weatherDescription" destination="8MZ-4L-yhI" id="BYs-9Y-rfR"/>
             </connections>
@@ -56,7 +54,7 @@
                         </view>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8MZ-4L-yhI">
                             <rect key="frame" x="16" y="242" width="343" height="0.0"/>
-                            <fontDescription key="fontDescription" name="FiraSans-Book" family="Fira Sans" pointSize="20"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
@@ -72,7 +70,7 @@
                             <color key="tintColor" red="0.23356819152832031" green="0.23360636830329895" blue="0.23355615139007568" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </segmentedControl>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="had-PK-Szc">
-                            <rect key="frame" x="0.0" y="355" width="375" height="300"/>
+                            <rect key="frame" x="0.0" y="352" width="375" height="300"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="300" id="WiA-bk-RTA"/>
@@ -90,12 +88,12 @@
                         <constraint firstItem="8MZ-4L-yhI" firstAttribute="top" secondItem="ZvR-en-E3S" secondAttribute="top" constant="242" id="Brg-vN-fQQ"/>
                         <constraint firstAttribute="bottom" secondItem="had-PK-Szc" secondAttribute="bottom" constant="12" id="GNL-4Y-v6U"/>
                         <constraint firstItem="SKb-uS-LKh" firstAttribute="leading" secondItem="ZvR-en-E3S" secondAttribute="leading" id="KS7-4n-LA6"/>
-                        <constraint firstItem="had-PK-Szc" firstAttribute="top" secondItem="nkP-yQ-7Ty" secondAttribute="bottom" constant="47" id="Lz2-3Q-UD1"/>
                         <constraint firstItem="nkP-yQ-7Ty" firstAttribute="width" secondItem="8MZ-4L-yhI" secondAttribute="width" id="WBd-lR-rF6"/>
                         <constraint firstItem="SKb-uS-LKh" firstAttribute="top" secondItem="ZvR-en-E3S" secondAttribute="top" constant="-210" id="Wk6-h9-3Td"/>
                         <constraint firstItem="8MZ-4L-yhI" firstAttribute="width" secondItem="s20-tL-YjD" secondAttribute="width" id="XvZ-NM-7ET"/>
                         <constraint firstItem="nkP-yQ-7Ty" firstAttribute="leading" secondItem="8MZ-4L-yhI" secondAttribute="leading" id="ecZ-AL-edc"/>
                         <constraint firstItem="nkP-yQ-7Ty" firstAttribute="top" secondItem="8MZ-4L-yhI" secondAttribute="bottom" constant="32" id="gqQ-cc-pCZ"/>
+                        <constraint firstItem="had-PK-Szc" firstAttribute="top" secondItem="nkP-yQ-7Ty" secondAttribute="bottom" constant="44" id="qDK-6a-kIW"/>
                         <constraint firstItem="8MZ-4L-yhI" firstAttribute="leading" secondItem="s20-tL-YjD" secondAttribute="leading" id="wyJ-th-aYT"/>
                     </constraints>
                 </scrollView>
