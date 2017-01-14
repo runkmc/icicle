@@ -17,10 +17,8 @@ class HourlyCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var precipChance: UILabel!
     @IBOutlet weak var humidity: UILabel!
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
     func display(_ hour:HourData) {
