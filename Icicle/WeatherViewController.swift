@@ -64,7 +64,7 @@ class WeatherViewController: UIViewController {
                 if let weather = result.successValue() {
                     self?.weather = weather
                     let paragraphStyle = NSMutableParagraphStyle()
-                    paragraphStyle.lineHeightMultiple = 1.1
+                    paragraphStyle.lineHeightMultiple = 1.15
                     let description = NSAttributedString(string: weather.fullSummary, attributes:
                         [NSFontAttributeName:UIFont(name:"FiraSans-Book", size:18.0)!,
                          NSParagraphStyleAttributeName:paragraphStyle])
