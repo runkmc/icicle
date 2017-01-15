@@ -23,7 +23,15 @@ class WeatherViewController: UIViewController {
     var weather: WeatherData? = nil
     let hourlyHelper = HourlyCollectionHelper(weather: nil)
     let animator = UIDynamicAnimator()
-    let layout:UICollectionViewFlowLayout = {
+    let hourlyLayout:UICollectionViewFlowLayout = {
+        let l = UICollectionViewFlowLayout()
+        l.itemSize = CGSize(width: 150, height: 300)
+        l.scrollDirection = .horizontal
+        l.headerReferenceSize = CGSize(width: 145, height: 300)
+        l.sectionHeadersPinToVisibleBounds = true
+        return l
+    }()
+    let dailyLayout:UICollectionViewFlowLayout = {
         let l = UICollectionViewFlowLayout()
         l.itemSize = CGSize(width: 150, height: 300)
         l.scrollDirection = .horizontal
@@ -39,7 +47,7 @@ class WeatherViewController: UIViewController {
         self.scrollView.isScrollEnabled = false
         self.hourlyCollectionView.isHidden = true
         self.toggleSwitch.isHidden = true
-        self.hourlyCollectionView.collectionViewLayout = self.layout
+        self.hourlyCollectionView.collectionViewLayout = self.hourlyLayout
         self.hourlyCollectionView.delegate = self.hourlyHelper
         self.hourlyCollectionView.dataSource = self.hourlyHelper
         let nib = UINib(nibName: "HourlyCollectionViewCell", bundle: Bundle.main)
@@ -87,6 +95,18 @@ class WeatherViewController: UIViewController {
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    @IBAction func switchToggled(_ sender: Any) {
+        let toggle = sender as! UISegmentedControl
+        switch toggle.selectedSegmentIndex {
+        case 0:
+            self.dailyCollectionView.isHidden = true
+            self.hourlyCollectionView.isHidden = false
+        default:
+            self.hourlyCollectionView.isHidden = true
+            self.dailyCollectionView.isHidden = false
+        }
     }
 }
 

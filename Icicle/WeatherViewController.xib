@@ -69,6 +69,9 @@
                                 <segment title="Daily"/>
                             </segments>
                             <color key="tintColor" red="0.23356819152832031" green="0.23360636830329895" blue="0.23355615139007568" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <connections>
+                                <action selector="switchToggled:" destination="-1" eventType="valueChanged" id="T02-03-v1I"/>
+                            </connections>
                         </segmentedControl>
                         <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="had-PK-Szc">
                             <rect key="frame" x="0.0" y="352" width="375" height="300"/>
