@@ -18,6 +18,7 @@
 		0A07AFFB1D5D5F8700534370 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A07AFF91D5D5F8700534370 /* SettingsViewController.xib */; };
 		0A07B0041D5D5FE500534370 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07B0021D5D5FE500534370 /* LocationsViewController.swift */; };
 		0A07B0051D5D5FE500534370 /* LocationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A07B0031D5D5FE500534370 /* LocationsViewController.xib */; };
+		0A0AABA51E2EF9E000340EFF /* WeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AABA41E2EF9E000340EFF /* WeatherIcon.swift */; };
 		0A0B60A71D9A168700B12996 /* Minutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B60A61D9A168700B12996 /* Minutes.swift */; };
 		0A0B60AB1D9ADD4200B12996 /* Hour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B60AA1D9ADD4200B12996 /* Hour.swift */; };
 		0A0B60AD1D9ADD4F00B12996 /* HourTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B60AC1D9ADD4F00B12996 /* HourTest.swift */; };
@@ -67,8 +68,8 @@
 		0A82C44B1E2ABDF300DCBE3B /* HourlyCollectionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A82C44A1E2ABDF300DCBE3B /* HourlyCollectionHelper.swift */; };
 		0A82C44E1E2AE59700DCBE3B /* DailyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A82C44C1E2AE59700DCBE3B /* DailyCollectionViewCell.swift */; };
 		0A82C44F1E2AE59700DCBE3B /* DailyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A82C44D1E2AE59700DCBE3B /* DailyCollectionViewCell.xib */; };
-		0A8798B11E29A71800458DB2 /* HourHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8798AF1E29A71800458DB2 /* HourHeaderView.swift */; };
-		0A8798B21E29A71800458DB2 /* HourHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A8798B01E29A71800458DB2 /* HourHeaderView.xib */; };
+		0A82C4511E2B0BD200DCBE3B /* DailyCollectionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A82C4501E2B0BD200DCBE3B /* DailyCollectionHelper.swift */; };
+		0A82C4571E2B39E100DCBE3B /* RotatingLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A82C4561E2B39E100DCBE3B /* RotatingLayout.swift */; };
 		0A99D91C1CBC5B8400BF354C /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99D91B1CBC5B8400BF354C /* Icon.swift */; };
 		0AA99DE71D9EDAD100CE614A /* Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA99DE61D9EDAD100CE614A /* Days.swift */; };
 		0AA99DE91D9EDAE100CE614A /* DaysTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA99DE81D9EDAE100CE614A /* DaysTest.swift */; };
@@ -116,6 +117,7 @@
 		0A07AFF91D5D5F8700534370 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		0A07B0021D5D5FE500534370 /* LocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		0A07B0031D5D5FE500534370 /* LocationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationsViewController.xib; sourceTree = "<group>"; };
+		0A0AABA41E2EF9E000340EFF /* WeatherIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherIcon.swift; sourceTree = "<group>"; };
 		0A0B60A61D9A168700B12996 /* Minutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minutes.swift; sourceTree = "<group>"; };
 		0A0B60AA1D9ADD4200B12996 /* Hour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hour.swift; sourceTree = "<group>"; };
 		0A0B60AC1D9ADD4F00B12996 /* HourTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourTest.swift; sourceTree = "<group>"; };
@@ -165,8 +167,8 @@
 		0A82C44A1E2ABDF300DCBE3B /* HourlyCollectionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourlyCollectionHelper.swift; sourceTree = "<group>"; };
 		0A82C44C1E2AE59700DCBE3B /* DailyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyCollectionViewCell.swift; sourceTree = "<group>"; };
 		0A82C44D1E2AE59700DCBE3B /* DailyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DailyCollectionViewCell.xib; sourceTree = "<group>"; };
-		0A8798AF1E29A71800458DB2 /* HourHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourHeaderView.swift; sourceTree = "<group>"; };
-		0A8798B01E29A71800458DB2 /* HourHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HourHeaderView.xib; sourceTree = "<group>"; };
+		0A82C4501E2B0BD200DCBE3B /* DailyCollectionHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyCollectionHelper.swift; sourceTree = "<group>"; };
+		0A82C4561E2B39E100DCBE3B /* RotatingLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RotatingLayout.swift; sourceTree = "<group>"; };
 		0A99D91B1CBC5B8400BF354C /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		0AA99DE61D9EDAD100CE614A /* Days.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Days.swift; sourceTree = "<group>"; };
 		0AA99DE81D9EDAE100CE614A /* DaysTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysTest.swift; sourceTree = "<group>"; };
@@ -245,6 +247,7 @@
 				0A43015C1E207C6200F0841E /* URLSession.swift */,
 				0A4301631E21724C00F0841E /* URLSessionDataTask.swift */,
 				0A4301651E21773400F0841E /* WeatherError.swift */,
+				0A0AABA41E2EF9E000340EFF /* WeatherIcon.swift */,
 			);
 			name = "Other Types";
 			sourceTree = "<group>";
@@ -267,7 +270,6 @@
 				0A07AFF91D5D5F8700534370 /* SettingsViewController.xib */,
 				0A07B0031D5D5FE500534370 /* LocationsViewController.xib */,
 				0A6AAE221E29935400432129 /* HourlyCollectionViewCell.xib */,
-				0A8798B01E29A71800458DB2 /* HourHeaderView.xib */,
 				0A82C44D1E2AE59700DCBE3B /* DailyCollectionViewCell.xib */,
 			);
 			name = IBFiles;
@@ -408,7 +410,6 @@
 			isa = PBXGroup;
 			children = (
 				0A6AAE211E29935400432129 /* HourlyCollectionViewCell.swift */,
-				0A8798AF1E29A71800458DB2 /* HourHeaderView.swift */,
 				0A82C44C1E2AE59700DCBE3B /* DailyCollectionViewCell.swift */,
 			);
 			name = Views;
@@ -418,6 +419,8 @@
 			isa = PBXGroup;
 			children = (
 				0A82C44A1E2ABDF300DCBE3B /* HourlyCollectionHelper.swift */,
+				0A82C4501E2B0BD200DCBE3B /* DailyCollectionHelper.swift */,
+				0A82C4561E2B39E100DCBE3B /* RotatingLayout.swift */,
 			);
 			name = "CollectionView Helpers";
 			sourceTree = "<group>";
@@ -633,7 +636,6 @@
 				0A06D1DE1E25654800BD1502 /* FiraSans-Book.otf in Resources */,
 				0A6AAE241E29935400432129 /* HourlyCollectionViewCell.xib in Resources */,
 				0A82C44F1E2AE59700DCBE3B /* DailyCollectionViewCell.xib in Resources */,
-				0A8798B21E29A71800458DB2 /* HourHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -801,7 +803,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A43015B1E207C3F00F0841E /* DataTask.swift in Sources */,
-				0A8798B11E29A71800458DB2 /* HourHeaderView.swift in Sources */,
 				0A54E1421E05EF6400359CAB /* decoder.swift in Sources */,
 				0A6AAE231E29935400432129 /* HourlyCollectionViewCell.swift in Sources */,
 				0A2D3B411CB5CB1000B0DF3C /* TimeGranularity.swift in Sources */,
@@ -830,16 +831,19 @@
 				0A315C0E1D9E182100F4A7DE /* Temperature.swift in Sources */,
 				0A0237641DB6FA0C00D7E66B /* Location.swift in Sources */,
 				0A0B60A71D9A168700B12996 /* Minutes.swift in Sources */,
+				0A0AABA51E2EF9E000340EFF /* WeatherIcon.swift in Sources */,
 				0AD565F71E0E4BB3009A58AE /* CurrentLocationService.swift in Sources */,
 				0A4301621E21722400F0841E /* DataTaskResumable.swift in Sources */,
 				0AC1FE411DF65E7800F0D602 /* HasPrecipitation.swift in Sources */,
 				0A1076541D6CB41300DED569 /* WeatherViewController.swift in Sources */,
 				0A77BC391D9642E500258721 /* Result.swift in Sources */,
 				0A07AFFA1D5D5F8700534370 /* SettingsViewController.swift in Sources */,
+				0A82C4511E2B0BD200DCBE3B /* DailyCollectionHelper.swift in Sources */,
 				0A4301641E21724C00F0841E /* URLSessionDataTask.swift in Sources */,
 				0A82C44B1E2ABDF300DCBE3B /* HourlyCollectionHelper.swift in Sources */,
 				0A99D91C1CBC5B8400BF354C /* Icon.swift in Sources */,
 				0AA99DE71D9EDAD100CE614A /* Days.swift in Sources */,
+				0A82C4571E2B39E100DCBE3B /* RotatingLayout.swift in Sources */,
 				0A0B60AB1D9ADD4200B12996 /* Hour.swift in Sources */,
 				0A537D321E206845004E1A1E /* LocationService.swift in Sources */,
 			);

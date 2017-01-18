@@ -14,7 +14,7 @@ import Curry
 struct Hour {
     let time:Double
     let summary: String
-    let icon:String?
+    let icon:String
     let precipProbability:Float?
     let precipType:String?
     let temperature:Float?
@@ -27,7 +27,7 @@ extension Hour: Decodable {
         return curry(Hour.init)
         <^> json <|  "time"
         <*> json <|  "summary"
-        <*> json <|? "icon"
+        <*> json <| "icon"
         <*> json <|? "precipProbability"
         <*> json <|? "precipType"
         <*> json <|? "temperature"
