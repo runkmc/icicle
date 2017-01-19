@@ -83,6 +83,7 @@
 		0ADE1F301CA1F04A007C2840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE1F2F1CA1F04A007C2840 /* Assets.xcassets */; };
 		0ADE1F331CA1F04A007C2840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE1F311CA1F04A007C2840 /* LaunchScreen.storyboard */; };
 		0ADE1F491CA1F04A007C2840 /* IcicleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE1F481CA1F04A007C2840 /* IcicleUITests.swift */; };
+		0AF8DFBF1E312955003370D8 /* gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8DFBE1E312955003370D8 /* gradient.swift */; };
 		0AFB94511E0640120097614F /* MinutesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB944F1E0640030097614F /* MinutesTest.swift */; };
 		3C8E6F0D9EFC339FF427FF0B /* Pods_IcicleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4435DFDD9DD37413088E99 /* Pods_IcicleTests.framework */; };
 		936E4FDE65E023D922142C5C /* Pods_Icicle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF4E81111755DCF0119678F /* Pods_Icicle.framework */; };
@@ -189,6 +190,7 @@
 		0ADE1F441CA1F04A007C2840 /* IcicleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IcicleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ADE1F481CA1F04A007C2840 /* IcicleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IcicleUITests.swift; sourceTree = "<group>"; };
 		0ADE1F4A1CA1F04A007C2840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AF8DFBE1E312955003370D8 /* gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gradient.swift; sourceTree = "<group>"; };
 		0AFB944F1E0640030097614F /* MinutesTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MinutesTest.swift; path = ../Icicle/MinutesTest.swift; sourceTree = "<group>"; };
 		41BB9EC9D590DF80AF358540 /* Pods_IcicleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IcicleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D4435DFDD9DD37413088E99 /* Pods_IcicleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IcicleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -363,6 +365,7 @@
 				0A54E1411E05EF6400359CAB /* decoder.swift */,
 				0AD565F61E0E4BB3009A58AE /* CurrentLocationService.swift */,
 				0A4301581E20728B00F0841E /* SavedLocationService.swift */,
+				0AF8DFBE1E312955003370D8 /* gradient.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -827,6 +830,7 @@
 				0A4301661E21773400F0841E /* WeatherError.swift in Sources */,
 				0A82C44E1E2AE59700DCBE3B /* DailyCollectionViewCell.swift in Sources */,
 				0A07B0041D5D5FE500534370 /* LocationsViewController.swift in Sources */,
+				0AF8DFBF1E312955003370D8 /* gradient.swift in Sources */,
 				0A43015D1E207C6200F0841E /* URLSession.swift in Sources */,
 				0A315C0E1D9E182100F4A7DE /* Temperature.swift in Sources */,
 				0A0237641DB6FA0C00D7E66B /* Location.swift in Sources */,
