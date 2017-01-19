@@ -23,6 +23,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="150" height="300"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ic0-Hj-SGF">
+                        <rect key="frame" x="0.0" y="0.0" width="150" height="300"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Fu-MV-PfW">
                         <rect key="frame" x="8" y="8" width="134" height="20"/>
                         <fontDescription key="fontDescription" name="FiraSans-Book" family="Fira Sans" pointSize="17"/>
@@ -59,34 +63,28 @@
                         <color key="textColor" red="0.035294117647058823" green="0.22352941176470587" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i8l-8v-6NJ">
-                        <rect key="frame" x="0.0" y="8" width="1" height="160"/>
-                        <color key="backgroundColor" red="0.92941176470588238" green="0.90588235294117647" blue="0.83137254901960778" alpha="1" colorSpace="calibratedRGB"/>
-                        <constraints>
-                            <constraint firstAttribute="height" constant="160" id="6MP-oT-QBi"/>
-                            <constraint firstAttribute="width" constant="1" id="eMZ-Ao-TN2"/>
-                        </constraints>
-                    </view>
                 </subviews>
             </view>
             <constraints>
-                <constraint firstItem="i8l-8v-6NJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="1Hw-X7-LMY"/>
                 <constraint firstAttribute="trailing" secondItem="4Hg-cr-Wye" secondAttribute="trailing" constant="8" id="5zq-I6-sfe"/>
                 <constraint firstAttribute="trailing" secondItem="Fq7-w5-zHn" secondAttribute="trailing" constant="8" id="8Lw-VE-Jdc"/>
                 <constraint firstItem="TtT-fF-WTz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="9JB-2f-pXh"/>
                 <constraint firstItem="4Hg-cr-Wye" firstAttribute="top" secondItem="Fq7-w5-zHn" secondAttribute="bottom" constant="8" id="CMg-cY-pB0"/>
                 <constraint firstAttribute="trailing" secondItem="8ya-96-RH6" secondAttribute="trailing" constant="8" id="CwS-Zm-O0R"/>
+                <constraint firstItem="ic0-Hj-SGF" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="DaI-D0-v9U"/>
                 <constraint firstItem="4Hg-cr-Wye" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="E3F-qL-m3I"/>
                 <constraint firstItem="5Fu-MV-PfW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="K7q-rr-ttE"/>
                 <constraint firstAttribute="trailing" secondItem="GRt-ee-QS2" secondAttribute="trailing" constant="8" id="LBc-U3-iLj"/>
                 <constraint firstItem="GRt-ee-QS2" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="NHK-Ms-ixg"/>
-                <constraint firstItem="i8l-8v-6NJ" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="O9f-Bo-JTB"/>
+                <constraint firstItem="ic0-Hj-SGF" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="OaL-Il-SPV"/>
                 <constraint firstItem="Fq7-w5-zHn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="Qem-Di-zqK"/>
+                <constraint firstItem="ic0-Hj-SGF" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="dCx-Qh-dhd"/>
                 <constraint firstItem="5Fu-MV-PfW" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="8" id="gM5-0G-DlH"/>
                 <constraint firstAttribute="trailing" secondItem="TtT-fF-WTz" secondAttribute="trailing" constant="8" id="gcf-QP-JMc"/>
                 <constraint firstItem="Fq7-w5-zHn" firstAttribute="top" secondItem="TtT-fF-WTz" secondAttribute="bottom" constant="8" id="geW-g9-7qb"/>
                 <constraint firstItem="8ya-96-RH6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="pYE-IM-BDt"/>
                 <constraint firstAttribute="trailing" secondItem="5Fu-MV-PfW" secondAttribute="trailing" constant="8" id="tb3-Gr-gV6"/>
+                <constraint firstItem="ic0-Hj-SGF" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="tp7-99-ioA"/>
                 <constraint firstItem="TtT-fF-WTz" firstAttribute="top" secondItem="5Fu-MV-PfW" secondAttribute="bottom" constant="8" id="txi-XI-bdU"/>
                 <constraint firstItem="8ya-96-RH6" firstAttribute="top" secondItem="GRt-ee-QS2" secondAttribute="bottom" constant="8" id="uMq-jy-C24"/>
                 <constraint firstItem="GRt-ee-QS2" firstAttribute="top" secondItem="4Hg-cr-Wye" secondAttribute="bottom" constant="8" id="yza-Ys-vlK"/>
@@ -94,6 +92,7 @@
             <size key="customSize" width="150" height="300"/>
             <connections>
                 <outlet property="apparentTemperature" destination="4Hg-cr-Wye" id="dW6-ry-HXK"/>
+                <outlet property="background" destination="ic0-Hj-SGF" id="a8f-3e-j9R"/>
                 <outlet property="humidity" destination="8ya-96-RH6" id="7KX-e4-1Zk"/>
                 <outlet property="precipChance" destination="GRt-ee-QS2" id="td0-z7-8Ed"/>
                 <outlet property="summary" destination="TtT-fF-WTz" id="il3-hp-kpK"/>

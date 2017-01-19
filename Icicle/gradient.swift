@@ -33,8 +33,9 @@ func gradientFor(weather: WeatherIcon, view: UIView) -> CAGradientLayer {
     }
     
     let gradient = CAGradientLayer()
-    gradient.colors = [color1, color2]
-    gradient.startPoint = CGPoint(x: view.frame.minX, y: view.frame.minY)
-    gradient.endPoint = CGPoint(x: view.frame.maxX, y: view.frame.maxY)
+    gradient.colors = [color1.cgColor, color2.cgColor]
+    gradient.startPoint = CGPoint(x: 0.0, y: 0.0)
+    gradient.endPoint = CGPoint(x: 1.0, y: 1.0)
+    gradient.frame = view.bounds
     return gradient
 }

@@ -16,6 +16,7 @@ class HourlyCollectionViewCell: UICollectionViewCell {
     @IBOutlet weak var apparentTemperature: UILabel!
     @IBOutlet weak var precipChance: UILabel!
     @IBOutlet weak var humidity: UILabel!
+    @IBOutlet weak var background: UIView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -28,5 +29,7 @@ class HourlyCollectionViewCell: UICollectionViewCell {
         self.apparentTemperature.text = hour.apparentTemperature
         self.precipChance.text = hour.precipChance
         self.humidity.text = hour.humidity
+        let gradient = gradientFor(weather: hour.icon, view: self.background)
+        self.background.layer.addSublayer(gradient)
     }
 }

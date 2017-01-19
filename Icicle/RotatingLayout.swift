@@ -36,7 +36,6 @@ class RotatingLayout: UICollectionViewFlowLayout {
                 attachment.length = 0
                 attachment.damping = 0.9
                 attachment.frequency = 1.0
-                print("adding attachment")
                 animator.addBehavior(attachment)
             }
         }

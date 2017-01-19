@@ -74,9 +74,17 @@ class WeatherViewController: UIViewController {
                         [NSFontAttributeName:UIFont(name:"FiraSans-Book", size:18.0)!,
                          NSParagraphStyleAttributeName:paragraphStyle])
                     self?.weatherDescription.attributedText = description
+                    
                     self?.hourlyHelper.weather = weather
                     self?.dailyHelper.weather = weather
                     self?.locationName.text = weather.location.name
+                    
+                    if let icon = weather.hours.first?.icon, let header = self?.headerBackground {
+                        let gradient = gradientFor(weather: icon, view: header)
+                        self?.headerBackground.layer.addSublayer(gradient)
+                        header.bringSubview(toFront: self!.locationName)
+                        print("gradient added")
+                    }
 
                     self?.hourlyCollectionView.reloadData()
                     self?.hourlyLayout.addSpringyness()
