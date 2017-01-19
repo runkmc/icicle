@@ -33,8 +33,8 @@ class RotatingLayout: UICollectionViewFlowLayout {
         items?.forEach { item in
             if item.representedElementCategory == .cell {
                 let attachment = UIAttachmentBehavior(item: item, attachedToAnchor: item.center)
-                attachment.length = 0.1
-                attachment.damping = 0.6
+                attachment.length = 0
+                attachment.damping = 0.9
                 attachment.frequency = 1.0
                 print("adding attachment")
                 animator.addBehavior(attachment)
