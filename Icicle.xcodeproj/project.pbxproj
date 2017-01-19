@@ -84,6 +84,7 @@
 		0ADE1F331CA1F04A007C2840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE1F311CA1F04A007C2840 /* LaunchScreen.storyboard */; };
 		0ADE1F491CA1F04A007C2840 /* IcicleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE1F481CA1F04A007C2840 /* IcicleUITests.swift */; };
 		0AF8DFBF1E312955003370D8 /* gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8DFBE1E312955003370D8 /* gradient.swift */; };
+		0AF8DFC11E312C51003370D8 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8DFC01E312C51003370D8 /* UIColor.swift */; };
 		0AFB94511E0640120097614F /* MinutesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB944F1E0640030097614F /* MinutesTest.swift */; };
 		3C8E6F0D9EFC339FF427FF0B /* Pods_IcicleTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D4435DFDD9DD37413088E99 /* Pods_IcicleTests.framework */; };
 		936E4FDE65E023D922142C5C /* Pods_Icicle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7BF4E81111755DCF0119678F /* Pods_Icicle.framework */; };
@@ -191,6 +192,7 @@
 		0ADE1F481CA1F04A007C2840 /* IcicleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IcicleUITests.swift; sourceTree = "<group>"; };
 		0ADE1F4A1CA1F04A007C2840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0AF8DFBE1E312955003370D8 /* gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gradient.swift; sourceTree = "<group>"; };
+		0AF8DFC01E312C51003370D8 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		0AFB944F1E0640030097614F /* MinutesTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MinutesTest.swift; path = ../Icicle/MinutesTest.swift; sourceTree = "<group>"; };
 		41BB9EC9D590DF80AF358540 /* Pods_IcicleUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IcicleUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D4435DFDD9DD37413088E99 /* Pods_IcicleTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IcicleTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -250,6 +252,7 @@
 				0A4301631E21724C00F0841E /* URLSessionDataTask.swift */,
 				0A4301651E21773400F0841E /* WeatherError.swift */,
 				0A0AABA41E2EF9E000340EFF /* WeatherIcon.swift */,
+				0AF8DFC01E312C51003370D8 /* UIColor.swift */,
 			);
 			name = "Other Types";
 			sourceTree = "<group>";
@@ -838,6 +841,7 @@
 				0A0AABA51E2EF9E000340EFF /* WeatherIcon.swift in Sources */,
 				0AD565F71E0E4BB3009A58AE /* CurrentLocationService.swift in Sources */,
 				0A4301621E21722400F0841E /* DataTaskResumable.swift in Sources */,
+				0AF8DFC11E312C51003370D8 /* UIColor.swift in Sources */,
 				0AC1FE411DF65E7800F0D602 /* HasPrecipitation.swift in Sources */,
 				0A1076541D6CB41300DED569 /* WeatherViewController.swift in Sources */,
 				0A77BC391D9642E500258721 /* Result.swift in Sources */,
