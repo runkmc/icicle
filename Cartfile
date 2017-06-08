@@ -1,4 +1,4 @@
 github "thoughtbot/argo" >= 4.0
 github "thoughtbot/runes" >= 4.0
 github "thoughtbot/curry" >= 3.0
-
+github "ReactiveX/RxSwift" >= 3.0
