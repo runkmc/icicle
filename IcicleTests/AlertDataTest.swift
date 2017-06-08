@@ -7,8 +7,8 @@
 //
 
 import Foundation
-import Argo
 import XCTest
+import Argo
 @testable import Icicle
 
 class AlertDataTest: XCTestCase {

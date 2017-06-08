@@ -8,7 +8,6 @@
 
 import Foundation
 import XCTest
-import Argo
 import CoreLocation
 @testable import Icicle
 
