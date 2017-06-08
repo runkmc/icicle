@@ -1,0 +1,3 @@
+github "thoughtbot/argo" "v4.1.2"
+github "thoughtbot/curry" "v3.0.0"
+github "thoughtbot/runes" "v4.1.0"
