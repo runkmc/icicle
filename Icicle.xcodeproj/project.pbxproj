@@ -31,6 +31,8 @@
 		0A289CED1DE2568E0054C731 /* DayDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A289CEC1DE2568E0054C731 /* DayDataTest.swift */; };
 		0A2D3B411CB5CB1000B0DF3C /* TimeGranularity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D3B401CB5CB1000B0DF3C /* TimeGranularity.swift */; };
 		0A2D3B471CB5DCFD00B0DF3C /* JSONhelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2D3B461CB5DCFD00B0DF3C /* JSONhelpers.swift */; };
+		0A2ED8BA1EE9E890006D5F3D /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2ED8B91EE9E890006D5F3D /* RxSwift.framework */; };
+		0A2ED8BC1EE9E894006D5F3D /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A2ED8BB1EE9E894006D5F3D /* RxCocoa.framework */; };
 		0A315C0E1D9E182100F4A7DE /* Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A315C0D1D9E182100F4A7DE /* Temperature.swift */; };
 		0A35A1E11D985D02001B99BD /* cloudy-futurerain.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A35A1E01D985D02001B99BD /* cloudy-futurerain.json */; };
 		0A35A1E51D986A73001B99BD /* historical-snow.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A35A1E41D986A73001B99BD /* historical-snow.json */; };
@@ -124,6 +126,8 @@
 		0A289CEC1DE2568E0054C731 /* DayDataTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DayDataTest.swift; sourceTree = "<group>"; };
 		0A2D3B401CB5CB1000B0DF3C /* TimeGranularity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeGranularity.swift; sourceTree = "<group>"; };
 		0A2D3B461CB5DCFD00B0DF3C /* JSONhelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONhelpers.swift; sourceTree = "<group>"; };
+		0A2ED8B91EE9E890006D5F3D /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		0A2ED8BB1EE9E894006D5F3D /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		0A315C0D1D9E182100F4A7DE /* Temperature.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temperature.swift; sourceTree = "<group>"; };
 		0A35A1E01D985D02001B99BD /* cloudy-futurerain.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cloudy-futurerain.json"; sourceTree = "<group>"; };
 		0A35A1E41D986A73001B99BD /* historical-snow.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "historical-snow.json"; sourceTree = "<group>"; };
@@ -193,6 +197,8 @@
 			files = (
 				0AC73FD01EE909470088A636 /* Argo.framework in Frameworks */,
 				0AC73FD21EE9094A0088A636 /* Curry.framework in Frameworks */,
+				0A2ED8BC1EE9E894006D5F3D /* RxCocoa.framework in Frameworks */,
+				0A2ED8BA1EE9E890006D5F3D /* RxSwift.framework in Frameworks */,
 				0AC73FD41EE9094E0088A636 /* Runes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -408,6 +414,8 @@
 		0AC73FCE1EE909470088A636 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0A2ED8BB1EE9E894006D5F3D /* RxCocoa.framework */,
+				0A2ED8B91EE9E890006D5F3D /* RxSwift.framework */,
 				0AC73FD31EE9094E0088A636 /* Runes.framework */,
 				0AC73FD11EE9094A0088A636 /* Curry.framework */,
 				0AC73FCF1EE909470088A636 /* Argo.framework */,
@@ -588,6 +596,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Argo.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Runes.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Curry.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
 			);
 			outputPaths = (
 			);
@@ -604,6 +614,8 @@
 				"$(SRCROOT)/Carthage/Build/iOS/Argo.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Curry.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Runes.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 			);
 			outputPaths = (
 			);
