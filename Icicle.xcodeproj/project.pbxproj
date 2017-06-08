@@ -74,6 +74,9 @@
 		0AA99DE91D9EDAE100CE614A /* DaysTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA99DE81D9EDAE100CE614A /* DaysTest.swift */; };
 		0AC120B01D61175A008E1557 /* getTestJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC120AF1D61175A008E1557 /* getTestJson.swift */; };
 		0AC1FE411DF65E7800F0D602 /* HasPrecipitation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC1FE401DF65E7800F0D602 /* HasPrecipitation.swift */; };
+		0AC73FD01EE909470088A636 /* Argo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC73FCF1EE909470088A636 /* Argo.framework */; };
+		0AC73FD21EE9094A0088A636 /* Curry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC73FD11EE9094A0088A636 /* Curry.framework */; };
+		0AC73FD41EE9094E0088A636 /* Runes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AC73FD31EE9094E0088A636 /* Runes.framework */; };
 		0AD046191DB3120900DC32F2 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD046181DB3120900DC32F2 /* WeatherData.swift */; };
 		0AD0461B1DB3121600DC32F2 /* WeatherDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD0461A1DB3121600DC32F2 /* WeatherDataTest.swift */; };
 		0AD565F71E0E4BB3009A58AE /* CurrentLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD565F61E0E4BB3009A58AE /* CurrentLocationService.swift */; };
@@ -172,6 +175,9 @@
 		0AA99DE81D9EDAE100CE614A /* DaysTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysTest.swift; sourceTree = "<group>"; };
 		0AC120AF1D61175A008E1557 /* getTestJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getTestJson.swift; sourceTree = "<group>"; };
 		0AC1FE401DF65E7800F0D602 /* HasPrecipitation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HasPrecipitation.swift; sourceTree = "<group>"; };
+		0AC73FCF1EE909470088A636 /* Argo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Argo.framework; path = Carthage/Build/iOS/Argo.framework; sourceTree = "<group>"; };
+		0AC73FD11EE9094A0088A636 /* Curry.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Curry.framework; path = Carthage/Build/iOS/Curry.framework; sourceTree = "<group>"; };
+		0AC73FD31EE9094E0088A636 /* Runes.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Runes.framework; path = Carthage/Build/iOS/Runes.framework; sourceTree = "<group>"; };
 		0AD046181DB3120900DC32F2 /* WeatherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 		0AD0461A1DB3121600DC32F2 /* WeatherDataTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDataTest.swift; sourceTree = "<group>"; };
 		0AD565F61E0E4BB3009A58AE /* CurrentLocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentLocationService.swift; sourceTree = "<group>"; };
@@ -196,6 +202,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0AC73FD01EE909470088A636 /* Argo.framework in Frameworks */,
+				0AC73FD21EE9094A0088A636 /* Curry.framework in Frameworks */,
+				0AC73FD41EE9094E0088A636 /* Runes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +423,16 @@
 			name = Helpers;
 			sourceTree = "<group>";
 		};
+		0AC73FCE1EE909470088A636 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0AC73FD31EE9094E0088A636 /* Runes.framework */,
+				0AC73FD11EE9094A0088A636 /* Curry.framework */,
+				0AC73FCF1EE909470088A636 /* Argo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		0ADE1F1C1CA1F04A007C2840 = {
 			isa = PBXGroup;
 			children = (
@@ -421,6 +440,7 @@
 				0ADE1F3C1CA1F04A007C2840 /* IcicleTests */,
 				0ADE1F471CA1F04A007C2840 /* IcicleUITests */,
 				0ADE1F261CA1F04A007C2840 /* Products */,
+				0AC73FCE1EE909470088A636 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -484,6 +504,7 @@
 				0ADE1F211CA1F04A007C2840 /* Sources */,
 				0ADE1F221CA1F04A007C2840 /* Frameworks */,
 				0ADE1F231CA1F04A007C2840 /* Resources */,
+				0AC73FD51EE909860088A636 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -615,6 +636,25 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AC73FD51EE909860088A636 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Argo.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Curry.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Runes.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		0ADE1F211CA1F04A007C2840 /* Sources */ = {
@@ -823,6 +863,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = P3HAZUW5GC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Icicle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.kmcg.weather;
@@ -840,6 +884,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = P3HAZUW5GC;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Icicle/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.kmcg.weather;
