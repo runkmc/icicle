@@ -20,7 +20,6 @@
                 <outlet property="headerBackgroundTopConstraint" destination="Wk6-h9-3Td" id="sz6-Vs-3H4"/>
                 <outlet property="locationName" destination="s20-tL-YjD" id="Gjz-9y-XYb"/>
                 <outlet property="scrollView" destination="ZvR-en-E3S" id="Pra-M3-c2s"/>
-                <outlet property="toggleSwitch" destination="nkP-yQ-7Ty" id="cYx-F5-ofL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
                 <outlet property="weatherDescription" destination="8MZ-4L-yhI" id="BYs-9Y-rfR"/>
             </connections>
@@ -57,30 +56,13 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="nkP-yQ-7Ty">
-                            <rect key="frame" x="16" y="274" width="343" height="35"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="34" id="5qg-wg-K5Z"/>
-                            </constraints>
-                            <segments>
-                                <segment title="Hourly"/>
-                                <segment title="Daily"/>
-                            </segments>
-                            <color key="tintColor" red="0.23356819152832031" green="0.23360636830329895" blue="0.23355615139007568" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            <connections>
-                                <action selector="switchToggled:" destination="-1" eventType="valueChanged" id="T02-03-v1I"/>
-                            </connections>
-                        </segmentedControl>
                     </subviews>
                     <constraints>
                         <constraint firstItem="SKb-uS-LKh" firstAttribute="width" secondItem="ZvR-en-E3S" secondAttribute="width" id="46l-9c-Elb"/>
                         <constraint firstItem="8MZ-4L-yhI" firstAttribute="top" secondItem="ZvR-en-E3S" secondAttribute="top" constant="242" id="Brg-vN-fQQ"/>
                         <constraint firstItem="SKb-uS-LKh" firstAttribute="leading" secondItem="ZvR-en-E3S" secondAttribute="leading" id="KS7-4n-LA6"/>
-                        <constraint firstItem="nkP-yQ-7Ty" firstAttribute="width" secondItem="8MZ-4L-yhI" secondAttribute="width" id="WBd-lR-rF6"/>
                         <constraint firstItem="SKb-uS-LKh" firstAttribute="top" secondItem="ZvR-en-E3S" secondAttribute="top" constant="-210" id="Wk6-h9-3Td"/>
                         <constraint firstItem="8MZ-4L-yhI" firstAttribute="width" secondItem="s20-tL-YjD" secondAttribute="width" id="XvZ-NM-7ET"/>
-                        <constraint firstItem="nkP-yQ-7Ty" firstAttribute="leading" secondItem="8MZ-4L-yhI" secondAttribute="leading" id="ecZ-AL-edc"/>
-                        <constraint firstItem="nkP-yQ-7Ty" firstAttribute="top" secondItem="8MZ-4L-yhI" secondAttribute="bottom" constant="32" id="gqQ-cc-pCZ"/>
                         <constraint firstItem="8MZ-4L-yhI" firstAttribute="leading" secondItem="s20-tL-YjD" secondAttribute="leading" id="wyJ-th-aYT"/>
                     </constraints>
                 </scrollView>
