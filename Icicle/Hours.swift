@@ -13,7 +13,6 @@ import Curry
 
 struct Hours {
     let summary:String
-    let icon:String?
     let hours:[Hour]
 }
 
@@ -21,7 +20,6 @@ extension Hours: Decodable {
     static func decode(_ json: JSON) -> Decoded<Hours> {
         return curry(Hours.init)
         <^> json <| "summary"
-        <*> json <|? "icon"
         <*> json <|| "data"
     }
 }
