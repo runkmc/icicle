@@ -11,8 +11,6 @@
 		0A0237641DB6FA0C00D7E66B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0237631DB6FA0C00D7E66B /* Location.swift */; };
 		0A0237661DB7E0EF00D7E66B /* weatherFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0237651DB7E0EF00D7E66B /* weatherFetcher.swift */; };
 		0A0237681DB814C300D7E66B /* WeatherModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0237671DB814C300D7E66B /* WeatherModels.swift */; };
-		0A07B0041D5D5FE500534370 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07B0021D5D5FE500534370 /* LocationsViewController.swift */; };
-		0A07B0051D5D5FE500534370 /* LocationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A07B0031D5D5FE500534370 /* LocationsViewController.xib */; };
 		0A0AABA51E2EF9E000340EFF /* WeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AABA41E2EF9E000340EFF /* WeatherIcon.swift */; };
 		0A0B60A71D9A168700B12996 /* Minutes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B60A61D9A168700B12996 /* Minutes.swift */; };
 		0A0B60AB1D9ADD4200B12996 /* Hour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0B60AA1D9ADD4200B12996 /* Hour.swift */; };
@@ -94,8 +92,6 @@
 		0A0237631DB6FA0C00D7E66B /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		0A0237651DB7E0EF00D7E66B /* weatherFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = weatherFetcher.swift; sourceTree = "<group>"; };
 		0A0237671DB814C300D7E66B /* WeatherModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModels.swift; sourceTree = "<group>"; };
-		0A07B0021D5D5FE500534370 /* LocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
-		0A07B0031D5D5FE500534370 /* LocationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationsViewController.xib; sourceTree = "<group>"; };
 		0A0AABA41E2EF9E000340EFF /* WeatherIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherIcon.swift; sourceTree = "<group>"; };
 		0A0B60A61D9A168700B12996 /* Minutes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Minutes.swift; sourceTree = "<group>"; };
 		0A0B60AA1D9ADD4200B12996 /* Hour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hour.swift; sourceTree = "<group>"; };
@@ -207,7 +203,6 @@
 			children = (
 				0A1076531D6CB41300DED569 /* WeatherViewController.xib */,
 				0ADE1F311CA1F04A007C2840 /* LaunchScreen.storyboard */,
-				0A07B0031D5D5FE500534370 /* LocationsViewController.xib */,
 			);
 			name = IBFiles;
 			sourceTree = "<group>";
@@ -326,7 +321,6 @@
 		0A3928671CADB08700F724C7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0A07B0021D5D5FE500534370 /* LocationsViewController.swift */,
 				0A608A331D5ED807002151E6 /* IcicleTabBarViewController.swift */,
 				0A1076521D6CB41300DED569 /* WeatherViewController.swift */,
 			);
@@ -511,7 +505,6 @@
 				0A1076551D6CB41300DED569 /* WeatherViewController.xib in Resources */,
 				0ADE1F331CA1F04A007C2840 /* LaunchScreen.storyboard in Resources */,
 				0ADE1F301CA1F04A007C2840 /* Assets.xcassets in Resources */,
-				0A07B0051D5D5FE500534370 /* LocationsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,7 +587,6 @@
 				0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */,
 				0A0B60AF1D9AEA3400B12996 /* Hours.swift in Sources */,
 				0A4301661E21773400F0841E /* WeatherError.swift in Sources */,
-				0A07B0041D5D5FE500534370 /* LocationsViewController.swift in Sources */,
 				0AF8DFBF1E312955003370D8 /* gradient.swift in Sources */,
 				0A43015D1E207C6200F0841E /* URLSession.swift in Sources */,
 				0A315C0E1D9E182100F4A7DE /* Temperature.swift in Sources */,
