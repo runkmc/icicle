@@ -11,9 +11,6 @@ import UIKit
 class WeatherViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
-    @IBOutlet weak var locationName: UILabel!
-    @IBOutlet weak var headerBackground: UIView!
-    @IBOutlet weak var headerBackgroundTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var weatherDescription: UILabel!
 
     var locationService: LocationService = CurrentLocationService.instance
@@ -38,7 +35,6 @@ class WeatherViewController: UIViewController {
                     let description = NSAttributedString(string: weather.fullSummary, attributes:
                         [NSParagraphStyleAttributeName:paragraphStyle])
                     self?.weatherDescription.attributedText = description
-                    self?.locationName.text = weather.location.name
                 }
 
             self?.scrollView.isScrollEnabled = true
