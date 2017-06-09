@@ -27,7 +27,6 @@ class WeatherViewController: UIViewController {
         // put everything in place
         super.viewDidLoad()
         self.scrollView.isScrollEnabled = false
-        self.toggleSwitch.isHidden = true
         // setup both collection views
     }
     
