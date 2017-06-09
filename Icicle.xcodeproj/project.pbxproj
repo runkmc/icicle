@@ -11,8 +11,6 @@
 		0A0237641DB6FA0C00D7E66B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0237631DB6FA0C00D7E66B /* Location.swift */; };
 		0A0237661DB7E0EF00D7E66B /* weatherFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0237651DB7E0EF00D7E66B /* weatherFetcher.swift */; };
 		0A0237681DB814C300D7E66B /* WeatherModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0237671DB814C300D7E66B /* WeatherModels.swift */; };
-		0A06D1DC1E255D2800BD1502 /* FiraSans-ExtraLight.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A06D1DB1E255D2800BD1502 /* FiraSans-ExtraLight.otf */; };
-		0A06D1DE1E25654800BD1502 /* FiraSans-Book.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A06D1DD1E25654800BD1502 /* FiraSans-Book.otf */; };
 		0A07AFFA1D5D5F8700534370 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07AFF81D5D5F8700534370 /* SettingsViewController.swift */; };
 		0A07AFFB1D5D5F8700534370 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A07AFF91D5D5F8700534370 /* SettingsViewController.xib */; };
 		0A07B0041D5D5FE500534370 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07B0021D5D5FE500534370 /* LocationsViewController.swift */; };
@@ -65,7 +63,6 @@
 		0A6AAE241E29935400432129 /* HourlyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6AAE221E29935400432129 /* HourlyCollectionViewCell.xib */; };
 		0A77BC391D9642E500258721 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77BC381D9642E500258721 /* Result.swift */; };
 		0A77BC3B1D9642FD00258721 /* ResultTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77BC3A1D9642FD00258721 /* ResultTest.swift */; };
-		0A82C4481E2AB7F300DCBE3B /* FiraSans-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0A82C4471E2AB7F300DCBE3B /* FiraSans-Light.otf */; };
 		0A82C44E1E2AE59700DCBE3B /* DailyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A82C44C1E2AE59700DCBE3B /* DailyCollectionViewCell.swift */; };
 		0A82C44F1E2AE59700DCBE3B /* DailyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A82C44D1E2AE59700DCBE3B /* DailyCollectionViewCell.xib */; };
 		0A99D91C1CBC5B8400BF354C /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99D91B1CBC5B8400BF354C /* Icon.swift */; };
@@ -103,8 +100,6 @@
 		0A0237631DB6FA0C00D7E66B /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		0A0237651DB7E0EF00D7E66B /* weatherFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = weatherFetcher.swift; sourceTree = "<group>"; };
 		0A0237671DB814C300D7E66B /* WeatherModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModels.swift; sourceTree = "<group>"; };
-		0A06D1DB1E255D2800BD1502 /* FiraSans-ExtraLight.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-ExtraLight.otf"; sourceTree = "<group>"; };
-		0A06D1DD1E25654800BD1502 /* FiraSans-Book.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-Book.otf"; sourceTree = "<group>"; };
 		0A07AFF81D5D5F8700534370 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		0A07AFF91D5D5F8700534370 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		0A07B0021D5D5FE500534370 /* LocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
@@ -157,7 +152,6 @@
 		0A6AAE221E29935400432129 /* HourlyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HourlyCollectionViewCell.xib; sourceTree = "<group>"; };
 		0A77BC381D9642E500258721 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		0A77BC3A1D9642FD00258721 /* ResultTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTest.swift; sourceTree = "<group>"; };
-		0A82C4471E2AB7F300DCBE3B /* FiraSans-Light.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "FiraSans-Light.otf"; sourceTree = "<group>"; };
 		0A82C44C1E2AE59700DCBE3B /* DailyCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DailyCollectionViewCell.swift; sourceTree = "<group>"; };
 		0A82C44D1E2AE59700DCBE3B /* DailyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DailyCollectionViewCell.xib; sourceTree = "<group>"; };
 		0A99D91B1CBC5B8400BF354C /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
@@ -223,9 +217,6 @@
 		0A06D1DA1E255CE300BD1502 /* Typefaces */ = {
 			isa = PBXGroup;
 			children = (
-				0A06D1DD1E25654800BD1502 /* FiraSans-Book.otf */,
-				0A82C4471E2AB7F300DCBE3B /* FiraSans-Light.otf */,
-				0A06D1DB1E255D2800BD1502 /* FiraSans-ExtraLight.otf */,
 			);
 			name = Typefaces;
 			sourceTree = "<group>";
@@ -546,11 +537,8 @@
 				0A1076551D6CB41300DED569 /* WeatherViewController.xib in Resources */,
 				0ADE1F331CA1F04A007C2840 /* LaunchScreen.storyboard in Resources */,
 				0ADE1F301CA1F04A007C2840 /* Assets.xcassets in Resources */,
-				0A82C4481E2AB7F300DCBE3B /* FiraSans-Light.otf in Resources */,
 				0A07B0051D5D5FE500534370 /* LocationsViewController.xib in Resources */,
-				0A06D1DC1E255D2800BD1502 /* FiraSans-ExtraLight.otf in Resources */,
 				0A07AFFB1D5D5F8700534370 /* SettingsViewController.xib in Resources */,
-				0A06D1DE1E25654800BD1502 /* FiraSans-Book.otf in Resources */,
 				0A6AAE241E29935400432129 /* HourlyCollectionViewCell.xib in Resources */,
 				0A82C44F1E2AE59700DCBE3B /* DailyCollectionViewCell.xib in Resources */,
 			);
