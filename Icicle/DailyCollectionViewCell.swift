@@ -27,9 +27,6 @@ class DailyCollectionViewCell: UICollectionViewCell {
         self.date.text = day.date
         self.high.text = day.high
         self.low.text = day.low
-        self.sunrise.text = day.sunrise
-        self.sunset.text = day.sunset
-        self.precip.text = day.precipChance
         self.summary.text = day.summary
     }
 }
