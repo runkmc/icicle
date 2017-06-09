@@ -19,7 +19,6 @@ struct Hour {
     let precipType:String?
     let temperature:Float?
     let apparentTemperature:Float?
-    let humidity:Float?
 }
 
 extension Hour: Decodable {
@@ -32,6 +31,5 @@ extension Hour: Decodable {
         <*> json <|? "precipType"
         <*> json <|? "temperature"
         <*> json <|? "apparentTemperature"
-        <*> json <|? "humidity"
     }
 }

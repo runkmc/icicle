@@ -25,7 +25,6 @@ class HourTest: XCTestCase {
         XCTAssertEqualWithAccuracy(hour!.precipProbability!, 0.46, accuracy: 0.01)
         XCTAssertEqual(hour!.precipType!, "snow")
         XCTAssertEqualWithAccuracy(hour!.temperature!, 20.52, accuracy: 0.01)
-        XCTAssertEqualWithAccuracy(hour!.humidity!, 0.84, accuracy: 0.01)
         XCTAssertEqual(hour!.summary, "Snow")
     }
 }

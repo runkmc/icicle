@@ -28,7 +28,6 @@ class HourlyCollectionViewCell: UICollectionViewCell {
         self.temperature.text = hour.temperature
         self.apparentTemperature.text = hour.apparentTemperature
         self.precipChance.text = hour.precipChance
-        self.humidity.text = hour.humidity
         let gradient = gradientFor(weather: hour.icon, view: self.background)
         self.background.layer.addSublayer(gradient)
     }

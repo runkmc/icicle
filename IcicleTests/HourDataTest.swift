@@ -30,7 +30,6 @@ class HourDataTest: XCTestCase {
         XCTAssertEqual("0%", hour.precipChance)
         XCTAssertEqual("—", hour.precipType)
         XCTAssertEqual("81°", hour.apparentTemperature)
-        XCTAssertEqual("32%", hour.humidity)
         XCTAssertEqual(.clearDay, hour.icon)
     }
     
@@ -44,7 +43,6 @@ class HourDataTest: XCTestCase {
         XCTAssertEqual("61%", hour.precipChance)
         XCTAssertEqual("Rain", hour.precipType)
         XCTAssertEqual("61°", hour.apparentTemperature)
-        XCTAssertEqual("95%", hour.humidity)
     }
 
 }
