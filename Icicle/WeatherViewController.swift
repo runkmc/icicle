@@ -36,10 +36,8 @@ class WeatherViewController: UIViewController {
                     let paragraphStyle = NSMutableParagraphStyle()
                     paragraphStyle.lineHeightMultiple = 1.15
                     let description = NSAttributedString(string: weather.fullSummary, attributes:
-                        [NSFontAttributeName:UIFont(name:"FiraSans-Book", size:18.0)!,
-                         NSParagraphStyleAttributeName:paragraphStyle])
+                        [NSParagraphStyleAttributeName:paragraphStyle])
                     self?.weatherDescription.attributedText = description
-                    
                     self?.locationName.text = weather.location.name
                 }
 
@@ -49,10 +47,8 @@ class WeatherViewController: UIViewController {
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-        headerBackgroundTopConstraint.constant = -210
         self.weatherDescription.text = nil
         self.view.layoutSubviews()
-        self.headerAnimator.removeAllBehaviors()
         print("did disappear")
     }
 
