@@ -210,13 +210,6 @@
 			name = "Other Types";
 			sourceTree = "<group>";
 		};
-		0A06D1DA1E255CE300BD1502 /* Typefaces */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Typefaces;
-			sourceTree = "<group>";
-		};
 		0A07AFF01D5D5EF100534370 /* IBFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -336,7 +329,6 @@
 		0A3928661CADB05900F724C7 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				0A06D1DA1E255CE300BD1502 /* Typefaces */,
 				0ADE1F2F1CA1F04A007C2840 /* Assets.xcassets */,
 			);
 			name = Assets;
