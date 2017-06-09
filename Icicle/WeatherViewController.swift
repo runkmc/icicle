@@ -15,13 +15,9 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var headerBackground: UIView!
     @IBOutlet weak var headerBackgroundTopConstraint: NSLayoutConstraint!
     @IBOutlet weak var weatherDescription: UILabel!
-    @IBOutlet weak var toggleSwitch: UISegmentedControl!
 
-    
     var locationService: LocationService = CurrentLocationService.instance
     var weather: WeatherData? = nil
-    let headerAnimator = UIDynamicAnimator()
-    var collectionAnimator: UIDynamicAnimator!
     
     override func viewDidLoad() {
         // put everything in place
