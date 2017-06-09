@@ -11,8 +11,6 @@
 		0A0237641DB6FA0C00D7E66B /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0237631DB6FA0C00D7E66B /* Location.swift */; };
 		0A0237661DB7E0EF00D7E66B /* weatherFetcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0237651DB7E0EF00D7E66B /* weatherFetcher.swift */; };
 		0A0237681DB814C300D7E66B /* WeatherModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0237671DB814C300D7E66B /* WeatherModels.swift */; };
-		0A07AFFA1D5D5F8700534370 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07AFF81D5D5F8700534370 /* SettingsViewController.swift */; };
-		0A07AFFB1D5D5F8700534370 /* SettingsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A07AFF91D5D5F8700534370 /* SettingsViewController.xib */; };
 		0A07B0041D5D5FE500534370 /* LocationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A07B0021D5D5FE500534370 /* LocationsViewController.swift */; };
 		0A07B0051D5D5FE500534370 /* LocationsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A07B0031D5D5FE500534370 /* LocationsViewController.xib */; };
 		0A0AABA51E2EF9E000340EFF /* WeatherIcon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A0AABA41E2EF9E000340EFF /* WeatherIcon.swift */; };
@@ -96,8 +94,6 @@
 		0A0237631DB6FA0C00D7E66B /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		0A0237651DB7E0EF00D7E66B /* weatherFetcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = weatherFetcher.swift; sourceTree = "<group>"; };
 		0A0237671DB814C300D7E66B /* WeatherModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherModels.swift; sourceTree = "<group>"; };
-		0A07AFF81D5D5F8700534370 /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
-		0A07AFF91D5D5F8700534370 /* SettingsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingsViewController.xib; sourceTree = "<group>"; };
 		0A07B0021D5D5FE500534370 /* LocationsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsViewController.swift; sourceTree = "<group>"; };
 		0A07B0031D5D5FE500534370 /* LocationsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LocationsViewController.xib; sourceTree = "<group>"; };
 		0A0AABA41E2EF9E000340EFF /* WeatherIcon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherIcon.swift; sourceTree = "<group>"; };
@@ -211,7 +207,6 @@
 			children = (
 				0A1076531D6CB41300DED569 /* WeatherViewController.xib */,
 				0ADE1F311CA1F04A007C2840 /* LaunchScreen.storyboard */,
-				0A07AFF91D5D5F8700534370 /* SettingsViewController.xib */,
 				0A07B0031D5D5FE500534370 /* LocationsViewController.xib */,
 			);
 			name = IBFiles;
@@ -331,7 +326,6 @@
 		0A3928671CADB08700F724C7 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				0A07AFF81D5D5F8700534370 /* SettingsViewController.swift */,
 				0A07B0021D5D5FE500534370 /* LocationsViewController.swift */,
 				0A608A331D5ED807002151E6 /* IcicleTabBarViewController.swift */,
 				0A1076521D6CB41300DED569 /* WeatherViewController.swift */,
@@ -518,7 +512,6 @@
 				0ADE1F331CA1F04A007C2840 /* LaunchScreen.storyboard in Resources */,
 				0ADE1F301CA1F04A007C2840 /* Assets.xcassets in Resources */,
 				0A07B0051D5D5FE500534370 /* LocationsViewController.xib in Resources */,
-				0A07AFFB1D5D5F8700534370 /* SettingsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,7 +607,6 @@
 				0AC1FE411DF65E7800F0D602 /* HasPrecipitation.swift in Sources */,
 				0A1076541D6CB41300DED569 /* WeatherViewController.swift in Sources */,
 				0A77BC391D9642E500258721 /* Result.swift in Sources */,
-				0A07AFFA1D5D5F8700534370 /* SettingsViewController.swift in Sources */,
 				0A4301641E21724C00F0841E /* URLSessionDataTask.swift in Sources */,
 				0A99D91C1CBC5B8400BF354C /* Icon.swift in Sources */,
 				0AA99DE71D9EDAD100CE614A /* Days.swift in Sources */,
