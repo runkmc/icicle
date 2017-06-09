@@ -59,10 +59,8 @@
 		0A5A76941DF34C8300E52D3A /* HourDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A76931DF34C8300E52D3A /* HourDataTest.swift */; };
 		0A608A321D5ED4E9002151E6 /* IcicleColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A608A311D5ED4E9002151E6 /* IcicleColor.swift */; };
 		0A608A341D5ED807002151E6 /* IcicleTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A608A331D5ED807002151E6 /* IcicleTabBarViewController.swift */; };
-		0A6AAE241E29935400432129 /* HourlyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A6AAE221E29935400432129 /* HourlyCollectionViewCell.xib */; };
 		0A77BC391D9642E500258721 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77BC381D9642E500258721 /* Result.swift */; };
 		0A77BC3B1D9642FD00258721 /* ResultTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77BC3A1D9642FD00258721 /* ResultTest.swift */; };
-		0A82C44F1E2AE59700DCBE3B /* DailyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A82C44D1E2AE59700DCBE3B /* DailyCollectionViewCell.xib */; };
 		0A99D91C1CBC5B8400BF354C /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99D91B1CBC5B8400BF354C /* Icon.swift */; };
 		0AA99DE71D9EDAD100CE614A /* Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA99DE61D9EDAD100CE614A /* Days.swift */; };
 		0AA99DE91D9EDAE100CE614A /* DaysTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA99DE81D9EDAE100CE614A /* DaysTest.swift */; };
@@ -146,10 +144,8 @@
 		0A5A76931DF34C8300E52D3A /* HourDataTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourDataTest.swift; sourceTree = "<group>"; };
 		0A608A311D5ED4E9002151E6 /* IcicleColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IcicleColor.swift; sourceTree = "<group>"; };
 		0A608A331D5ED807002151E6 /* IcicleTabBarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IcicleTabBarViewController.swift; sourceTree = "<group>"; };
-		0A6AAE221E29935400432129 /* HourlyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HourlyCollectionViewCell.xib; sourceTree = "<group>"; };
 		0A77BC381D9642E500258721 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		0A77BC3A1D9642FD00258721 /* ResultTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTest.swift; sourceTree = "<group>"; };
-		0A82C44D1E2AE59700DCBE3B /* DailyCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DailyCollectionViewCell.xib; sourceTree = "<group>"; };
 		0A99D91B1CBC5B8400BF354C /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		0AA99DE61D9EDAD100CE614A /* Days.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Days.swift; sourceTree = "<group>"; };
 		0AA99DE81D9EDAE100CE614A /* DaysTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysTest.swift; sourceTree = "<group>"; };
@@ -217,8 +213,6 @@
 				0ADE1F311CA1F04A007C2840 /* LaunchScreen.storyboard */,
 				0A07AFF91D5D5F8700534370 /* SettingsViewController.xib */,
 				0A07B0031D5D5FE500534370 /* LocationsViewController.xib */,
-				0A6AAE221E29935400432129 /* HourlyCollectionViewCell.xib */,
-				0A82C44D1E2AE59700DCBE3B /* DailyCollectionViewCell.xib */,
 			);
 			name = IBFiles;
 			sourceTree = "<group>";
@@ -525,8 +519,6 @@
 				0ADE1F301CA1F04A007C2840 /* Assets.xcassets in Resources */,
 				0A07B0051D5D5FE500534370 /* LocationsViewController.xib in Resources */,
 				0A07AFFB1D5D5F8700534370 /* SettingsViewController.xib in Resources */,
-				0A6AAE241E29935400432129 /* HourlyCollectionViewCell.xib in Resources */,
-				0A82C44F1E2AE59700DCBE3B /* DailyCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
