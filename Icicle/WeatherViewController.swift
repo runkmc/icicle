@@ -28,13 +28,8 @@ class WeatherViewController: UIViewController {
                 print("block ran")
                 if let weather = result.successValue() {
                     self?.weather = weather
-                    let paragraphStyle = NSMutableParagraphStyle()
-                    paragraphStyle.lineHeightMultiple = 1.15
-                    let description = NSAttributedString(string: weather.fullSummary, attributes:
-                        [NSParagraphStyleAttributeName:paragraphStyle])
-                    self?.weatherDescription.attributedText = description
+                    self?.weatherDescription.attributedText = self?.setParagraph(text: weather.fullSummary)
                 }
-
             self?.scrollView.isScrollEnabled = true
             }
         }
@@ -42,11 +37,16 @@ class WeatherViewController: UIViewController {
     
     override func viewDidDisappear(_ animated: Bool) {
         self.weatherDescription.text = nil
-        self.view.layoutSubviews()
         print("did disappear")
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    func setParagraph(text:String) -> NSAttributedString {
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineHeightMultiple = 1.15
+        return NSAttributedString(string: text, attributes: [NSParagraphStyleAttributeName:paragraphStyle])
     }
 }
