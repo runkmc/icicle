@@ -19,7 +19,6 @@ class DaysTest: XCTestCase {
         let d = days.value!
         
         XCTAssertEqual(d.summary, "No precipitation throughout the week, with temperatures falling to 67°F on Sunday.")
-        XCTAssertEqual(d.icon!, "clear-day")
         XCTAssertEqual(d.days[0].summary, "Dry throughout the day.")
     }
 
