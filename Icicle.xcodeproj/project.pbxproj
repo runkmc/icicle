@@ -52,7 +52,6 @@
 		0A56D0BB1DA9CECE00963D43 /* CurrentlyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A56D0BA1DA9CECE00963D43 /* CurrentlyTest.swift */; };
 		0A5A76921DF34C7600E52D3A /* HourData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A76911DF34C7600E52D3A /* HourData.swift */; };
 		0A5A76941DF34C8300E52D3A /* HourDataTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5A76931DF34C8300E52D3A /* HourDataTest.swift */; };
-		0A608A321D5ED4E9002151E6 /* IcicleColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A608A311D5ED4E9002151E6 /* IcicleColor.swift */; };
 		0A77BC391D9642E500258721 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77BC381D9642E500258721 /* Result.swift */; };
 		0A77BC3B1D9642FD00258721 /* ResultTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77BC3A1D9642FD00258721 /* ResultTest.swift */; };
 		0AA99DE71D9EDAD100CE614A /* Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA99DE61D9EDAD100CE614A /* Days.swift */; };
@@ -130,7 +129,6 @@
 		0A56D0BA1DA9CECE00963D43 /* CurrentlyTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CurrentlyTest.swift; sourceTree = "<group>"; };
 		0A5A76911DF34C7600E52D3A /* HourData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourData.swift; sourceTree = "<group>"; };
 		0A5A76931DF34C8300E52D3A /* HourDataTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HourDataTest.swift; sourceTree = "<group>"; };
-		0A608A311D5ED4E9002151E6 /* IcicleColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IcicleColor.swift; sourceTree = "<group>"; };
 		0A77BC381D9642E500258721 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		0A77BC3A1D9642FD00258721 /* ResultTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTest.swift; sourceTree = "<group>"; };
 		0AA99DE61D9EDAD100CE614A /* Days.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Days.swift; sourceTree = "<group>"; };
@@ -283,7 +281,6 @@
 				0A77BC381D9642E500258721 /* Result.swift */,
 				0A2D3B401CB5CB1000B0DF3C /* TimeGranularity.swift */,
 				0A2D3B461CB5DCFD00B0DF3C /* JSONhelpers.swift */,
-				0A608A311D5ED4E9002151E6 /* IcicleColor.swift */,
 				0A54E1411E05EF6400359CAB /* decoder.swift */,
 				0AD565F61E0E4BB3009A58AE /* CurrentLocationService.swift */,
 				0A4301581E20728B00F0841E /* SavedLocationService.swift */,
@@ -564,7 +561,6 @@
 				0A3928631CADAE0800F724C7 /* ForecastAPI.swift in Sources */,
 				0A0237621DB6F92200D7E66B /* LocationFetcher.swift in Sources */,
 				0A54E13A1E04F12D00359CAB /* Alert.swift in Sources */,
-				0A608A321D5ED4E9002151E6 /* IcicleColor.swift in Sources */,
 				0A54E13E1E04FFE600359CAB /* AlertData.swift in Sources */,
 				0AD046191DB3120900DC32F2 /* WeatherData.swift in Sources */,
 				0A2D3B471CB5DCFD00B0DF3C /* JSONhelpers.swift in Sources */,
