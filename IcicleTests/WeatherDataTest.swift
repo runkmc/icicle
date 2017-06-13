@@ -30,16 +30,6 @@ class WeatherDataTest: XCTestCase {
         XCTAssertEqual(wd.fullSummary, "Currently 61°. Partly cloudy for the hour. Partly cloudy until this evening. Tomorrow, mostly cloudy starting in the evening, high of 61°. Light rain on Tuesday through Sunday, with temperatures peaking at 66°F on Tuesday.")
     }
     
-    func testSunnyColor() {
-        let wd = setupWeather(jsonFile: "sunny-hot")
-        XCTAssertEqual(wd.weatherColor, IcicleColor.orange)
-    }
-    
-    func testPartlyCloudyColor() {
-        let wd = setupWeather(jsonFile: "cloudy-futurerain")
-        XCTAssertEqual(wd.weatherColor, IcicleColor.green)
-    }
-    
     func testHours() {
         let wd = setupWeather(jsonFile: "cloudy-futurerain")
         let hour = wd.hours[44]

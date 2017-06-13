@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct IcicleColor {
+struct IcicleCoolor {
     static let yellow = UIColor(hue:0.127, saturation:1, brightness:0.708, alpha:1)
     static let orange = UIColor(hue:0.049, saturation:0.894, brightness:0.797, alpha:1)
     static let red = UIColor(hue:0.002, saturation:0.784, brightness:0.863, alpha:1)

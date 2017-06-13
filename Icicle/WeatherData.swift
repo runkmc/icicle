@@ -12,15 +12,13 @@ import Argo
 struct WeatherData {
     
     let fullSummary:String
-    let weatherColor:UIColor
     let hours:[HourData]
     let days:[DayData]
     let alerts:[AlertData]
     let location: Location
     
-    init(fullSummary:String, color:UIColor, hours:[HourData], days:[DayData], alerts:[AlertData], location:Location) {
+    init(fullSummary:String, hours:[HourData], days:[DayData], alerts:[AlertData], location:Location) {
         self.fullSummary = fullSummary
-        self.weatherColor = color
         self.hours = hours
         self.days = days
         self.alerts = alerts
@@ -34,13 +32,11 @@ struct WeatherData {
         guard let days = models.days.value else { return .error(models.days.error!.description) }
         
         let fullSummary = parseSummary(currently:currently, minutes:minutes, hours:hours, days:days)
-        let color = parseColor(icon: currently.icon)
         let individualHours = hours.hours.map { HourData.create($0, timeZone:models.timeZone) }
         let individualDays = days.days.map { DayData.create($0, timeZone:models.timeZone) }
         let alerts = models.alerts.map { AlertData.create($0) }
         
         return .success(WeatherData(fullSummary: fullSummary,
-                                    color: color,
                                     hours:individualHours,
                                     days:individualDays,
                                     alerts:alerts,
@@ -66,19 +62,4 @@ struct WeatherData {
         
         return "Currently \(currentTemp)\(feelsTemp) \(minutes.summary) \(hours.summary) \(tomorrow) \(days.summary)"
     }
-    
-    private static func parseColor(icon:String) -> UIColor {
-        switch icon {
-            case "clear-day"             : return IcicleColor.orange
-            case "clear-night"           : return IcicleColor.violet
-            case "partly-cloudy-night"   : return IcicleColor.base02
-            case "rain", "sleet"         : return IcicleColor.blue
-            case "snow", "fog", "cloudy" : return IcicleColor.cyan
-            case "wind"                  : return IcicleColor.red
-            case "partly-cloudy-day"     : return IcicleColor.green
-        default                          : return IcicleColor.magenta
-        }
-        
-    }
-    
 }
