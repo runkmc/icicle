@@ -68,7 +68,6 @@
 		0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ADE1F281CA1F04A007C2840 /* AppDelegate.swift */; };
 		0ADE1F301CA1F04A007C2840 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE1F2F1CA1F04A007C2840 /* Assets.xcassets */; };
 		0ADE1F331CA1F04A007C2840 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0ADE1F311CA1F04A007C2840 /* LaunchScreen.storyboard */; };
-		0AF8DFBF1E312955003370D8 /* gradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8DFBE1E312955003370D8 /* gradient.swift */; };
 		0AF8DFC11E312C51003370D8 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AF8DFC01E312C51003370D8 /* UIColor.swift */; };
 		0AFB94511E0640120097614F /* MinutesTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AFB944F1E0640030097614F /* MinutesTest.swift */; };
 /* End PBXBuildFile section */
@@ -149,7 +148,6 @@
 		0ADE1F341CA1F04A007C2840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0ADE1F391CA1F04A007C2840 /* IcicleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IcicleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ADE1F3F1CA1F04A007C2840 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0AF8DFBE1E312955003370D8 /* gradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = gradient.swift; sourceTree = "<group>"; };
 		0AF8DFC01E312C51003370D8 /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		0AFB944F1E0640030097614F /* MinutesTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MinutesTest.swift; path = ../Icicle/MinutesTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -284,7 +282,6 @@
 				0A54E1411E05EF6400359CAB /* decoder.swift */,
 				0AD565F61E0E4BB3009A58AE /* CurrentLocationService.swift */,
 				0A4301581E20728B00F0841E /* SavedLocationService.swift */,
-				0AF8DFBE1E312955003370D8 /* gradient.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -572,7 +569,6 @@
 				0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */,
 				0A0B60AF1D9AEA3400B12996 /* Hours.swift in Sources */,
 				0A4301661E21773400F0841E /* WeatherError.swift in Sources */,
-				0AF8DFBF1E312955003370D8 /* gradient.swift in Sources */,
 				0A43015D1E207C6200F0841E /* URLSession.swift in Sources */,
 				0A315C0E1D9E182100F4A7DE /* Temperature.swift in Sources */,
 				0A0237641DB6FA0C00D7E66B /* Location.swift in Sources */,
