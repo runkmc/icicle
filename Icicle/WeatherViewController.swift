@@ -17,10 +17,8 @@ class WeatherViewController: UIViewController {
     var weather: WeatherData? = nil
     
     override func viewDidLoad() {
-        // put everything in place
         super.viewDidLoad()
         self.scrollView.isScrollEnabled = false
-        // setup both collection views
     }
     
     override func viewWillAppear(_ animated: Bool) {
