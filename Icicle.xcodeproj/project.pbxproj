@@ -33,6 +33,7 @@
 		0A35A1E71D986BAA001B99BD /* sunny-hot.json in Resources */ = {isa = PBXBuildFile; fileRef = 0A35A1E61D986BAA001B99BD /* sunny-hot.json */; };
 		0A39143F1DE6C6C700A1330C /* ParseTimeZoneTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A39143E1DE6C6C700A1330C /* ParseTimeZoneTest.swift */; };
 		0A3928631CADAE0800F724C7 /* ForecastAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3928621CADAE0800F724C7 /* ForecastAPI.swift */; };
+		0A4301591E20728B00F0841E /* SavedLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A4301581E20728B00F0841E /* SavedLocationService.swift */; };
 		0A43015B1E207C3F00F0841E /* DataTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A43015A1E207C3F00F0841E /* DataTask.swift */; };
 		0A43015D1E207C6200F0841E /* URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A43015C1E207C6200F0841E /* URLSession.swift */; };
 		0A4301601E21718E00F0841E /* URLSessionDataTaskStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A43015F1E21718E00F0841E /* URLSessionDataTaskStub.swift */; };
@@ -108,6 +109,7 @@
 		0A35A1E61D986BAA001B99BD /* sunny-hot.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sunny-hot.json"; sourceTree = "<group>"; };
 		0A39143E1DE6C6C700A1330C /* ParseTimeZoneTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseTimeZoneTest.swift; sourceTree = "<group>"; };
 		0A3928621CADAE0800F724C7 /* ForecastAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForecastAPI.swift; sourceTree = "<group>"; };
+		0A4301581E20728B00F0841E /* SavedLocationService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedLocationService.swift; sourceTree = "<group>"; };
 		0A43015A1E207C3F00F0841E /* DataTask.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataTask.swift; sourceTree = "<group>"; };
 		0A43015C1E207C6200F0841E /* URLSession.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSession.swift; sourceTree = "<group>"; };
 		0A43015F1E21718E00F0841E /* URLSessionDataTaskStub.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskStub.swift; sourceTree = "<group>"; };
@@ -279,6 +281,7 @@
 				0A2D3B461CB5DCFD00B0DF3C /* JSONhelpers.swift */,
 				0A54E1411E05EF6400359CAB /* decoder.swift */,
 				0AD565F61E0E4BB3009A58AE /* CurrentLocationService.swift */,
+				0A4301581E20728B00F0841E /* SavedLocationService.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -560,6 +563,7 @@
 				0A2D3B471CB5DCFD00B0DF3C /* JSONhelpers.swift in Sources */,
 				0A0237681DB814C300D7E66B /* WeatherModels.swift in Sources */,
 				0A289CEB1DE23F9A0054C731 /* DayData.swift in Sources */,
+				0A4301591E20728B00F0841E /* SavedLocationService.swift in Sources */,
 				0A56D0B91DA9CE9D00963D43 /* Currently.swift in Sources */,
 				0A5A76921DF34C7600E52D3A /* HourData.swift in Sources */,
 				0ADE1F291CA1F04A007C2840 /* AppDelegate.swift in Sources */,
