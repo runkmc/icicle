@@ -30,7 +30,6 @@ class HourDataTest: XCTestCase {
         XCTAssertEqual("0%", hour.precipChance)
         XCTAssertEqual("—", hour.precipType)
         XCTAssertEqual("81°", hour.apparentTemperature)
-        XCTAssertEqual(.clearDay, hour.icon)
     }
     
     func testRainyCreation() {

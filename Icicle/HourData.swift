@@ -16,7 +16,6 @@ struct HourData {
     let precipChance: String
     let precipType: String
     let apparentTemperature: String
-    let icon: WeatherIcon
     
     static let timeformatter: DateFormatter = {
         let formatter = DateFormatter()
@@ -41,10 +40,9 @@ struct HourData {
         let precipChance = formatPercentage(hour.precipProbability)
         let precipType = formatPrecipType(hour.precipType)
         let apparentTemperature = parseTemp(hour.apparentTemperature)
-        let icon = WeatherIcon.create(str: hour.icon)
         
         return HourData(time: time, summary: hour.summary, temperature: temperature, precipChance: precipChance,
-                        precipType: precipType, apparentTemperature: apparentTemperature, icon: icon)
+                        precipType: precipType, apparentTemperature: apparentTemperature)
     }
 }
 
