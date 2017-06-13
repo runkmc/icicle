@@ -55,7 +55,6 @@
 		0A608A321D5ED4E9002151E6 /* IcicleColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A608A311D5ED4E9002151E6 /* IcicleColor.swift */; };
 		0A77BC391D9642E500258721 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77BC381D9642E500258721 /* Result.swift */; };
 		0A77BC3B1D9642FD00258721 /* ResultTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A77BC3A1D9642FD00258721 /* ResultTest.swift */; };
-		0A99D91C1CBC5B8400BF354C /* Icon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A99D91B1CBC5B8400BF354C /* Icon.swift */; };
 		0AA99DE71D9EDAD100CE614A /* Days.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA99DE61D9EDAD100CE614A /* Days.swift */; };
 		0AA99DE91D9EDAE100CE614A /* DaysTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA99DE81D9EDAE100CE614A /* DaysTest.swift */; };
 		0AC120B01D61175A008E1557 /* getTestJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AC120AF1D61175A008E1557 /* getTestJson.swift */; };
@@ -134,7 +133,6 @@
 		0A608A311D5ED4E9002151E6 /* IcicleColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IcicleColor.swift; sourceTree = "<group>"; };
 		0A77BC381D9642E500258721 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
 		0A77BC3A1D9642FD00258721 /* ResultTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultTest.swift; sourceTree = "<group>"; };
-		0A99D91B1CBC5B8400BF354C /* Icon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Icon.swift; sourceTree = "<group>"; };
 		0AA99DE61D9EDAD100CE614A /* Days.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Days.swift; sourceTree = "<group>"; };
 		0AA99DE81D9EDAE100CE614A /* DaysTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysTest.swift; sourceTree = "<group>"; };
 		0AC120AF1D61175A008E1557 /* getTestJson.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = getTestJson.swift; sourceTree = "<group>"; };
@@ -285,7 +283,6 @@
 				0A77BC381D9642E500258721 /* Result.swift */,
 				0A2D3B401CB5CB1000B0DF3C /* TimeGranularity.swift */,
 				0A2D3B461CB5DCFD00B0DF3C /* JSONhelpers.swift */,
-				0A99D91B1CBC5B8400BF354C /* Icon.swift */,
 				0A608A311D5ED4E9002151E6 /* IcicleColor.swift */,
 				0A54E1411E05EF6400359CAB /* decoder.swift */,
 				0AD565F61E0E4BB3009A58AE /* CurrentLocationService.swift */,
@@ -592,7 +589,6 @@
 				0A1076541D6CB41300DED569 /* WeatherViewController.swift in Sources */,
 				0A77BC391D9642E500258721 /* Result.swift in Sources */,
 				0A4301641E21724C00F0841E /* URLSessionDataTask.swift in Sources */,
-				0A99D91C1CBC5B8400BF354C /* Icon.swift in Sources */,
 				0AA99DE71D9EDAD100CE614A /* Days.swift in Sources */,
 				0A0B60AB1D9ADD4200B12996 /* Hour.swift in Sources */,
 				0A537D321E206845004E1A1E /* LocationService.swift in Sources */,
