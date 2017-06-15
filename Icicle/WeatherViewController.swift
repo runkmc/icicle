@@ -10,7 +10,6 @@ import UIKit
 
 class WeatherViewController: UIViewController {
 
-    @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var weatherDescription: UILabel!
 
     var locationService: LocationService = CurrentLocationService.instance
@@ -18,7 +17,6 @@ class WeatherViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.scrollView.isScrollEnabled = false
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -30,7 +28,6 @@ class WeatherViewController: UIViewController {
                     self?.weather = weather
                     self?.weatherDescription.attributedText = self?.setParagraph(text: weather.fullSummary)
                 }
-            self?.scrollView.isScrollEnabled = true
             }
         }
     }
