@@ -10,6 +10,10 @@ import UIKit
 
 class WeatherViewController: UIViewController {
 
+    @IBOutlet weak var locationHeadLabel: UILabel!
+    @IBOutlet weak var timeHeadLabel: UILabel!
+    @IBOutlet weak var dateHeadLabel: UILabel!
+    @IBOutlet weak var currentConditionsHead: UILabel!
     @IBOutlet weak var weatherDescription: UILabel!
 
     var locationService: LocationService = CurrentLocationService.instance

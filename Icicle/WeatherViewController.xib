@@ -11,14 +11,68 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeatherViewController" customModule="Icicle" customModuleProvider="target">
             <connections>
+                <outlet property="currentConditionsHead" destination="Ncx-dB-ekz" id="t3i-Bx-eqn"/>
+                <outlet property="dateHeadLabel" destination="RvN-i1-taK" id="SqQ-c0-qn2"/>
+                <outlet property="locationHeadLabel" destination="MsW-Dw-cXr" id="j65-uz-e9b"/>
+                <outlet property="timeHeadLabel" destination="iQS-OZ-WSc" id="Pli-y7-xGs"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="weatherDescription" destination="hji-gM-LcQ" id="BHs-qI-mPU"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MsW-Dw-cXr">
+                    <rect key="frame" x="16" y="18" width="343" height="27.5"/>
+                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQS-OZ-WSc">
+                    <rect key="frame" x="16" y="49.5" width="343" height="27.5"/>
+                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RvN-i1-taK">
+                    <rect key="frame" x="16" y="81" width="343" height="27.5"/>
+                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ncx-dB-ekz">
+                    <rect key="frame" x="16" y="128.5" width="343" height="66"/>
+                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Bold" family="Avenir Next Condensed" pointSize="48"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hji-gM-LcQ">
+                    <rect key="frame" x="16" y="214" width="343" height="22"/>
+                    <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="MsW-Dw-cXr" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="18" id="02S-yh-Suj"/>
+                <constraint firstItem="RvN-i1-taK" firstAttribute="trailing" secondItem="MsW-Dw-cXr" secondAttribute="trailing" id="04N-LI-D4C"/>
+                <constraint firstItem="Ncx-dB-ekz" firstAttribute="top" secondItem="RvN-i1-taK" secondAttribute="bottom" constant="20" id="Age-sf-9GG"/>
+                <constraint firstItem="hji-gM-LcQ" firstAttribute="leading" secondItem="MsW-Dw-cXr" secondAttribute="leading" id="LK8-po-D7K"/>
+                <constraint firstItem="hji-gM-LcQ" firstAttribute="top" secondItem="Ncx-dB-ekz" secondAttribute="bottom" constant="20" id="R8J-fz-a4E"/>
+                <constraint firstItem="iQS-OZ-WSc" firstAttribute="top" secondItem="MsW-Dw-cXr" secondAttribute="bottom" constant="4" id="VoW-lW-1jq"/>
+                <constraint firstItem="MsW-Dw-cXr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="ZGO-0p-3b4"/>
+                <constraint firstItem="iQS-OZ-WSc" firstAttribute="leading" secondItem="MsW-Dw-cXr" secondAttribute="leading" id="a1e-AN-xNv"/>
+                <constraint firstItem="RvN-i1-taK" firstAttribute="top" secondItem="iQS-OZ-WSc" secondAttribute="bottom" constant="4" id="bt2-KK-Lq2"/>
+                <constraint firstItem="Ncx-dB-ekz" firstAttribute="trailing" secondItem="MsW-Dw-cXr" secondAttribute="trailing" id="dfB-Pp-EDC"/>
+                <constraint firstItem="iQS-OZ-WSc" firstAttribute="trailing" secondItem="MsW-Dw-cXr" secondAttribute="trailing" id="fOv-7Q-5II"/>
+                <constraint firstItem="RvN-i1-taK" firstAttribute="leading" secondItem="MsW-Dw-cXr" secondAttribute="leading" id="lNa-R3-nY5"/>
+                <constraint firstItem="Ncx-dB-ekz" firstAttribute="leading" secondItem="MsW-Dw-cXr" secondAttribute="leading" id="nvs-WO-gr5"/>
+                <constraint firstAttribute="trailing" secondItem="MsW-Dw-cXr" secondAttribute="trailing" constant="16" id="xaF-5x-Cag"/>
+                <constraint firstItem="hji-gM-LcQ" firstAttribute="trailing" secondItem="MsW-Dw-cXr" secondAttribute="trailing" id="xwn-Zq-xHA"/>
+            </constraints>
             <point key="canvasLocation" x="34.5" y="156.5"/>
         </view>
     </objects>
