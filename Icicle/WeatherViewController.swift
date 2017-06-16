@@ -31,6 +31,8 @@ class WeatherViewController: UIViewController {
                 if let weather = result.successValue() {
                     self?.weather = weather
                     self?.currentConditionsHead.text = weather.headline
+                    self?.timeHeadLabel.text = weather.time
+                    self?.dateHeadLabel.text = weather.date
                     self?.weatherDescription.attributedText = self?.setParagraph(text: weather.fullSummary)
                 }
             }
