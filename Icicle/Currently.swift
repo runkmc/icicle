@@ -13,7 +13,7 @@ import Curry
 
 struct Currently {
     let time:Double
-    let summary:String?
+    let summary:String
     let temperature:Float
     let apparentTemperature:Float?
     let precipProbability:Float?
@@ -24,7 +24,7 @@ extension Currently: Decodable {
     static func decode(_ json: JSON) -> Decoded<Currently> {
         return curry(Currently.init)
         <^> json <| "time"
-        <*> json <|? "summary"
+        <*> json <| "summary"
         <*> json <| "temperature"
         <*> json <|? "apparentTemperature"
         <*> json <|? "precipProbability"

@@ -19,7 +19,7 @@ class CurrentlyTest: XCTestCase {
         let c = currently.value!
         
         XCTAssertEqual(c.time, 1474830537)
-        XCTAssertEqual(c.summary!, "Clear")
+        XCTAssertEqual(c.summary, "Clear")
         XCTAssertEqualWithAccuracy(c.temperature, 83.12, accuracy: 0.01)
         XCTAssertEqualWithAccuracy(c.apparentTemperature!, 81.45, accuracy: 0.01)
         XCTAssertEqualWithAccuracy(c.precipProbability!, 0, accuracy: 0.001)
