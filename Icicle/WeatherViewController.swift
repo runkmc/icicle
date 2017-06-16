@@ -47,7 +47,7 @@ class WeatherViewController: UIViewController {
     
     func setParagraph(text:String) -> NSAttributedString {
         let paragraphStyle = NSMutableParagraphStyle()
-        paragraphStyle.lineHeightMultiple = 1.15
+        paragraphStyle.lineHeightMultiple = 1.10
         return NSAttributedString(string: text, attributes: [NSParagraphStyleAttributeName:paragraphStyle])
     }
 }
