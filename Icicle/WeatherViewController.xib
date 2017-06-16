@@ -48,12 +48,15 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hji-gM-LcQ">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hji-gM-LcQ">
                     <rect key="frame" x="16" y="236" width="343" height="22"/>
                     <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="16"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="1ae-nc-bRg">
+                    <rect key="frame" x="14" y="597" width="347" height="31"/>
+                </slider>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
@@ -61,9 +64,12 @@
                 <constraint firstItem="RvN-i1-taK" firstAttribute="trailing" secondItem="MsW-Dw-cXr" secondAttribute="trailing" id="04N-LI-D4C"/>
                 <constraint firstItem="Ncx-dB-ekz" firstAttribute="top" secondItem="RvN-i1-taK" secondAttribute="bottom" constant="20" id="Age-sf-9GG"/>
                 <constraint firstItem="hji-gM-LcQ" firstAttribute="leading" secondItem="MsW-Dw-cXr" secondAttribute="leading" id="LK8-po-D7K"/>
+                <constraint firstItem="1ae-nc-bRg" firstAttribute="leading" secondItem="MsW-Dw-cXr" secondAttribute="leading" id="Mlu-MU-J4R"/>
                 <constraint firstItem="hji-gM-LcQ" firstAttribute="top" secondItem="Ncx-dB-ekz" secondAttribute="bottom" constant="20" id="R8J-fz-a4E"/>
                 <constraint firstItem="iQS-OZ-WSc" firstAttribute="top" secondItem="MsW-Dw-cXr" secondAttribute="bottom" constant="4" id="VoW-lW-1jq"/>
+                <constraint firstItem="1ae-nc-bRg" firstAttribute="trailing" secondItem="MsW-Dw-cXr" secondAttribute="trailing" id="Yur-Ie-b3C"/>
                 <constraint firstItem="MsW-Dw-cXr" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="16" id="ZGO-0p-3b4"/>
+                <constraint firstAttribute="bottom" secondItem="1ae-nc-bRg" secondAttribute="bottom" constant="40" id="ZYy-fU-kxd"/>
                 <constraint firstItem="iQS-OZ-WSc" firstAttribute="leading" secondItem="MsW-Dw-cXr" secondAttribute="leading" id="a1e-AN-xNv"/>
                 <constraint firstItem="RvN-i1-taK" firstAttribute="top" secondItem="iQS-OZ-WSc" secondAttribute="bottom" constant="4" id="bt2-KK-Lq2"/>
                 <constraint firstItem="Ncx-dB-ekz" firstAttribute="trailing" secondItem="MsW-Dw-cXr" secondAttribute="trailing" id="dfB-Pp-EDC"/>
