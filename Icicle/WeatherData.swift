@@ -17,6 +17,22 @@ struct WeatherData {
     let days:[DayData]
     let alerts:[AlertData]
     let location: Location
+    let date: String
+    let time: String
+    
+    static let dateformatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.locale = Locale.current
+        formatter.dateFormat = "M/d"
+        return formatter
+    }()
+    
+    static let timeformatter: DateFormatter = {
+        let formatter = DateFormatter()
+        formatter.locale = Locale.current
+        formatter.dateFormat = "h a"
+        return formatter
+    }()
     
     init(fullSummary:String, headline:String, hours:[HourData], days:[DayData], alerts:[AlertData], location:Location) {
         self.fullSummary = fullSummary
@@ -25,6 +41,8 @@ struct WeatherData {
         self.days = days
         self.alerts = alerts
         self.location = location
+        self.date = WeatherData.dateformatter.string(from: Date())
+        self.time = WeatherData.timeformatter.string(from: Date())
     }
     
     static func create(models:WeatherModels, location:Location) -> Result<String, WeatherData> {
