@@ -30,6 +30,7 @@ class WeatherViewController: UIViewController {
                 print("block ran")
                 if let weather = result.successValue() {
                     self?.weather = weather
+                    self?.currentConditionsHead.text = weather.headline
                     self?.weatherDescription.attributedText = self?.setParagraph(text: weather.fullSummary)
                 }
             }
