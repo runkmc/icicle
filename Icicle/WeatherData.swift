@@ -12,13 +12,15 @@ import Argo
 struct WeatherData {
     
     let fullSummary:String
+    let headline:String
     let hours:[HourData]
     let days:[DayData]
     let alerts:[AlertData]
     let location: Location
     
-    init(fullSummary:String, hours:[HourData], days:[DayData], alerts:[AlertData], location:Location) {
+    init(fullSummary:String, headline:String, hours:[HourData], days:[DayData], alerts:[AlertData], location:Location) {
         self.fullSummary = fullSummary
+        self.headline = headline
         self.hours = hours
         self.days = days
         self.alerts = alerts
@@ -32,11 +34,13 @@ struct WeatherData {
         guard let days = models.days.value else { return .error(models.days.error!.description) }
         
         let fullSummary = parseSummary(currently:currently, minutes:minutes, hours:hours, days:days)
+        let headline = "\(currently.summary)/\(Int(currently.temperature))°"
         let individualHours = hours.hours.map { HourData.create($0, timeZone:models.timeZone) }
         let individualDays = days.days.map { DayData.create($0, timeZone:models.timeZone) }
         let alerts = models.alerts.map { AlertData.create($0) }
         
         return .success(WeatherData(fullSummary: fullSummary,
+                                    headline:headline,
                                     hours:individualHours,
                                     days:individualDays,
                                     alerts:alerts,
