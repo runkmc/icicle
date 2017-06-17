@@ -15,6 +15,12 @@ class WeatherViewController: UIViewController {
     @IBOutlet weak var dateHeadLabel: UILabel!
     @IBOutlet weak var currentConditionsHead: UILabel!
     @IBOutlet weak var weatherDescription: UILabel!
+    @IBOutlet weak var timeLabel: UILabel!
+    @IBOutlet weak var tempLabel: UILabel!
+    @IBOutlet weak var feelsLikeLabel: UILabel!
+    @IBOutlet weak var summaryLabel: UILabel!
+    @IBOutlet weak var precipLabel: UILabel!
+    @IBOutlet weak var precipTypeLabel: UILabel!
 
     var locationService: LocationService = CurrentLocationService.instance
     var weather: WeatherData? = nil
